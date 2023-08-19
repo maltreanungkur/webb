@@ -8,14 +8,14 @@ title = "Trishan Mondal"
   isoCode = "en"
   rtl = false
   dateFormat = "2 January 2006"
-  logo = "img/trishan.jpg"
+  logo = "logo.png"
   # secondaryLogo = "img/secondary-logo.png"
   # description = "My awesome website"
   # copyright = "Copy, _right?_ :thinking_face:"
 
 [author]
   name = "Trishan Mondal"
-  image = "img/trishan.jpg"
+  image = "trishan2.png.jpg"
   headline = "Welcome to my homepage!"
   # bio = "A little bit about you"
   links = [
