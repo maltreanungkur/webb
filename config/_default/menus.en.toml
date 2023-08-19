@@ -13,7 +13,7 @@
 [[main]]
  name = "Blog"
  pageRef = "posts"
- weight = 100
+ weight = 150
 
 #[[main]]
 #  name = "Parent"
@@ -22,32 +22,32 @@
 [[main]]
  name = "About"
  pageRef = "about"
- weight = 200
+ weight = 100
 
 
 [[main]]
   identifier = "instagram"
   pre = "instagram"
   url = "https://instagram.com/Trishan_1"
-  weight = 60
+  weight = 600
 
 [[main]]
   identifier = "mastodon"
   pre = "mastodon"
   url = "https://masto.ai/@trishan1"
-  weight = 50
+  weight = 500
 
 [[main]]
   identifier = "github"
   pre = "github"
   url = "https://github.com/Trishan8"
-  weight = 40
+  weight = 400
 
 [[main]]
   identifier = "envelope"
   pre = "envelope"
   url = "mailto:trishanmondal004@gmail.com"
-  weight = 20
+  weight = 200
 
 #[[main]]
 #  name = "example sub-menu 2"
@@ -71,10 +71,10 @@
 #  pageRef = "categories"
 #  weight = 20
 
-#[[main]]
-#  name = "Tags"
-#  pageRef = "tags"
-#  weight = 30
+# [[main]]
+#   name = "Tags"
+# pageRef = "tags"
+# weight = 30
 
 
 # -- Footer Menu --
@@ -82,10 +82,10 @@
 # the copyright notice. Configure as per the main menu above.
 
 
-# [[footer]]
-#   name = "Tags"
-#   pageRef = "tags"
-#   weight = 10
+[[footer]]
+  name = "Tags"
+  pageRef = "tags"
+  weight = 10
 
 # [[footer]]
 #   name = "Categories"
