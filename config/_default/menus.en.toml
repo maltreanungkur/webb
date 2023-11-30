@@ -34,7 +34,7 @@
 [[main]]
   identifier = "mastodon"
   pre = "mastodon"
-  url = "https://masto.ai/@trishan1"
+  url = "https://mathstodon.xyz/@trishan1"
   weight = 500
 
 [[main]]
