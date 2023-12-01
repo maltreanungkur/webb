@@ -24,13 +24,6 @@
  pageRef = "about"
  weight = 100
 
-
-[[main]]
-  identifier = "instagram"
-  pre = "instagram"
-  url = "https://instagram.com/Trishan_1"
-  weight = 600
-
 [[main]]
   identifier = "mastodon"
   pre = "mastodon"
