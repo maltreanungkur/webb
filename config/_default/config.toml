@@ -3,7 +3,6 @@
 # https://blowfish.page/docs/getting-started/
 
 
-
 theme = "blowfish"
 baseURL = "https://trishan8.github.io"
 defaultContentLanguage = "en"
