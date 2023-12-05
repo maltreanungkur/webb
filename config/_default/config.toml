@@ -22,7 +22,7 @@ buildFuture = false
   anchor = 'Center'
 
 [taxonomies]
-  tag = "tags"
+  tag = "Tags"
   category = "categories"
   author = "authors"
   series = "series"

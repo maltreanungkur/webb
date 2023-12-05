@@ -25,6 +25,11 @@
  weight = 100
 
 [[main]]
+ name = "Resources"
+ pageRef = "resources"
+ weight = 190
+
+[[main]]
   identifier = "mastodon"
   pre = "mastodon"
   url = "https://mathstodon.xyz/@trishan1"

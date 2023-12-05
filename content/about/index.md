@@ -1,6 +1,7 @@
 ---
-title: "About"
+title: "About Me"
 description: "Here I will mostly write about my self"
+showDate: false
 
 ---
 

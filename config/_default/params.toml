@@ -41,8 +41,8 @@ smartTOCHideUnfocusedChildren = true
   showMoreLink = true
   showMoreLinkDest = "/posts"
   cardView = false
-  cardViewScreenWidth = false
-  layoutBackgroundBlur = true # only used when layout equals background
+  cardViewScreenWidth = true
+  layoutBackgroundBlur = false # only used when layout equals background
 
 [article]
   showDate = true
@@ -59,7 +59,7 @@ smartTOCHideUnfocusedChildren = true
   showEdit = false
   # editURL = "https://github.com/username/repo/"
   editAppendPath = true
-  seriesOpened = false
+  seriesOpened = true
   showHeadingAnchors = true
   showPagination = true
   invertPagination = false
@@ -69,8 +69,8 @@ smartTOCHideUnfocusedChildren = true
   relatedContentLimit = 3
   showTaxonomies = false
   showAuthorsBadges = false
-  showWordCount = true
-  showSummary = true
+  showWordCount = false
+  showSummary = false
   sharingLinks = ["twitter", "reddit", "facebook", "email", "whatsapp", "telegram"]
 
 [list]
