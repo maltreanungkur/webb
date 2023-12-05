@@ -1,0 +1,492 @@
+\documentclass[11pt]{article}
+
+% Usepackages 
+
+\usepackage[utf8]{inputenc}
+\usepackage[hmargin={1.5 cm,1.5cm},
+   top=1.5cm, marginpar=3.5cm, bottom=1.5cm
+   ]{geometry}  
+\usepackage{subfiles}
+\usepackage{hyperref}
+\usepackage{physics}
+\usepackage[most]{tcolorbox}
+\usepackage{xparse}
+\usepackage{accents}
+\usepackage{pdfpages}
+\usepackage{wrapfig}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{bbm}
+\usepackage{tikz-cd}
+\usepackage{tikz}
+\usepackage{mathtools}
+\usepackage{pgfplots}
+\usepackage{titlesec}
+\usetikzlibrary{arrows}
+\pgfplotsset{width=7cm,height=9cm,plotstyle/.style={line width=1.2pt,smooth,samples=100,domain=-0.05:1.01}} 
+
+%%%%%%%%
+
+%Bibliography
+
+%\addbibresource{ref.bib}
+
+%%%%%%%%%
+
+% Additional Styles
+
+\hypersetup{colorlinks = true, linkcolor = blue, urlcolor = violet}
+
+%\titleformat{\chapter}[display]{\normalfont\sffamily\Large\bfseries\centering}{\chaptertitlename\ \thechapter}{0pt}{\Huge}
+
+\titleformat{\section}[hang]{\fontsize{14}{15}\sffamily\bfseries\centering}{\color{columbiablue}\S}{0.21em}{}
+
+\newcommand{\textscf}[1]{\textbf{\textsc{#1}}}
+%%%%%%
+\definecolor{deepjunglegreen}{rgb}{0.40, 0.69, 0.29}
+\definecolor{columbiablue}{rgb}{0.41, 0.37, .89}
+%Theorem Box
+
+\newtcbtheorem[number within=section]{Thm}{\textbf{Theorem} --}{
+ detach title,  
+ fonttitle=\sffamily,
+  coltitle=bondiblue,
+%   colbacktitle=white,
+  %colbacktitle=cosmiclatte,
+  colback=columbiablue!4,
+  colframe=bondiblue,
+  leftrule= 1mm,
+  rightrule=-0.2mm,
+  toprule=-0.2mm,
+  bottomrule=-0.2mm,
+  sharp corners,
+  attach title to upper,
+  separator sign none,
+  description font=\mdseries}{th}
+
+% defination Box
+
+\newtcbtheorem[number within=section]{Def}{Definition}{
+  breakable, enhanced,
+  attach boxed title to top left={xshift=3mm, yshift=-3mm, yshifttext=-1mm},
+  coltitle=black,
+  colbacktitle=columbiablue!25,
+  fonttitle=\sffamily,
+  colback=white,
+  colframe=black,
+  leftrule=0.5mm,
+  rightrule=0.2mm,
+  toprule=0.2mm,
+  bottomrule=0.2mm,
+  arc=2.5mm,
+  separator sign={\ $\blacktriangleright$},
+  description delimiters none,
+  description font=\bfseries}{def}
+
+%Lemma
+\definecolor{electricviolet}{rgb}{0.56, 0.0, 1.0}
+
+\newtcbtheorem[no counter]{Lem}{ \textbf{\textcolor{electricviolet}{\S} Lemma:}}{
+  detach title,
+  fonttitle=\sffamily,
+  coltitle=black,
+  colbacktitle=white,
+  colback=white,
+  colframe=white,
+  description font=\bfseries,
+  before upper={\tcbtitle},
+  title = $\mathbf{\S}$ \textsc{Lemma}
+}{}
+
+\newtcbtheorem[number within=section]{Lemn}{ \textbf{\textcolor{deepjunglegreen}{\S} Lemma}}{
+  detach title,
+  fonttitle=\sffamily,
+  coltitle=black,
+  colbacktitle=white,
+  colback=white,
+  colframe=white,
+  description font=\bfseries,
+  before upper={\tcbtitle},
+  title = $\mathbf{\S}$ \textsc{Lemma}
+}{}
+
+%%% Info box 
+\definecolor{corn}{rgb}{0.98, 0.93, 0.36}
+\definecolor{awesome}{rgb}{1.0, 0.13, 0.32}
+\definecolor{verdigris}{rgb}{0.26, 0.7, 0.68}
+\definecolor{ufogreen}{rgb}{0.24, 0.82, 0.44}
+\definecolor{turquoiseblue}{rgb}{0.0, 1.0, 0.94}
+\definecolor{salmonpink}{rgb}{1.0, 0.57, 0.64}
+\definecolor{screamin}{rgb}{0.46, 1.0, 0.44}
+\newtcbtheorem[no counter]{Sly}{}{
+ breakable, enhanced,
+%   attach boxed title to top left={xshift=3mm, yshift= -3mm, yshifttext=-1mm},
+  %coltitle=black,
+  %colbacktitle=cyan!70,
+  fonttitle=\sffamily,
+  colback=cyan!5,
+  colframe=black,
+  leftrule=0.2mm,
+  rightrule=0.2mm,
+  toprule=0.2mm,
+  bottomrule=0.2mm,
+  separator sign none,
+  description font=\bfseries}{}
+
+%%%%%
+
+
+%%%%problems
+\definecolor{bondiblue}{rgb}{0.0, 0.58, 0.71}
+
+\newtcbtheorem[no counter]{prob}{\textcolor{bondiblue}{\textbf{\textsf{Problem.}}}}{
+  detach title,
+  fonttitle=\sffamily,
+  coltitle=black,
+  colbacktitle=white,
+  colback=white,
+  colframe=white,
+  leftrule=0.1mm,
+  rightrule= -0.1mm,
+  toprule=-0.1mm,
+  bottomrule=-0.1mm,
+  description font=\bfseries,
+  before upper={\tcbtitle},
+  title = $\mathbf{\S}$ 
+}{}
+
+
+
+
+% Main documentclass
+
+\newcommand{\bb}[1]{\mathbb{#1}}
+\newcommand{\N}{\bb{N}}
+\newcommand{\Z}{\bb{Z}}
+\newcommand{\Q}{\bb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\bb{C}}
+\newcommand{\Op}[1]{\mathcal{O}_{#1}}
+\newcommand{\msk}{\medskip}
+\newcommand{\ssk}{\smallskip}
+\newcommand{\bsk}{\bigskip}
+\newcommand{\Qed}{\quad \blacksquare}
+\newcommand{\contra}{\rightarrow \leftarrow}
+\newcommand{\heart}{\ensuremath\heartsuit}
+\newcommand{\butt}{\rotatebox[origin=c]{180}{\heart}}
+\newcommand{\ltag}[2]{\label{#1} \tag{#2}}
+\newcommand{\floor}[1]{\lfloor {#1} \rfloor}
+\newcommand{\inp}[2]{\left\langle {#1}, {#2} \right\rangle}
+\newcommand{\vphi}{\varphi}
+\newcommand{\veps}{\varepsilon}
+\newcommand{\pdot}[2]{{#1} \cdot {#2}}
+\newcommand{\Area}{\operatorname{Area}}
+\newcommand{\ran}{\operatorname{ran}}
+\newcommand{\Vol}{\operatorname{Vol}} 
+\newcommand{\s}{\bb{S}}
+\newcommand{\fb}[1]{\mathbf{#1}}
+\newcommand{\T}{\mathbf{Top}}
+\newcommand{\p}{\partial}
+\newcommand{\ch}{\mathbf{Chain}^*}
+\newcommand{\cha}{\mathbf{Chain}^\text{ag}}
+\newcommand{\gr}{\mathbf{Graded groups}}
+\newcommand{\kc}{\mathcal{K}}
+\newcommand{\D}{\Delta}
+\newcommand{\de}{\delta}
+\newcommand{\ep}{\varepsilon}
+\newcommand{\coro}[1]{{\hspace*{0.6cm} \textcolor{purple}{\textsc{Corollary. }}}\textit{#1}}
+\newcommand{\examp}{\hspace{0.6cm} $\blacklozenge$ \textsc{Example} \textbf{:}} 
+\newcommand{\ts}[1]{\textbf{\textsf{#1}}}
+\newcommand{\cod}[1]{\textcolor{codegreen}{\texttt{#1}}}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\theo}[2]{{\hspace*{0.6cm} \textcolor{blue}{\textsc{Theorem.}}\hspace*{0.1cm}\textbf{\textsf{#1}} \hspace*{0.1cm}}\textit{#2}}
+\newcommand{\sol}{ \textbf{\textit{Solution.}} }
+\newcommand{\id}{\mathbf{Id}}
+\newcommand{\htt}{\tilde{H}}
+\newcommand{\htb}{\tilde{H}_{\bullet}}
+%%%%%% 
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{1,1,1}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{blue},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+
+
+%%%%%%%
+
+\begin{document}
+ 
+ \title{{\Huge \textsc{Assignment-4}}}
+ \author{\textbf{ \textsf{Algebraic Topology}} \\[0.2cm]
+ \large \textsc{Trishan Mondal}}
+ \date{}
+ \maketitle
+
+ \section{Problem 1}
+
+ \begin{prob}{}{}
+    Let $B$ be a CW complex. Show that every covering space over $B$ admits a CW structure with cells projecting homeomorphically onto cells.
+ \end{prob}
+ \sol Let $p:E \to B$ be a covering space. For any point $x \in B$ we have an index set $\Lambda$ such that, $p^{-1}(x) = \qty{x_{\lambda}}_{\lambda \in \Lambda}$. It is given $B$ is a CW complex. So for each $n \geq 0$ there exist characteristic maps $\qty{\varphi_{\alpha}^n : D^n_{\alpha}\to B : \alpha \in I_n}$, let $e_\alpha^n = \operatorname{Im}(\varphi_{\alpha}^n : D_{\alpha}^n \setminus \p D_{\alpha}^n\to B)$, $B^n$ is union of $e^k_{\alpha}$ where $\alpha$ varies over the index set $I_k$ and $k \leq n$. We know by the property of CW complex, $B= \cup_{n\geq 0} B^n$. Note that for $n\geq 0$, $(D^n_{\alpha},0)$ is pointedly contractible and by the property of covering space there is a map $\tilde{\varphi}_{\lambda\alpha}^n : (D^n_{\alpha},0) \to (E,x_{\alpha}^n)$, where $x_{\alpha}^n = \varphi_{\alpha}^n(0)$ such that the following diagram commutes,
+ \[\begin{tikzcd}
+	& {(E,x^n_{\alpha \lambda})} \\
+	{(D_{\alpha}^n,0)} & {(B,x_{\alpha}^n)}
+	\arrow["p",from=1-2, to=2-2]
+	\arrow["{\varphi_{\alpha}^n}"', from=2-1, to=2-2]
+	\arrow["{\tilde{\varphi}_{\lambda\alpha}^n}", dashed, from=2-1, to=1-2]
+\end{tikzcd}\]
+In the above diagram $x^n_{\alpha \lambda}$ is the inverse image of $x_{\alpha}^n$ under $p$ (it's cardinality is same as $\Lambda$ as mentioned above). Let us define $e_{\lambda \alpha}^n = \varphi_{\lambda\alpha}^n(D_{\alpha}^n \setminus \p D_{\alpha}^n)$. Now we will show the collection of maps $\qty{\varphi_{\alpha \lambda}^n:D^n_{\alpha}\to E}_{\alpha,\lambda,n}$ defines a CW structure on $E$. To prove this we will use the following theorem proved in class,
+
+\begin{Thm}{ }{ }\label{thm:1}
+   Given a space $X$ and a family of map $\qty{\phi_{\beta}^n : D^n_{\beta}\to X}_{\beta,n}$, these are characteristic map of CW structure if and only if the following three condition holds: 
+   \begin{itemize}
+      \item[i.]  $\phi_{\beta}^n : D^n_{\beta} \setminus \p D^n_{\beta}\to X$ is a homeomorphism into it's image.
+      \item[ii.] Every cell $\phi_{\beta}^n(\p D^n_{\beta})$ is contained in finite number of cells of dimension $<n$.
+      \item[iii.] $A \subset X$ is closed if and only if $A \cap \bar{e^n_{\beta}} = A \cap \phi_{\beta}^n(D_{\beta}^n)$ is closed (equivalently $(\phi_{\beta}^n)^{-1}(A)$ is closed in $D^n_{\beta}$)  
+   \end{itemize}
+\end{Thm}
+
+\noindent Before proving this, let $$E^n := \bigcup_{k \leq n, \Lambda,I_k} {e^k_{\lambda \alpha}}$$ Assume that $y \in E$ and $x =p(y)\in B$. Let, $x \in e^n_{\alpha}$ and $\gamma$ be a path from $x$ to $x^n_{\alpha}$ within this cell. For each $x_\lambda \in p^{-1}(x)$ there is a lifting $\gamma_{\lambda}$ of $\gamma$ such that it is a path from $x_{\lambda}$ to $x^{n}_{\alpha \lambda}$. For some $\lambda$, $y = x_{\lambda}$ so $y \in e^n_{\lambda\alpha}$ for that $\lambda$. Thus we can conclude $$E = \bigcup_{n\geq 0}E^n$$
+Now we will show that $\qty{\varphi_{\alpha \lambda}^n}$ gives us a CW structure on $E$ by showing this assignment  satisfy all three conditions of the theorem \ref{thm:1}.1. 
+
+\begin{itemize}
+   \item[]\ts{i.} From the construction we know $p \circ \varphi_{\lambda \alpha}^n=\varphi_{\alpha}^n$. Thus image of restriction of $p$ to $e^n_{\lambda \alpha}$ is $e^n_{\alpha}$. Since $\varphi_{\alpha}^n ( D^n_{\alpha} \setminus \p D^n_{\alpha})$ is homeomorphic to it's image we can say the same for $\varphi^n_{\alpha \lambda}$.
+   \item[] \ts{ii.} By the CW structure of $B$ we know, $\varphi_{\alpha}^n(\p D^n_{\alpha}) \subset B^{n-1}$, it follows that $\varphi^n_{\lambda \alpha} (\p D^n_{\alpha})\subset E^{n-1}$. Since $\p D^n_{\alpha}$ is compact $\varphi^n_{\lambda \alpha} (\p D^n_{\alpha})$ is contained in finitely many cells of $E^{n-1}$.
+   \item[] \ts{iii.} It is equivalent to prove $E$ has weak topology with respect to the maps $\qty{\varphi^n_{\alpha \lambda}}$. To show this we will use the following commutative diagram, \[\begin{tikzcd}
+      {\bigsqcup_{\alpha}D^n_{\alpha}} & E \\
+      {\bigsqcup_{\alpha} D_{\alpha}^n} & B & {}
+      \arrow["{\coprod \varphi^n_{\lambda\alpha}}", from=1-1, to=1-2]
+      \arrow["\id"', from=1-1, to=2-1]
+      \arrow["{\coprod \varphi^n_{\alpha}}"', from=2-1, to=2-2]
+      \arrow["p", from=1-2, to=2-2]
+   \end{tikzcd}\]
+   Let us call $\phi = \coprod \varphi^n_{\alpha}$ and $\tilde{\varphi} = \coprod \varphi^n_{\alpha \lambda}$. From the definition of weak topology we can say \textbf{$E$ is an weak topology with respect to those maps mentioned if $\tilde{\varphi}$ satisfy the following property:} Suppose that $\widetilde{E}$ is a subset of $E$ with $\tilde{\varphi}^{-1}(\widetilde{E})$ open; each such $\widetilde{E}$ is open in $E$. 
+   \item[] Let $y \in \widetilde{E}$, let $x=p(y)$, let $U$ be an open neighborhood of $x$, and let $\widetilde{U}$ be the sheet over $U$ containing $y$. Then $\widetilde{E}$ is open if and only if each such $\widetilde{E} \cap \tilde{U}$ is open in $E$. Changing notation if necessary, we may thus assume that $\widetilde{E} \subset \tilde{U}$, where $p \mid \tilde{U}$ is a homeomorphism. Now $\tilde{\varphi}^{-1}(\widetilde{E})$ is open; since $\id$ is an open map, $\id \circ \tilde{\varphi}^{-1}(\widetilde{E})$ is open. We claim that $\id \circ \tilde{\varphi}^{-1}(\widetilde{E})=\varphi^{-1} \circ p(\widetilde{E})$. If this claim is correct, then $\varphi \circ \id \circ \tilde{\varphi}^{-1}(\widetilde{E})=\varphi \circ \varphi^{-1} \circ p(\widetilde{E})=p(\widetilde{E})$ is open in $B$, because $B$ has weak topology with respect to the maps $\qty{\varphi_{\alpha}^n}$. It follows that $(p \mid \tilde{U})^{-1}(\widetilde{E})=\widetilde{E}$ is open in $E$, for $p \mid \widetilde{U}$ is a homeomorphism, and this will complete the proof.
+   
+   \item[] Assume that $\tilde{\varphi}(z) \in \widetilde{E}$. From the commutativity of the diagram we have, $\varphi \circ \id(z)=p\circ\tilde{\varphi}(z) \in$ $p(\widetilde{E})$; hence $\id \circ \tilde{\varphi}^{-1}(\widetilde{E}) \subset \varphi^{-1} \circ p(\widetilde{E})$. For the reverse inclusion, let $z \in \varphi^{-1}\circ p(\widetilde{E})$, so that $\varphi(z) \in p(\widetilde{E})$. Now $z \in D^n_{\alpha}$, say; choose a path $f$ in $D^n_{\alpha}$ from $z$ to $0$. Hence $\varphi \circ f$ is a path in $e^n_{\alpha}$ from $\varphi(z)$ to $x^n_{\alpha}$. Let $\tilde{g}$ be a lifting of $\varphi \circ f$ with $\tilde{g}(0) \in \widetilde{E}$; of course, $\tilde{g}(1)=x^n_{\alpha\lambda}$ for some $\lambda$. But $\tilde{\varphi}\circ \id^{-1} \circ f$ is also a lifting of $\varphi \circ f$, which ends at $x^n_{\alpha\lambda}$. By uniqueness of path lifting (here we lift the reverse of $\varphi \circ f)$, it follows that $\tilde{\varphi} \circ \id^{-1} \circ f=\tilde{g}$, and so $\tilde{\varphi}\circ \id^{-1}\circ f(0)=\tilde{g}(0) \in \widetilde{E}$. But $\tilde{\varphi} \circ \id^{-1} \circ f(0)=$ $\tilde{\varphi} \circ \id^{-1}(z)$, and so $z \in \id \circ \tilde{\varphi}^{-1}(\widetilde{E})$, as desired.
+\end{itemize}
+
+\noindent So we have proved the above $E$ has a cell structure with cells $e^n_{\alpha \lambda}$ mentioned above and $p$ maps $e^n_{\alpha \lambda}$ to $e^n_{\alpha}$ more specifically $p$ is a ``cullular map''.
+
+
+ \section{Problem 2}
+
+ \begin{prob}{}{}
+    Show that $\mathbb{C} P^{n}$ has a CW structure with $\left(\mathbb{C} P^{n}\right)^{(2 k)}=\mathbb{C} P^{2 k+1} \simeq \mathbb{C} P^{k}$ for all $k \leq n$. Compute the cellular chain complex of $\mathbb{C} P^{n}$ and compute the homology groups.
+ \end{prob}
+
+ \sol Recall the definition of $\C P^n$. It is the space of all lines passing through origin. The complex projective space $\mathbb{C P}^n$ is the space of complex lines through the origin in $\mathbb{C}^{n+1}$. Such a line is determined by a point $\left(z_0, \ldots, z_n\right) \neq 0$ on the line, and for any scalar $\lambda \in \mathbb{C}\setminus\{0\}$ the tuple $\left(\lambda z_0, \ldots, \lambda z_n\right)$ determines the same line for which we write $\left[z_0: \ldots: z_n\right]$. The line can also be represented by a point $z=\left(z_0, \ldots, z_n\right)$ with $|z|=1$, so that $z$ and $\lambda z$ represent the same line for all $\lambda \in S^1$. Thus $\mathbb{C}P^n=\s^{2 n+1} / \s^1$ is a space of (real) dimension $2 n$. There are inclusions
+ $$
+ \mathbb{C} P^0 \subseteq \mathbb{C} P^1 \subseteq \mathbb{C}P^2 \subseteq \ldots
+ $$
+ where $ i_0: \mathbb{C}P^{k-1} \hookrightarrow  \mathbb{C}P^k$ sends $\left[z_0: \ldots: z_{k-1}\right]$ to $\left[z_0: \ldots: z_{k-1}: 0\right]$. An arbitrary point in $ \mathbb{C}P^k\setminus \mathbb{C}P^{k-1}$ can be uniquely represented by $\left(z_0, \ldots, z_{k-1}, t\right)$ where $t>0$ is the real number $\sqrt{1-\norm{z}^2}$. This will give us the following commutative diagram,
+ \[\begin{tikzcd}
+	{\p D^{2k}} & {\C P^{k-1}} \\
+	{D^{2k}} & {\C P^{k}}
+	\arrow["i"', hook, from=1-1, to=2-1]
+	\arrow[from=1-1, to=1-2]
+	\arrow["q"', from=2-1, to=2-2]
+	\arrow["{i_0}", from=1-2, to=2-2]
+\end{tikzcd}\]
+Here $q$ is the map sends $(z_0,\cdots,z_{k-1})\mapsto \qty[z_0:z_1,\cdots,z_{k-1}:\sqrt{1-\norm{z}^2}]$, this map restricts to $\p D^{2k}$ will send, $(z_0,\cdots,z_{k-1})\mapsto \qty[z_0:z_1,\cdots,z_{k-1}:0]$ which lands in $\C P^{k-1}$ and $i$ is inclusion. We are attaching $\p D^{2k} \subseteq D^{2k}$ allong $\C P^{k-1}$, to get $\C P^k$. Thus the above diagram is a pushout diagram (for each $k \geq 0$). Note that $X^0=\C P^0$ is a singletons set, by attaching $\p D^2 \subseteq D^2$ to the point $\C P^{0}$ along the map mentioned above to get $X^2 = \C P^1$, we will continue this process for $1 \leq k \leq n$. The topology on $\C P^n$ is inherited by $\C P^{n-1}$ and thus by induction $\C P^n$ has weak topology. SO, this defines a CW-structure on $\C P^n$ by induction on $k$ as follows,
+
+$$(\C P^n)^{2k}=(\C P^{n})^{2k+1}=\C P^k$$
+
+\noindent According to this cell structure there is 1 cell of dimensions $0,2,\cdots,2n$ and no-cell of odd dimension. We will have the following cellular chain complex, $$0\to \Z \to 0 \to \Z \cdots \to\Z\to 0$$
+So the cellular homology of $\C P^n$ is $$H^{CW}_n(\C P^n)\simeq\begin{cases*}
+   \Z & \text{ for } $k= 0,2,\cdots,2n$\\
+   0 & \text{ else}
+\end{cases*}$$
+
+ \section{Problem 3}
+
+ \begin{prob}{}{}
+    Show that the quotient map $\mathbb{S}^{1} \times \mathbb{S}^{1} \rightarrow \mathbb{S}^{2}$ collapsing the subspace $\mathbb{S}^{1} \vee \mathbb{S}^{1}$ to a point is not nullhomotopic by showing that it induces an isomorphism on $\mathrm{H}_{2}$.
+ \end{prob}
+ \sol Let, $q :\s^1 \times \s^1 \to \s^2$ is the quotient map. Since $(\s^1 \times \s^1, \s^1 \vee \s^1)$ is a good pair we can say $H_n(\s^1 \times \s^1, \s^1 \vee \s^1) \simeq H_n(\s^1 \times \s^1 /\s^1 \vee \s^1) =H_n(\s^n)$. Thus we have the following exact sequence, 
+ 
+ $$\underbrace{H_2(\s^1 \vee \s^1)}_{\simeq 0} \to H_2(\s^1 \times \s^1)\xrightarrow{H_2(q)}H_2(\s^1 \times \s^1/ \s^1 \vee \s^1) \xrightarrow{f} H_1(\s^1 \vee \s^1)\xrightarrow{H_1(i)}H_1(\s^1 \times \s^1)\xrightarrow{H_1(q)} \underbrace{H_1(\s^1 \times \s^1/ \s^1 \vee \s^1)}_{\simeq 0}$$
+
+\noindent Since $\s^1 \vee \s^1$ is 1-dimensional CW complex we have it's second homology group is trivial. Thus, the map $H_2(q)$ in the above exact sequence is injective. Similarly, the last term is trivial as the space $\s^1 \times \s^1 / \s^1 \vee \s^1$ is homeomorphic to $\s^2$. If $q$ was null-homotopic $H_2(q)$ will induce a trivial map in the above sequence. But then we will have the following SES $$0 \to \underbrace{H_2(\s^1 \times \s^1/ \s^1 \vee \s^1)}_{\simeq \Z} \to \underbrace{H_1(\s^1 \vee \s^1)}_{\Z \oplus \Z}\xrightarrow{H_1(i)}\underbrace{H_1(\s^1 \times \s^1)}_{\simeq \Z \oplus \Z}\xrightarrow{H_1(q)} 0$$
+This is not possible as it gives rise to an exact sequence $0 \to \Z \to \Z^2 \to \Z^2\to 0$ but this is not possible as $\Z^2 \not\simeq \Z \oplus \Z^2$ (this is from the property of projective modules). Thus $q$ is not null-homotopic. 
+
+\vspace*{0.2cm}
+
+\noindent $\bullet$ In order to show $H_2(q)$ is an isomorphism we will prove $f$ is a trivial map. From the above discussion we know, $\operatorname{Im}(H_2(q)) = d \Z\langle \tau \rangle$ where $d \neq 0$, an integer and $\tau$ is generator $H_2(\s^1 \times \s^1/ \s^1 \vee \s^1) \simeq \Z$. The map $f$ must have kernal $\simeq d\Z$ by exactness. If the map $f$ is not trivial then it must map generator of the group $H_2(\s^1 \times \s^1/ \s^1 \vee \s^1) \simeq \Z$ will map to a non-zero element of $H_1(\s^1\vee \s^1)\simeq \Z \oplus \Z$. Let $g$ be the generator but then $f(d\cdot g) = df(g) =0$, which means a non-zero element of $H_1(\s^1\vee \s^1)\simeq \Z \oplus \Z$ has a finite order. It is not possible. Thus the map $f$ is trivial. $\hfill \blacksquare$
+
+ \section{Problem 4}
+
+ \begin{prob}{}{}
+    Compute the cellular chain complex of the surface $\Sigma_{g}$ for the standard $\mathrm{CW}$ structure consisting of one-0 cell, $2 \mathrm{g}$-1 cells, and one 2 cell attached by the product of commutators $\left[a_{1}, b_{1}\right] \cdots\left[a_{g}, b_{g}\right]$.
+ \end{prob}
+ \sol   Let \( X = \Sigma_g \). As the cellular chain complex has the terms \( \oplus_{I_n}\mathbbm{Z} \), where \( I_n \) is the indexing set of \( n- \)cells, we get
+ \[
+   C_n^{\textrm{cell}}(X) =
+   \begin{cases}
+     \mathbbm{Z}, \, n = 0,2    \\
+     \mathbbm{Z}^{2g}, \, n = 1 \\
+     0, \, n \geq 3
+   \end{cases}
+ \]
+ We now compute the boundary maps of the complex using the result proved in class that
+ \[
+   d_{n}([\alpha]) = \sum_{\beta \in I_{n-1}} d_{\alpha\beta}[\beta]
+ \]
+ \noindent where \( [\alpha] \) is a generator of \( C_{n}^{\textrm{cell}} \) and \( d_{\alpha\beta} \) denotes the degree of the map \( S^{n-1}_\alpha \to X^{n-1} \to S^{n-1}_\beta \), for \( \beta \in I_{n-1} \). (Here we are using square brackets to denote the generator obtained from that cell.)
+ From the attaching map of the \( 2- \)cell, we get the composition \( S^{1}_\alpha \to X^{1} \to S^{1}_\beta \) corresponds to the word \( a_{\beta}a_{\beta}^{-1} \) and is hence nullhomotopic, for all \( \alpha, \beta \). Therefore, \( d_{\alpha\beta} = 0 \) for all \( \alpha \in I_{2}, \beta \in I_1 \). Hence, \( d_2 \equiv 0 \). As \( X \) is path connected, we get \( d_1 \equiv 0 \) by looking at the boundary map \( \Delta_1(X) \to \Delta_0(X) \). As the higher terms in the complex are all 0, we get \( d_n \equiv 0 \) for all \( n \geq 3 \) as well. Therefore, the cellular chain complex is:
+ \[0\xrightarrow{0}\Z \xrightarrow{0}\Z^{2g}\xrightarrow{0}\Z\to 0\]
+ where the penultimate term on the right is \( C_0^{\textrm{cell}}(X) \) and the last term on the left is \( C_n^{\textrm{cell}}(X) \), \( n \geq 3 \). Hence, the homology groups are:
+ \[
+   H_n^{\textrm{CW}} (X) =
+   \begin{cases}
+     \mathbbm{Z}, \, n = 0,2    \\
+     \mathbbm{Z}^{2g}, \, n = 1 \\
+     0, \, n \geq 3
+   \end{cases}
+ \]
+
+ \section{Problem 5}
+
+ \begin{prob}{}{}
+    Compute the cellular chain complex of the surface $N_{h}$ for the standard CW structure consisting of one 0 cell, g 1 cells, and one 2 cell attached by the word $a_{1}^{2} a_{2}^{2} \cdots a_{g}^{2}$.
+ \end{prob}
+
+ \sol Let \( X = N_h \). As the cellular chain complex has the terms \( \oplus_{I_n}\mathbbm{Z} \), where \( I_n \) is the indexing set of \( n- \)cells, we get
+ \[
+   C_n^{\textrm{cell}}(X) =
+   \begin{cases}
+     \mathbbm{Z}, \, n = 0,2   \\
+     \mathbbm{Z}^{h}, \, n = 1 \\
+     0, \, n \geq 3
+   \end{cases}
+ \]
+ We now compute the boundary maps of the complex as in Problem 3. From the attaching map of the \( 2- \)cell, we get the composition \( S^{1}_\alpha \to X^{1} \to S^{1}_\beta \) corresponds to the word \( a_{\beta}^2 \) and therefore, \( d_{\alpha\beta} = 2 \) for all \( \alpha \in I_{2}, \beta \in I_1 \). Hence, \( d_2[\alpha] = 2 \sum_{\beta \in I_1}[\beta]  \) for all \( \alpha \in I_2 \). As \( X \) is path connected, we get \( d_1 \equiv 0 \) by looking at the boundary map \( \Delta_1(X) \to \Delta_0(X) \). As the higher terms in the complex are all 0, we get \( d_n \equiv 0 \) for all \( n \geq 3 \). Therefore, the cellular chain complex is:
+ \[0\xrightarrow{0}\Z \xrightarrow{\varphi}\Z^{h}\xrightarrow{0}\Z\to 0\]
+ where the last term on the right is \( C_0^{\textrm{cell}}(X) \), the last term on the left is \( C_n^{\textrm{cell}}(X) \), \( n \geq 3 \), and \( \varphi(1) = 2(1,\dots,1) \). Hence, the homology groups are:
+ \[
+   H_n^{\textrm{CW}} (X) =
+   \begin{cases}
+     \mathbbm{Z}, \, n = 0,2                                      \\
+     \mathbbm{Z}^{h-1} \oplus \mathbbm{Z}/2 \mathbbm{Z}, \, n = 1 \\
+     0, \, n \geq 3
+   \end{cases}
+ \]
+
+ \section{Problem 6}
+
+ \begin{prob}{}{}
+    Show that if $X$ is a CW complex then $H_{n}\left(X^{n}\right)$ is free by identifying it with the kernel of the cellular boundary map $H_{n}\left(X^{n}, X^{n-1}\right) \rightarrow$ $H_{n-1}\left(X^{n-1}, X^{n-2}\right)$
+ \end{prob}
+
+ \sol If $X$ is a CW-complex, it means $X^n$ are $n$-skeleton structures of $X$. Note that $(X^n,X^{n-1})$ is a good pair for $n \geq 1$. Thus, $H_n(X^n,X^{n-1}) \simeq \tilde{H}_n(X^n/X^{n-1})$. Here, we are collapsing all the cells of $X^n$, dimension less or equal to $n-1$ to a point. Thus $\tilde{H}_n(X^n/X^{n-1})\simeq \tilde{H}_n( \bigvee_{\alpha \in I} \s^n_{\alpha})$, where $I$ is the index set corresponding to the number of $n$-cells in $X$. Thus we can say, $$\tilde{H}_n(X^n/X^{n-1})\simeq \tilde{H}_n( \bigvee_{\alpha \in I} \s^n_{\alpha}) \simeq \bigoplus_{\alpha \in I} \Z$$
+ Which is a free group. Now consider the following commutative diagram. Where the `red arrows' and `blue arrows' are part of some exact sequence. From the construction of cellular boundary map we know, $d_n = j_{n-1} \circ \p_n$. \[\begin{tikzcd}
+	&&&& {} \\
+	0 & {H_n(X^n)} & {H_n(X^n,X^{n-1})} & {H_{n-1}(X^{n-1})} & 0 \\
+	&& {H_{n-1}(X^{n-1},X^{n-2})}
+	\arrow[color={rgb,255:red,214;green,92;blue,92}, from=2-1, to=2-2]
+	\arrow["{j_n}", color={rgb,255:red,214;green,92;blue,92}, from=2-2, to=2-3]
+	\arrow["{\partial_n}", color={rgb,255:red,214;green,92;blue,92}, from=2-3, to=2-4]
+	\arrow["{j_{n-1}}", color={rgb,255:red,92;green,92;blue,214}, from=2-4, to=3-3]
+	\arrow[color={rgb,255:red,92;green,92;blue,214}, from=2-5, to=2-4]
+	\arrow["{d_n}"', from=2-3, to=3-3]
+\end{tikzcd}\]
+In the `red arrow' exact sequence $j_n$ is injective and thus by exactness $\operatorname{Im} j_n = \ker \p_n$. In the similar fashion $j_{n-1}$ is injective, so we have $\ker d_n = \ker j_{n-1}\circ \ker \p_n \simeq \ker \p_n = \operatorfont{Im } j_n$. By injectivity of $j_n$ we can say, $\operatorname{Im }j_n \simeq H_n(X^n)$. Thus we have $H_n(X^n) \simeq \ker d_n$. Here the kernal of $d_n$ is a subgroup of the free abelian group $H_n(X^n,X^{n-1})$ and hence it is a free abelian groups. Since $H_n(X^n)$ is isomorphic to a free abelian group it must be a free abelian group. 
+
+
+ \section{Problem 7}
+
+ \begin{prob}{}{}
+    For a finite CW complex $X$, the Euler characteristic $\chi(X)$ is defined to be the alternating sum $\Sigma_{n}(-1)^{n} c_{n}$, where $c_{n}$ is the number of $n$ cells of $X$. For finite CW complexes $X$ and $Y$, show that $$\chi(X \times Y)=\chi(X) \chi(Y)$$
+ \end{prob}
+ \sol Recall the cell structure of $X \times Y$ that can be given from cell structure of $X$ and $Y$. The number of $n$-cells in $X\times  Y$ is $\sum_{k=0}^n c_k(X)c_{n-k}(Y)$, where $c_k(X)$ is number of $k$-dimensional cell of $X$ and $c_{n-k}(Y)$ is number of $(n-k)$-dimensional cell in $Y$. The previous result is true as product of each $k$-dimensional cell in $X$ and $(n-k)$-cell  in $Y$ gives us a $n$-dimensional cell in $X \times Y$. \begin{align*}
+    \chi(X \times Y) &= \sum_{n=0}^{\infty}(-1)^n c_n(X \times Y) \\
+    &= \sum_{n=0}^{\infty}(-1)^n \sum_{k=0}^{n}c_k(X)c_{n-k}(Y) \\
+    &=\sum_{n=0}^{\infty}\sum_{k=0}^{n} (-1)^kc_k(X) (-1)^{n-k}c_{n-k}(Y) \\
+    &= \qty(\sum_{n=0}^{\infty}(-1)^nc_n(X)) \qty(\sum_{n=0}^{\infty}(-1)^nc_n(Y))\\
+    &= \chi(X) \chi(Y)
+ \end{align*}
+
+ \section{Problem 8}
+ \begin{prob}{}{}
+    If a finite $\mathrm{CW}$ complex $X$ is the union of sub-complexes $A$ and $B$, show that $$\chi(X)=\chi(A)+\chi(B)-\chi(A \cap B)$$
+ \end{prob}
+ \sol Let, $c_n(X)$ be the number of $n$-cell in the CW-complex $X$. Number of n-dimensional cell in $A$ is $c_n(A)$, similarly the number is $c_n(B)$ for $B$, thus by inclusion-exclusion principle we have, \begin{align*}
+    c_n(X)&=c_n(A \cup B) = c_n(A)+c_n(B)-c_n(A \cap B) \\
+    \chi(X) &= \sum_{n\geq 0} (-1)^nc_n(X) \\
+    &= \sum_{n\geq 0} (-1)^n \qty(c_n(A)+c_n(B)-c_n(A \cap B))\\
+    &= \chi(A) + \chi(B) - \chi(A \cap B)
+ \end{align*}
+
+ \section{Problem 9}
+ \begin{prob}{}{}
+    Compute the homology groups of the space obtained by gluing the boundary of a Möbius band to the standard $\mathbb{R} P^{1} \subseteq \mathbb{R} P^{2}$.
+ \end{prob}
+
+ \sol We will solve this problem using Mayer-Vietories sequence. Let $X$ be the space we get after gluing boundary $\p \mu$ of mobius strip $\mu$, with the standard $\R P^1\subseteq \R P^2$. The space $X$ is obtained by the following push out diagram, \[\begin{tikzcd}
+	{\R P^1} & {\p \mu \subset\mu} \\
+	{\R P^2} & X
+	\arrow["i", hook, from=1-1, to=2-1]
+	\arrow["h", from=1-1, to=1-2]
+	\arrow[from=1-2, to=2-2]
+	\arrow[from=2-1, to=2-2]
+\end{tikzcd}\]
+Where the map $i$ is the natural inclusion and $h$ is the homeomorphism $z \mapsto z^2$. We can take open cover of $X$ as following: $A$ is the opens set around $\R P^2$ in $X$ and $B$ is the open set around $\mu$ in $X$. It's not hard to see $A \cup B = X$, $A \cap B$ deformation retracts onto $\R P^1$ and $A$,$B$ deformation retracts onto $\R P^2$,$\mu$ respectively. Thus we have the following Mayer Vietories sequence on the reduced homology groups,
+\[\begin{tikzcd}
+	{\underbrace{\htt_2(\R P^2) \oplus \htt_2(\mu)}_{\simeq 0}} & {\htt_2(X)} & {\htt_1(\R P^1)} & {\htt_1(\R P^2)\oplus\htt_1(\mu)} \\
+	&& 0 & {\htt_1(X)}
+	\arrow[from=1-1, to=1-2]
+	\arrow["{\p_2}", color={rgb,255:red,153;green,92;blue,214}, from=1-2, to=1-3]
+	\arrow["k", from=1-3, to=1-4]
+	\arrow[color={rgb,255:red,153;green,92;blue,214}, from=1-4, to=2-4]
+	\arrow["{\p_1}", from=2-4, to=2-3]
+\end{tikzcd}\]
+In the above LES sequence, the map $k= (H_n(i),H_n(h))$. Note that both $H_n(i)$ and $H_n(h)$ are injective as, the map $H_1(i)$ taking the generator $\tau$ to the class $[\tau] \in H_1(\R P^2)$ which is non-zero, thus we can treat $[\tau]$ as generator $\htt_1(\R P^2)$ and $H_n(h)$ maps it to $2\sigma$ where $\sigma$ is generator $\htt_1(\mu)$. Thus is because $\R P^1$ loops twice around $\p \mu$. Thus $\ker \p_2$ is trivial and hence $\htt_2(X)$ is trivial. Now, $\operatorname{Im}(k) =\langle ([\tau], 2\sigma)\rangle$, thus by exactness of the above LES we get, $$\tilde{H}_1(X) \simeq \frac{\langle{[\tau] : 2[\tau]=0}\rangle \oplus \langle\sigma\rangle}{\langle ([\tau], 2\sigma)\rangle}$$
+The above group has order $4$ and the element $([\tau],\sigma)$ has order $4$ so, $\htt_1(X) \simeq \Z/4\Z$. The homology groups for $n \geq 3$ are trivial as this space don't have $n$-simplex structure for $n \geq 3$.
+
+ \section{Problem 10}
+ \begin{prob}{}{}
+    Construct a CW complex $X$ with the following homology groups: $H_{0}(X) \simeq \mathbb{Z}, H_{1}(X) \simeq \mathbb{Z} \oplus \mathbb{Z}_{2}, H_{2}(X) \simeq \mathbb{Z}_{3}, H_{3}(X) \simeq \mathbb{Z}$, and $H_{n}(X) \simeq$ 0 for all $n \geq 4$. More generally, for a sequence of abelian groups $\left(A_{i}\right)_{i \geq 1}$, show that there exists a connected CW complex $X$ such that $H_{i}(X) \simeq A_{i}$ for all $i \geq 1$.
+ \end{prob}
+
+ \sol Recall a construction of the Moore-space $M(G;n)$ proved in class (here $G$ must be an abelian group). We want to construct a space $X$, such that $\htt_n(X)=G$ and $\htb(X)$ is trivial for other indices. By characterisation of abelian group we know any abelian group $G\cong F/ \ker \varphi$, Where $\varphi : F \to G$ is a surjective group homomorphism from a free abelian group to $G$. 
+\begin{itemize}
+    \item[] We know ``subgroup of a free abelian group is free abelian''. So $\ker \varphi$ is a free abelian group. Let, $\qty{x_{\alpha}}$ be generators of $F$ and $\qty{y_{\beta}}$ be generators of $\ker \varphi$. Where $\alpha \in A$ and $\beta \in B$. We can write, $$y_{\beta} = \sum_{\alpha \in A} d_{\alpha \beta}x_{\alpha}$$
+    Let, $X^n=\bigvee_{\alpha}\s^n_{\alpha}$ and for each $\alpha \in A$ attach $e_{\beta}^{n+1}$ to $X^n$ via some map $\phi_{\beta}$ such that, degree of the composition $\s^n_{\alpha} \to X^n \to \s^n_{\beta}$ is $d_{\alpha \beta}$ (It was done in class how to construct such map for a given degree), call this adjunction space $X$. Thus, we will have the following cellular chain complex $$0 \to \underbrace{K}_{(n+1)-th} \rightarrow F \to 0 \to \cdots \Z \to 0$$ Thus CW-homology groups will be $\htt_n(X) \simeq F/\ker \varphi \simeq G$ and $\htb(X)$ is trivial for other indices.
+\end{itemize}
+Let, $X^n$ be a CW-complex ($n\geq 1$) such that, $\htt_n(X^n)= A_i$ and $\htb(X^n)$ is trivial for other indices (this space can be Constructed in the way we did above). Let $X = \bigvee_{n\geq 1}X^n$. So we have, \begin{align*}
+    \htb(X) &\simeq \bigoplus_{n\geq 1} \htb(X^n) \\
+    &= \begin{cases}
+        \text{Trivial} & \text{ if }  $k=0$\\
+        H_k(X^k) \simeq A_k & \text{ if } k>0
+    \end{cases}
+\end{align*}
+Thus above is the CW-complex, which is connected and $\htt_n(X) = H_n(X) \simeq A_n$ for $n \geq 1$. $\hfill \blacksquare$
+
+\end{document}
+

@@ -9,20 +9,97 @@ series_order: 2
 B.Math
 ## Semester 5 (B.Math)
 
+### Algebraic Topology 
+ > This course was taken by prof.[Charanya Ravi](https://charanyaravi.github.io/). The texts for this course as follows:
+ - (Main text) [Algebraic topology](https://loeh.app.uni-regensburg.de/teaching/topologie1_ws1819/lecture_notes.pdf)- Clara Loh and Class notes
+ - (For Problems) [Algebraic Topolgoy](https://pi.math.cornell.edu/~hatcher/AT/AT.pdf)- A.Hatcher
+ - (Further) [Concise Course in Algebraic topology](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.math.uchicago.edu/~may/CONCISE/ConciseRevised.pdf)-J.P.
+
+**Assignments** for this course are as follows:
+   * *Assignment 1*: Point set topology, Homotopy and Fundamental group [problems and solutions](algtop1.pdf).
+   * *Assignment 2*: Computation of fundamental groups, construction of covering spaces [problem and solutions](algtop2.pdf) and [Tex file](algtop2.tex).
+   * *Assignment 3*: Singular Homology [problem and solutions](algtop3.tex) and [Tex file](algtop3.tex).
+   * *Assignment 4*: Cellular Homology [problem and solutions](algtop4.tex) and [Tex file](algtop4.tex).
+
+
+
 ## Semester 4 (B.Math)
+Here you can get access to the study materials and assignments (with solution) of all the courses provided to B.Math Second Year Students (Sem -IV) on the year 2023. In general, five courses are offered in each semester. The courses offered this semester are listed below. Question paper of corresponding subjects of Midsem and Semestral exams can be found in the [official webpage of ISI](https://www.isibang.ac.in/~adean/infsys/database).
+
+### Topology ###
+> This course was instructed by [Prof. Maneesh Thakur](https://isi.irins.org/profile/122628). During the course we mostly followed the followiing texts- 
+
+ - [Introduction to topology and modern analysis](https://www.academia.edu/41477596/_Simmons_Introduction_to_Topology_and_Modern_Analysis) - G.F.Simmons
+ - [Topology](http://mathcenter.spb.ru/nikaan/2019/topology/4.pdf)-J.Munkres
+
+This course was mainly for point set topology but oure professor covered some interesting topics like Topological groups, Classification of surfaces. For these the text were as follows: 
+-[A Basic course in algebraic topology](https://link.springer.com/book/10.1007/978-1-4939-9063-4)-W.S.Massey
+-[Basic Topology](https://libgen.rs/book/index.php?md5=8B995F78BB1E7FA0B53CA57F21FD5003)-Armstrong
+
+ - **Assignments** can be found [here](https://github.com/Trishan8/ISI-B.Math-Sem-IV/tree/main/Topology). 
+ 
+- This [Homework](https://github.com/Trishan8/ISI-B.Math-Sem-IV/blob/main/Topology/Topo-homework-2(Printed).pdf) is very special. Here we got to know about **p-adic topology** and **compact-open** topology.
+
+
+### Rings and Modules ###  
+ > This course was instructed by [Prof. B.Sury](https://www.isibang.ac.in/~sury/). During this course we mostly followed:
+  
+   - [Introduction to Rings and Modules - C.Musili](https://libgen.rs/book/index.php?md5=FFF8CA8E2C8ADF55A09FF626B255E4BC) - [Abstract algebra](https://dokumen.tips/documents/dummit-and-foote-abstract-algebra-third-edition.html) by Dummit and Foote. 
+
+We got very nice assignments during the course. Find all the **assignments** and their solution in this [link](https://github.com/Trishan8/ISI-B.Math-Sem--III/blob/main/Rings%20and%20Modules).
+  
+  * During the course we got many references from the professor and they are written [here](https://github.com/Trishan8/ISI-B.Math-Sem--III/blob/main/Rings%20and%20Modules/Concise%20Lecture%20Notes%20(Incomplete).pdf). This note is incomplete. If anyone is interested to finish it up, please contact me. ([Tex file](https://github.com/Trishan8/ISI-B.Math-Sem-IV/tree/main/Rings%20and%20Modules/Concise%20Lecture%20notes%20Tex))
+
+
+### Electrodynamics ###
+  * This Course was instructed by [Dr. Prabuddha Chakraborty](https://www.isibang.ac.in/~adean/infsys/database/Bmath/Ele.html/ "Dr. Prabuddha Chakraborty"). The text books, required refferences and assignments along with their solutions (some solution are provided rest solution are not provided because their submission were in offline mode) are provided in this [link](https://github.com/Trishan8/ISI-B.Math-Sem--III/tree/main/Electrodynamics).
+### Diffrential Equation ###
+
+This course was instructed by [Prof. CRE Raja](https://www.isibang.ac.in/~creraja/) and [Vivek Agrahari](https://www.linkedin.com/in/vivek-kumar-agrahari-3253bba6/?trk=people-guest_people_search-card&originalSubdomain=in). All the study material and assignments used in this course can be found [here](https://github.com/Trishan8/ISI-B.Math-Sem-IV/tree/main/Ordinary%20Differential%20equation). (The submissions were offline so there is no softcopy of the solutions).
+
+
+
+
+### Introduction to Linear Models and Regression ##
+ * This course was instructed by [prof. Mohan Delampady](https://www.isibang.ac.in/~mohan/). The refferences and professor's note can be found in this [link](https://github.com/Trishan8/ISI-B.Math-Sem-IV/tree/main/Introduction%20to%20Linear%20Models%20and%20Regression).
+
+
 
 ## Semester 3 (B.Math)
 Total 5 courses were offered during this course and all the courses were compulsory. 
  ### Group Theory
-This course was taken by prof.[Maneesh Thakur](https://isi.irins.org/profile/122628). One of my very favourite course dusing B.Math. The following books were main texts for this course:
+>This course was taken by prof.[Maneesh Thakur](https://isi.irins.org/profile/122628). One of my very favourite course dusing B.Math. The following books were main texts for this course:
 - [An introduction to theory of groups](https://eclass.uoa.gr/modules/document/file.php/MATH784/Rotman%20An%20introduction%20to%20the%20theory%20of%20groups%20%281%29.pdf)-Rotman (For problems and the composition series parts)
+- Notes of k.conrad
 - Class notes for most of the course.
 - **Additional topics**: Lie groups and matrix expontiation, Fundamental groups.
- #### Assignments
- - **Assignment 1:** Some basic definitions and theorems (Cayley's theorem, Lagrange's theorem, normal subgroups and homomorphism theorems) [Worksheet](Assignment-1.pdf) and [solution](Group-Ass-1.pdf).
- - **Assignment 2:** Some basic definitions and theorems (Permutation groups, Sylow theorems, groups of small orders)[Worksheet](Assignment-2.pdf) and [solution](Group-Ass-2.pdf).
- - **Assignment 3:** Semi direct product, Solvable, Nilpotent groups [Worksheet](Assignment-3.pdf) and [solution](Group-Ass-3.pdf).
--  **Assignment 4 and 5:** Lie group, exponential map [Worksheet](Assignment-4-5.pdf) and [solution](Group-Ass-4.pdf).
+- **Assignments**
+    *  **Assignment 1:** Some basic definitions and theorems (Cayley's theorem, Lagrange's theorem, normal subgroups and homomorphism theorems) [Worksheet](Assignment-1.pdf) and [solution](Group-Ass-1.pdf).
+    * **Assignment 2:** Some basic definitions and theorems (Permutation groups, Sylow theorems, groups of small orders)[Worksheet](Assignment-2.pdf) and [solution](Group-Ass-2.pdf).
+    * **Assignment 3:** Semi direct product, Solvable, Nilpotent groups [Worksheet](Assignment-3.pdf) and [solution](Group-Ass-3.pdf).
+    * **Assignment 4 and 5:** Lie group, exponential map [Worksheet](Assignment-4-5.pdf) and [solution](Group-Ass-4.pdf).
+
+### Analysis of several variables 
+This course was taken by prof. [Jaydeb Sarker](https://www.isibang.ac.in/~jay/). The following boks were the textbooks for this course:
+- Notes by professor- notes of this course which is not available to me at the moment.
+- Spivak and Munkres - Analysis of several variables
+- Calculus II - Apostole
+
+### Statistics -II (Introduction to Statistical Inference)
+This course was taken by prof.Rituparna Sen. The texts for this course as follows:
+- George Casella and Roger L Berger: Statistical Inference.
+- Erich L Lehmann and George Casella: Theory of Point Estimation.
+
+### Classical Mechanics
+ This course was taken by prof.Sukanya Sinha. The textbooks are as follows:
+ - Classical mechanics- Griffiths
+ - Classical mechanics (for Rigid Body mechanics)- H.Goldstein
+
+### Discrete Mathematics
+
+This course was taken by prof. [S.Inamdar](https://www.isibang.ac.in). The following boks were the textbooks for this course:
+- A course in combinatorics (for graph theory and design theory)- Van, Lint, wilson
+- Introduction to graph theory (for graphtheory)- Doglus west
 
 ## Semester 2 (B.Math)
   Total 5 courses were offered during this course and all the courses were compulsory. (I don't have assignments and semestral exam's answer script at the moment)
