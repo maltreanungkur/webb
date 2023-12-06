@@ -13,13 +13,13 @@ B.Math
  > This course was taken by prof.[Charanya Ravi](https://charanyaravi.github.io/). The texts for this course as follows:
  - (Main text) [Algebraic topology](https://loeh.app.uni-regensburg.de/teaching/topologie1_ws1819/lecture_notes.pdf)- Clara Loh and Class notes
  - (For Problems) [Algebraic Topolgoy](https://pi.math.cornell.edu/~hatcher/AT/AT.pdf)- A.Hatcher
- - (Further) [Concise Course in Algebraic topology](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.math.uchicago.edu/~may/CONCISE/ConciseRevised.pdf)-J.P.
+ - (Further) [Concise Course in Algebraic topology](https://www.math.uchicago.edu/~may/CONCISE/ConciseRevised.pdf)-J.P.May
 
 **Assignments** for this course are as follows:
    * *Assignment 1*: Point set topology, Homotopy and Fundamental group [problems and solutions](algtop1.pdf).
    * *Assignment 2*: Computation of fundamental groups, construction of covering spaces [problem and solutions](algtop2.pdf) and [Tex file](algtop2.tex).
-   * *Assignment 3*: Singular Homology [problem and solutions](algtop3.tex) and [Tex file](algtop3.tex).
-   * *Assignment 4*: Cellular Homology [problem and solutions](algtop4.tex) and [Tex file](algtop4.tex).
+   * *Assignment 3*: Singular Homology [problem and solutions](algtop3.pdf) and [Tex file](algtop3.tex).
+   * *Assignment 4*: Cellular Homology [problem and solutions](algtop4.pdf) and [Tex file](algtop4.tex).
 
 
 

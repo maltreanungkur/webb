@@ -674,14 +674,22 @@ where the last equality is obtained by putting \( a = a_1, b = a_1a_2 \). Taking
   \item \textbf{\textsf{Calculation of fundamental group: }} Let, $Y = X/\Z$. From the covering $p: X \to X/\Z$ we have the following exact sequence of groups, 
   into the exact sequence:
       $$
-      1\to\mathbb{Z}( = \pi_1(X))\to\pi_1(Y)\to\mathbb{Z}\to1
+      1\to\pi_1(X)\xrightarrow{\pi(p)}\pi_1(Y)\to \underbrace{\pi_1(Y)/\pi_1(p)(\pi_1(X))}_{\simeq \Z}\to 1
       $$
   
-  If we can show the fundamental group of $Y$ is abelian, the above SES will turn into a SES of $\Z$-modules. Thus we will have $\pi_1(Y)= \Z \oplus \Z$. From the above SES it is evident that the fundamental group can have at-most \textbf{two generators}. Now notice that, $\tilde{X} =\R^2$ is universal cover of $X$, in order to show $\pi_1(Y)$ is abelian it is enough to show deck transformation group of the covering $\tilde X \to X \to X/\Z$ is abelian. 
-
-  \vspace*{0.2cm}
-  
-  
+  Thus the above SES splits. Thus $\pi_1(Y)= \pi_1(X) \ltimes \pi_1(Y)/\pi_1(p)(\pi_1(X))$ which is isomorphic to $\Z \ltimes \Z$. If we can show the fundamental group of $Y$ is abelian, we will have $\pi_1(Y)= \Z \oplus \Z$. It will be enough to check the generators of two copies of $\Z$ to commute. Let, $\gamma$ be a loop around $0$ in $\R^2$, based at $(x_0,y_0)$ and $\alpha$ be a path connecting $(x_0,y_0)$ to $(2x_0,y_0/2)$ (this should be homotopic to the line joining them). The images $[p\circ \gamma]$ and $[p\circ \alpha]$ will be loop in $Y$ and they will generate two different copies of $\Z$ shown as above. Let, $h:X \times I \to X$ be the homotopy between $\id$ and $\varphi$ defined as follows, $$h((x,y),t)=(1-t)(x,y)+t\varphi(x,y)= (1-t)(x,y) + t(2x,y/2)$$
+  [Note that $(x,y)$ and $(2x,y/2)$ lies in the smae quandrant so the line joining them is also in $\R^2\setminus \qty{0}$]. Let us define a map, $$F : I \times I \xrightarrow{\gamma \times \id}X \times I \xrightarrow{h}X$$ 
+ This is a homotopy from $\gamma$ to $\varphi(\gamma)$ (but this is important to note). Loot at the following things, \begin{align*}
+  F(0,t)&=h(\gamma(0),t)= (x_0,y_0)(1-t)+ t(2x_0,y_0/2) \simeq \alpha  \\
+  F(s,1)&= h(\gamma(s),1) = \varphi(\gamma(s)) \simeq \gamma \\
+  F(s,0)&= h(\gamma(s),0)= \gamma(s)\\
+  F(1,t)&= h(\gamma(1),t)= (x_0,y_0)(1-t)+t(2x_0,y_0/2) \simeq \alpha
+ \end{align*}
+Thus by square law we can say, $[\alpha \ast \gamma] = [\gamma \ast \alpha]$. In other words we can say, \begin{align*}
+  p[\alpha \ast \gamma] &= p[\gamma \ast \alpha]\\
+  [p(\alpha)]\cdot [p(\gamma)] &= [p(\gamma)]\cdot [p(\alpha)]
+\end{align*}
+Thus the commutators commute. Hence, $\pi_1(Y)$ is abelian and hence $\pi_1(Y)\simeq \Z \oplus \Z$.  $\hfill \blacksquare$
   % And it is very easy to see. As the deck transformation acts trivially on the fibre. Thus $\pi_1(Y) = \Z \oplus \Z$.  
 \end{itemize}
 
