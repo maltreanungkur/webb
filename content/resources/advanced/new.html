@@ -1,0 +1,368 @@
+<pre>
+    <code>
+      
+\documentclass[a4paper, 11pt]{amsart}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{mathrsfs}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{quiver}
+\usepackage{xcolor}
+\usepackage{physics}
+\usepackage{float}
+\usepackage{tcolorbox}
+\usepackage{wrapfig, framed, caption}
+\usepackage{titlesec}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=2.5cm,top=2.5cm,headheight=16pt,headsep=0.1in,heightrounded]{geometry}
+\newtheorem{thm}{\color{blue!50!black}Theorem}[section]
+\newtheorem{prop}[thm]{\color{blue!50!black}Proposition}
+\newtheorem{corollary}[thm]{Corollary}
+\newtheorem{lemma}[thm]{Lemma}
+\newtheorem{defn}[thm]{Definition}
+\theoremstyle{definition}
+\newtheorem{eg}[thm]{Example}
+
+% section title format
+
+\titleformat{\section}[hang]{\fontsize{12}{13}\scshap\centering}{\thesection .}{0.21em}{}
+
+  %%% New commands
+
+  \newcommand{\V}{\mathbb{V}}
+  \newcommand{\bb}[1]{\mathbb{#1}}
+  \newcommand{\N}{\bb{N}}
+  \newcommand{\Z}{\bb{Z}}
+  \newcommand{\Q}{\bb{Q}}
+  \newcommand{\R}{\mathbb{R}}
+  \newcommand{\C}{\bb{C}}
+  \newcommand{\Op}[1]{\mathcal{O}_{#1}}
+  \newcommand{\msk}{\medskip}
+  \newcommand{\ssk}{\smallskip}
+  \newcommand{\bsk}{\bigskip}
+  \newcommand{\Qed}{\quad \blacksquare}
+  \newcommand{\contra}{\rightarrow \leftarrow}
+  \newcommand{\heart}{\ensuremath\heartsuit}
+  \newcommand{\butt}{\rotatebox[origin=c]{180}{\heart}}
+  \newcommand{\ltag}[2]{\label{#1} \tag{#2}}
+  \newcommand{\floor}[1]{\lfloor {#1} \rfloor}
+  \newcommand{\inp}[2]{\left\langle {#1}, {#2} \right\rangle}
+  \newcommand{\vphi}{\varphi}
+  \newcommand{\veps}{\varepsilon}
+  \newcommand{\pdot}[2]{{#1} \cdot {#2}}
+  \newcommand{\Area}{\operatorname{Area}}
+  \newcommand{\ran}{\operatorname{ran}} 
+  \newcommand{\s}{\bb{S}}
+  \newcommand{\fb}[1]{\mathbf{#1}}
+  \newcommand{\T}{\mathbf{Top}}
+ \newcommand{\p}{\partial}
+ \newcommand{\ch}{\mathbf{Chain}^*}
+ \newcommand{\cha}{\mathbf{Chain}^\text{ag}}
+ \newcommand{\gr}{\mathbf{Graded groups}}
+ \newcommand{\hc}{\mathcal{H}}
+ \newcommand{\D}{\Delta}
+ \newcommand{\ep}{\varepsilon}
+ 
+% title details 
+%\title{\textbf{\textsf{Hahn-Banach Separation Theorem}}}
+\title{Hahn-Banach Theorem and Riesz Representation Theorem}
+\author{Soumyashant Nayak}
+\date{Latex}
+\begin{document}
+
+\maketitle
+
+\begin{center}
+    \textbf{Latexed by :} Soumya dasgupta and Trishan Mondal 
+\end{center}
+
+\section{Introduction.}
+
+\noindent This study takes a close look at how the Hahn-Banach Extension Theorem and the Riesz Representation Theorem are connected. We see that the Hahn-Banach Extension Theorem, especially when we're talking about positive linear rules, helps us prove the Riesz Representation Theorem. The Hahn-Banach Extension Theorem is like a tool that lets us stretch certain rules from a smaller space to a bigger one, without changing the rules themselves. When we focus on positive rules, this stretching also keeps the positivity intact. Using this stretching idea, we move to the Riesz Representation Theorem. The Riesz Representation Theorem is about how continuous linear rules are related to a specific way of pairing things, sort of like multiplication. By cleverly using the stretched positive rules from the Hahn-Banach Extension Theorem, we put together a solid proof for the Riesz Representation Theorem.
+
+In a nutshell, this study shows how the Hahn-Banach Extension Theorem, especially when dealing with positive rules, works hand in hand with the Riesz Representation Theorem. This partnership reveals deep insights in a really nice way.
+
+
+\section{Some Definitions.}
+
+We will always consider $\V$ to be a real vector space, a subset $K \subseteq \V$ is \textit{convex} if $\forall \, x,y \in K$ and $t \in [0,1]$, we have $tx + (1-t)y \in K$. For simplicity we will denote by $L_{x,y} := \{ t x + (1-t) y \mid t \in [0,1] \}$ 
+
+\begin{defn}
+    A point $x \in K$ is said to be an \textbf{internal point} of $K$ if for any $v \in \V \setminus \{0\}$, there exists $\varepsilon_v > 0$ such that the subset $(x - \varepsilon_v v , x + \varepsilon_v v ) := \{ x + t \varepsilon_v v \mid t \in [-1,1] \} \subseteq K$. 
+\end{defn}
+So vaguely speaking an internal point has the property that we can wiggle about any direction and still remain inside the original subset.
+
+An obvious observation is that if $\V$ is a finite-dimensional vector space over $\mathbb{R}$ and $K$ is a convex subset of $\V$ then the notion of internal point and interior point are the same, that is $x \in K$ is an internal point if and only if it is an interior point. To see this note that since $\V$ is finite-dimensional we can replace it with $\R^n$ for some non-negative integer $n$. If $x \in K$ is an interior point then it is obviously an internal point, as we can find a ball centered around it contained in $K$. Conversely, if it is an internal point then we can find positive numbers $\varepsilon_i > 0$ such that $(x - \varepsilon_i e_i, x + \varepsilon_i e_i) \subseteq K$ for $i = 1,\dots,n$, where $\{e_i\}_{i=1}^n$ are the standard basis for $\R^n$. Then we can consider the convex hull of the extreme points $x \pm \varepsilon_i e_i$, let it be $C$, as $K$ is convex this subset is contained in $K$. Now we can easily pick a suitable $\varepsilon > 0$, such that $B_{\varepsilon}(x) \subseteq C \subseteq K$.  
+
+The result is not true if we assume $K$ is not convex, for example consider the following subset in $\R^2$. 
+
+We also have the following observation: 
+\[
+    \left\{ \mbox{non-zero linear functionals on } \V \right\} \longleftrightarrow \left\{ \mbox{codimension } 1 \mbox{ subsapces of } \V \right\} 
+\]
+
+\begin{prop}\label{prop1}
+    If $\rho$ is a linear functional on $\V$, then every linear functional that vanishes on $\ker \rho$ is a scalar multiple of $\rho$. 
+\end{prop}
+\noindent\textit{Proof.} If $\rho_0 = 0$, then there is nothing to prove. Suppose $\rho_0 \neq 0$, let $\V_0 = \ker \rho_0$, and let $\rho$ vanishes on $\V_0$, then $\rho$ factors through $\V/\V_0$. Then we have the following commutative diagram.
+\[\begin{tikzcd}
+	{\mathbb{V}} & {\mathbb{V}/\mathbb{V}_0} & \R \\
+	& \R
+	\arrow["\pi", from=1-1, to=1-2]
+	\arrow["{\bar{\rho}_0}", from=1-2, to=1-3]
+	\arrow["\rho"', from=1-1, to=2-2]
+	\arrow["{\bar{\rho}}", from=1-2, to=2-2]
+	\arrow["{\bar{\rho} \circ (\bar{\rho}_0)^{-1}}", from=1-3, to=2-2]
+	\arrow["{\rho_0}", curve={height=-30pt}, from=1-1, to=1-3]
+\end{tikzcd}\]
+where $\bar{\rho}$ the maps induced by $\rho$, since $\rho_0 \neq 0$, we have $\bar{\rho}_0$ is an isomorphism, so the linear map $\bar{\rho} \circ (\bar{\rho}_0)^{-1}$ is well defined. Now as any linear map from $\R \to \R$ is just a scalar multiplication, we get that $\rho = a \rho_0$ for some scalar $a \in \R$. $\hfill \qed$
+
+\begin{prop}
+    If $\rho_1, \dots, \rho_n$ are linear functionals on $\V$ and $\rho$ vanishes on $\cap_{i=1}^n \ker \rho_i$, then $\rho$ is a linear combination of the $\rho_i$'s.
+\end{prop}
+
+\noindent\textit{Proof.} We will prove by induction, the base case is already true from proposition $\ref{prop1}$. For $n=2$, suppose we have $\ker \rho_1 \cap \ker \rho_2 \subseteq \ker \rho$. Then we restrict our linear functionals on the subspace $\ker \rho_2$. Then note that 
+\begin{align*}
+      \ker \left( \rho\vert_{\ker \rho_2} \right) &= \ker \rho \cap \ker \rho_2 \\ &\supseteq \ker \rho_1 \cap \ker \rho_2\\ &= \ker \left( 
+ \rho_1\vert_{\ker \rho_2} \right)
+\end{align*}
+Then once again by Proposition \ref{prop1} we get that $\rho\vert_{\ker \rho_2} = a \rho_1\vert_{\ker \rho_2}$, and this further gives that $(\rho - a\rho_1)\vert_{\ker \rho_2} = 0$, and hence we get $\rho - a\rho_1 = b \rho_2 \Rightarrow \rho = a \rho_1 + b \rho_2$, which completes the proof for $n=2$. In general suppose the result is true for $n-1$ linear functionals, then we for $n$ linear functionals $\rho_1, \dots, \rho_n$ such that $\ker \rho \supseteq \cap_{i=1}^n \ker \rho_i$. Then restricting all the linear functionals on $\ker \rho_n$ then by induction hypothesis we get that 
+\[
+    \left( \rho\vert_{\ker \rho_n} \right) = \sum_{i=1}^{n-1} a_i\left( 
+ \rho_i\vert_{\ker \rho_n}\right) \Rightarrow \left( \rho - \sum_{i=1}^{n-1} a_i \rho_i \right)\vert_{\ker \rho_n} = 0 
+\]
+and hence by proposition \ref{prop1} there exists $a_n \in R$ such that $\rho = \sum_{i=1}^n a_i \rho_i$, which completes the proof. $\hfill \qed$
+
+\begin{defn}
+    Let $\V_0$ be a codimension $1$ subspace of $\V$, then the subset $x_0 + \V_0$ is called a \textbf{hyperplane}.
+\end{defn}
+
+A linear functional $\rho : \V \to \R$ naturally gives rise to hyperplanes, we can consider the set $\hc_{\rho,k} := \{ x \in \V \mid \rho(x) = k \}$ for $k \in \R$. This also gives us a  notion of \textbf{closed half spaces}, we define them by $\hc^+_{\rho,k} := \{ x \in V \mid \rho(x) \geq k \}$ and $\hc^-_{\rho,k} := \{ x \in V \mid \rho(x) \leq k \}$. As we will later see these are regarded as the \textit{fundamental convex sets}, as any closed convex set in $\R^n$ is the intersection of closed half spaces. We define \textbf{open half spaces} by taking the interior of closed half spaces, that $(\hc^+)^{\circ} := \{ x \in V \mid \rho(x) > k \}$.
+
+\section{Hahn-Banach Separation Theorem.}
+
+\begin{thm}
+    Let $\V$ be a vector space over $\R$ and $Y,Z$ are two non-empty, disjoint convex subsets of $\V$ then, 
+
+\begin{enumerate}
+    \item[(1)] If $Y$ or $Z$ has an internal point then they are separated by a hyper-plane $\hc \subseteq \V$. Such that, $Y \subseteq \hc^{+}, Z \subseteq \hc^{-}$. 
+    \item[(2)] If $Y$ or $Z$ consists entirely of internal points, it is contained in one of the open-half spaces determined by $\hc$.
+    \item[(3)] If both $Y$ and $Z$ consist entirely of internal points, they are strictly separated by a hyperplane $\hc$.
+\end{enumerate}    
+\end{thm}
+
+\textit{Proof. }  We will prove the theorem in several parts as follows. Before that let's assume, $Y_i$ is the set of internal points of $Y$. 
+
+
+    \noindent\textbf{\textsf{Step 1:}} When two points $y_1,y_2$ are in the set $Y_i$, we can see that any point in the segment $L_{y_1,y_2}$ is an internal point of $Y$. 
+
+ \vspace*{0.2cm}
+    
+ \noindent\textbf{\textsf{Step 2:}} We asserts $Y_i$ consist entirely of internal points of $Y_i$, i.e every point in $Y_i$ is an internal point in $Y_i$. For this let, $y \in Y_i,v \in \V$ be a vector, then there exist $\ep_v > 0$ such that, for $c \in (-\ep_v, \ep_v)$, $y + cv \in Y$ (this is because $y$ ids internal point of $Y$). Let,$0 \le t \le 1$, then $$y + tcv = (1-t)y+t(y+cv) \in Y_i$$ Thus for a suitably chosen $0<t<1$, $(x-t\ep_vv, x + t\ep_vv) \subseteq Y_i$.
+
+   \vspace*{0.2cm}
+
+ \noindent\textbf{\textsf{Step 3:}} Now we will show that, ``If $\hc$ separates $Y_i$ and $Z$, it separates $Y$ and $Z$ too''. Let, $\hc = \qty{x \in V : \rho (x) = k}$ be the plane separates $Y_i$ and $Z$ such that $Y_i \subseteq \hc ^{+}$ and $Z \subseteq \hc^{-}$. Let, $y \in Y_i$, $y_1 \in Y$ and for $t \in (0,1)$ 
+
+ \begin{align*}
+     &ty_1 + (1-t)y \in  Y_i  \\
+     & \rho(ty_1+(1-t)y)  \ge k \\
+      \implies & t\rho(y_1) +(1-t) \rho(y) \ge k 
+ \end{align*}
+ taking limit $t \to 0$ we have $\rho(y) \ge k$, which means $Y \subseteq \hc^{+}$. So, $\hc$ separates $Y$ and $Z$.
+
+ \noindent\textbf{\textsf{Step 4:}} It is enough to prove, \textit{(2)}. Now assume, $Y-Z := \qty{y-z : y \in Y \text{ and } z \in Z}$. Notice the following properties,
+
+ \begin{itemize}
+     \item $Y \cap Z = \phi$ which implies $\qty{0} \notin Y-Z$. 
+     \item $(Y-Z)$ consists entirely of internal points. 
+     \item $(Y-Z)$ is convex.
+     \item $(Y-Z)$ consists entirely of internal points.
+ \end{itemize}
+
+ \noindent Let, $\mathcal{C}$ be the family of all convex subsets $C$ of $V$ satisfying, $\qty{0} \notin C$, $Y-Z \subseteq C$, each point $C$ is an internal points of $C$. We can construct a partially ordered set $C_1 \subseteq C_2 \subseteq C_3 \cdots$ in $\mathcal{C}$ which has upper-bound by the unions. It has an upper bound by Zorn's lemma, there exist a maximal element $C \in \mathcal{C}$.
+
+ \vspace{0.2cm}
+
+ \noindent\textbf{\textsf{Step 5:}} Consider the set, $\qty{au : u \in C \text{ and } a > 0}$. It is a convex set that contains $Y-Z$, also $C$ is contained in this. By maximality of $C$, we can say the above set coincides with $C$. Since $C$ is convex by the above result we can conclude $C \cap (-C) = \emptyset$. If $u,v \in C$ and $a >0, b \ge 0$, $au+bv \in C$, which means $C$ is a `positive cone'. For, $w \in \V \setminus C$ and $b \ge 0$ we can see $bw \in \V \setminus C$.
+
+ % \begin{center}
+ %     \includegraphics[width=0.28\textwidth]{step.png}
+ % \end{center}
+
+ \vspace{0.2cm}
+
+ \noindent\textbf{\textsf{Step 6:}} Let, $u,v \in \V \setminus C$ then, $au +bv \in \V \setminus C$ for $a,b \ge 0$. If we suppose $u +v \in C$ and $r \ge 0$, we have, \begin{align*}
+      2rv &\in \V \setminus C \\
+      2rv &= r(u+v) +r(u-v) \\
+      r&(u-v)  \notin C
+ \end{align*}
+
+     Now define $C_1 = \qty{x +r(u-v) : x \in C, r \ge 0} = C +r(u-v)$, here, $C \subseteq C_1$. By maximality of $C$, we can say $C = C_1$. So, $2u = (u+v) +(u-v) \in C_1 = C$ i.e. $u \in C$.
+
+     \vspace{0.2cm}
+
+\noindent\textbf{\textsf{Step 7:}} Let's define $\hc_0 = \V \setminus (C \cup -C)$. We will prove this is a hyperplane. We can easily verify if,$v,u \in \hc_0$ then, $au \in \hc_0$, $au + bv \in \hc_0$ so $\hc_0$ is a vector space. 
+
+Now we will prove $\hc_0$ has codimension $1$.In order two do that we will show any two vectors in $\V / \hc_0$ lie in the same equivalence class. Let,$u,v \in \V / \hc_0$  and $u \in C$ and $v \in -C$ and consider the following two sets,
+
+\begin{align*}
+    S_0 &= \qty{s \in [0,1] : u +s(v-u) \in C} \\
+    S_1 &= \qty{s \in [0,1] : u + s(v-v) \in -C}
+\end{align*}
+
+\noindent Since $C$ (or $-C$) contains entirely of internal points $S_0,S_1$ are open sets (we will get an open interval on the direction of the vector $u-v$ totally contained in $C$($-C$ respectively)). $[0,1]$ is connected so we cannot write $[0,1] = S_0 \cup S_1$. Choose $s \in [0,1]\setminus (S_0 \cup S_1)$, it will give us $u +s(u-v) \notin C \cup (-C)$. This means $\operatorname{codim} \hc_0 = 1$. 
+
+\vspace{0.2cm}
+
+\noindent\textbf{\textsf{Step 8:}} $\rho$ be a non-linear functional on $\V$ whose nullspace is $\hc_0$, $\rho (C)$ is convex and does not contain $0$. WLOG, $\rho(C) \subseteq (0 , \infty)$ and hence $\rho(x) >0$ for $x \in  C$. Now, $Y-Z \subseteq C$ which means $\rho(y) - \rho(z) >0$ where, $y \in Y$ and $z \in Z$.
+
+$Y,Z$ are disjoint non-empty convex sets. $Y$ consists entirely of internal points, there exists $\rho$, a linear functional on $\V$ such that, $\rho(y) - \rho(z) >0$. Now take $k = \inf \qty{\rho(x) : y \in Y}$, we will have $\rho(y) \ge k \ge \rho(z)$ which implies $\hc = \qty{x \in \V : \rho(x)=k}$. We can conclude $Y \in \hc^{+}$ and $Z \in \hc^{-}$. We have to show strict containment for $Y$. In order to do that let,$\rho(y_0) =k$ and choose $v \notin \hc_0$. Thus,there is $\ep_v >0$ such that,\begin{align*}
+    \rho(y_0 \pm \ep_vV) \ge k \\
+    \Rightarrow \pm \ep_v \rho(v) \ge 0 \\
+    \Rightarrow \pm \rho(v) \ge 0
+\end{align*}
+
+This means, $ \rho(y) >k$ for all $y \in Y$. $\hfill \square$
+
+\begin{corollary}
+    Every closed convex set $K \subset \R^n$ can be written as the intersection of closed-half spaces.
+\end{corollary}
+
+\begin{proof}
+    Let, $x \in \R^n \setminus K$, consider $B_x$ be an open ball around $x$ contained in $\R^n \setminus K$ (this always exists as $K$ is closed set). By \textbf{\textsf{Hahn-Banach separation theorem}} there is a hyperplane, $\hc_x$ separates $B_x$ and $K$. So, 
+\[K \subseteq \bigcap_{x \in \R^n \setminus K} \hc_x ^{+}\]
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{coro2.1.png}
+    \caption{Figure depicting the separation of the closed convex set $K$ and balls centered around a point}
+    \label{fig:enter-label}
+\end{figure}
+If there is a $y \in \bigcap_{x \in \R^n \setminus K} \hc_x ^{+} \setminus K$, then we can get an open ball $B'_y$ (whose diameter is lesser than before) lies totally out-side $K $. Again we will get a hyperplane $\hc_y'$ strictly separates $B_y$ and $K$. But $\hc_y'$ is already contained in the intersection of closed hyperplanes. So $y$ lies another side of the intersection of hyperplanes. This leads us to a contradiction.
+\end{proof} 
+
+
+
+\section{Hahn-Banach Extension Theorem.}
+
+Let $K$ be a compact convex set in $\R^n$, $x \in \partial K$, let $\hc_x$ separates $x$ and $K$, then $\hc_x$ is said to be a \textbf{supporting hyperplane} for $K$ at $x$. 
+
+\begin{defn}
+    Let $\V$ be a real vector space, a map $p : \V \to \R$ is said to be \textbf{sublinear} (or a \textbf{sublinear functional}) if $p(x+y) \leq p(x) + p(y)$ and $p(ax) = ap(x)$, $a \geq 0$. 
+\end{defn}
+
+
+Let $K$ be a compact convex set. We now define the \textbf{support function} by $h(K, \cdot ) : \R^n \to \R$, $u \mapsto \sup \{ \langle x,u \rangle \mid x \in K \}$. Similar to the correspondence between linear functionals and codimension $1$ subspaces, we also have a correspondence between compact convex sets in $\R^n$ and sublinear functionals on $\R^n$. 
+\[
+    \{ \mbox{compact convex sets in }\R^n \} \overset{1:1}{\longleftrightarrow} \{ \mbox{sublinear functionals on }\R^n \}
+\]
+
+\begin{tcolorbox} 
+\begin{thm}
+If $f : \R^n \to \R$ is sublinear, then there is an unique compact convex $K \subseteq \R^n$ such that $f = h(K,.)$     
+\end{thm}
+\end{tcolorbox}
+
+\begin{thm}\textsc{(Hahn-Banach Extension Theorem).}
+    If $p$ is a sublinear functional on a real vector space $\V$, and $\rho_0$ is a linear functional on a subspace $\V_0$ of $\V$, and $\rho_0(y) \leq p(y)$,for all $y \in \V_0$. Then there is a linear functional $\rho$ on $\V$ such that $\rho(x) \leq p(x)$, for all $x \in \V$ and $\rho(y) = \rho_0(y)$, for all $y \in \V_0$.
+\end{thm}
+\noindent\textit{Proof.} We can consider $\R \times \V$ as a real vector space. And we define the \textit{epigraph} of $p$ by 
+\[
+    \widetilde{V} := \{ (r,x) \in \R \times \V \mid p(x) < r \}
+\]
+We will show that $\widetilde{V}$ is non-empty convex and consists entirely of internal points. The non-emptiness and convexity are not difficult to see. We still need to show that $\widetilde{V}$ consists only of internal points. Let $\{e_{\alpha}\}_{\alpha \in J}$ be a basis of $\V$, then the vectors $(1,\mathbf{0})$ and $\{(0,e_{\alpha})\}_{\alpha \in J}$ forms a basis of $\R \times \V$. We will show that finding $\ep > 0$ for each basis element suffices to show that $\widetilde{V}$ consists only of internal points. Let $v = (x,r) \in \widetilde{V}$, for a basis element $(0,e_{\alpha})$, we want to find $\varepsilon_{\alpha}$ such that that $p(x \pm \varepsilon_{\alpha} e_{\alpha}) < r$. Its enough to find $\varepsilon_{\alpha} > 0$ such that 
+\[
+    p(x) + \varepsilon_{\alpha} p(e_{\alpha}) < r \quad \mbox{ and } \quad p(x) + \varepsilon_{\alpha} p(-e_{\alpha}) < r 
+\]
+If $p(\pm e_{\alpha}) = 0$, then the inequality is obviously true, otherwise we can take 
+\[
+    \ep_{\alpha} = \min \left\{ \left|\frac{r - p(x)}{p(e_{\alpha})}\right|, \left|\frac{r - p(x)}{p(-e_{\alpha})}\right| \right\}
+\]
+On the other hand for the basis element $(1,\mathbf{0})$ can choose $\varepsilon = \frac{1}{2}(r - p(x))$, then we obviously have 
+\[
+    p(x) < r + \varepsilon \quad \mbox{ and } \quad p(x) < r - \ep 
+\]
+Thus if we denote by $\{\xi_{\beta}\}_{\beta \in I}$ to be the above basis for $\R \times \V$, then we have shown that there exists $\varepsilon_{\beta} > 0$ such that $(v-\ep_{\beta} \xi_{\beta}, v + \ep_{\beta} \xi_{\beta}) \subseteq \widetilde{V}$. Now lets pick a vector $w \in \widetilde{V}$, let $w = \sum_{i=1}^n a_i \ep_{\beta_i}$. Then consider the convex hull of the points $\{v \pm \ep_{\beta_i} \xi_{\beta_i}\}$ let it be $\mathcal{S} \subseteq \widetilde{V}$, since $\widetilde{V}$ is convex. Then we can find $\varepsilon > 0$, such that $(v - \ep w, v + \ep w) \subseteq \mathcal{S}$, which shows that $\widetilde{V}$ consists only of internal points. 
+
+
+Note that the graph of $\rho_0$, $W = \{ (\rho_0(y),y) \mid y \in V_0 \}$ is a linear subspace of $\R \times \V$, and we further have $\widetilde{V} \cap W = \emptyset$. To see this note that if $(r,x) \in \widetilde{V} \cap W$ then we have $p(x) < r = \rho_0(x)$ for some $x \in \V_0$, contradiction! 
+
+The \textbf{\textsf{Hahn-Banach Separation}} theorem then says that there exists a linear function $\sigma : \R \times \V \to \R$ and $k \in \R$ such that $\sigma(\widetilde{v}) > k \geq \sigma(w)$ for all $\widetilde{v} \in \widetilde{V}$ and $w \in W$. Now we will show that $\sigma$ vanishes on $W$. If $w \in W$ then $aw \in W$, then $\sigma(aw) \leq k$ for all $a \in \R$, but then as $\sigma$ is a linear functional we get that $a \sigma(w) \leq k$ for all $a \in \R$. But then $\sigma(w) = 0$ as otherwise we can always find a large enough (small enough) $a$, which won't obey the inequality. This basically tells us that we can choose the scalar $k$ to be $0$, and thus $\sigma(\widetilde{v}) > 0$ for all $\widetilde{v} \in \widetilde{V}$. 
+
+Note that $(1,0) \in \widetilde{V}$, we can choose appropriate scaling of $\sigma$ to get $1 = \sigma((1,0)) > 0$, then let us define $\rho(x) := \sigma((0,x))$. We claim that $\rho$ extends $\rho_0$ and also satisfies the inequality $\rho(x) \leq p(x)$. These are easily verified, let $x \in \V$ 
+\begin{align*}
+    \sigma(r,x) &= \sigma(r(1,0)) + \sigma(0,x) \\ 
+                &= r - \rho(x)
+\end{align*}    
+then for all $r \in \R$ such that $(r,x) \in \widetilde{V}$ we have $\sigma(r,x) > 0$ and thus $r > \rho(x)$, but then we get 
+\begin{align*}
+    \rho(x) &\leq \inf \{ r \in \R \mid (r,x) \in \widetilde{V} \} \\ 
+    &= \inf \{ r \in \R \mid r > p(x) \} \\ 
+    &= p(x)
+\end{align*}
+and when $y \in \V_0$ we get $0 = \sigma((\rho_0(y),y)) = \rho_0(y) - \rho(y)$ and thus we get $\rho_0(y) = \rho(y)$ for all $y \in \V_0$, which completes the proof of the theorem. $\hfill \qed$
+
+\section{Hahn-Banach Extension theorem for positive functionals}
+
+\noindent Let $\V$ be a vector-space over $\R$ then a liner functional, $\rho$ is said to be positive linear functional if, $\rho(v) \ge 0$ for all $0 \preceq v$, where $\preceq$ is partial order on $\V$.
+
+\begin{defn}
+
+Let, $\V$ be a real vector space $C \subset V$ is said to be \textbf{cone of} $\V$ if for any two $u,v \in C$ and $a,b \ge 0$, $au +vb \in C$. 
+    
+\end{defn}
+
+Whenever we are given a cone $C$ of a vector space $\V$ we can give partial ($\preceq$) order to $\V$ in the following way. Let, $x,y \in \V$ be two vector spaces we will write $x \perceq y$ if $y-x \in C$. It can be proven easily that $\preceq$ is a partial order on $\V$. We can say something more general. There is ono-one correspondence between the \textit{partial orders on} $\V$ and \textit{cones $C$ in} $\V$.
+
+\[\qty{\text{partial orders on } \V} \longleftrightarrow \qty{\text{cones in }\V}\]
+
+\noindent Positive cone $C$ in $\V$ can span $\V$. As an example, we can take the vector space of all continuous functions from $[0,1]$ to $\R$, which is typically denoted as $\mathscr{C}[0,1]$. Now consider $\mathscr{P}[0,1]$ be the subset of $\mathscr{C}[0,1]$ containing all the positive continuous functions from $[0,1]$ to $\R$. Any $f \in \mathscr{C}[0,1]$ can be written as, $$f = \max \qty{f,0}-(-\min \qty{0,f})$$
+
+where both $\max \qty{f,0}$ and $-\min \qty{0,f})$ are elements of $\mathscr{P}[0,1]$. Now we are ready to state the Hahn-Banach extension theorem for positive functionals.
+
+\begin{thm} \label{thm:hbepf}(\textbf{Hahn-Banach extension for positive functionals})
+    Let, $C$ be positive cone on $\V$ which spans $\V$. Let, $\V_0$ be a subspace of $\V$, such that $\V_0\cap C$ spans $\V_0$. Let, $p : \V \to \R$ be the sub-linear functional such that, $0\preceq v_1\preceq v_2$ will give us $p(v_1) \le p(v_2)$. If $\rho_0$ is a positive linear functional on $\V_0$ such that $\rho_0(y) \le p(y)$ for all $y \in \V_0$.
+
+    Then, there exists a positive linear functional $\rho : \V \to \R$ and $\rho_0(y) = \rho(y)$ for all $y \in V_0$ and $\rho(x) \le p(x)$.
+    \end{thm}
+
+\section{Riesz Representation Theorem}
+
+It was shown by \textbf{Jordan-Hahn} that a linear functional $\rho$ can be written as a linear combination of two positive functionals $\rho^+,\rho^-$. It is sufficient to study positive linear functionals. Now we will see how we can represent any positive linear function over the vector space $\mathscr{C}[0,1]$, which is stated below.
+
+\begin{thm} (\textbf{Riesz Representation theorem}) Let, $\rho: \mathscr{C} [0,1] \to \R$ be a positive linear functional. There exists a unique right continuous increasing function $g_{\rho}:[0,1]\to \R$ with $\lim_{t\to 0^{+}}g_{\rho}(t)=0$ such that, $$\rho(f)= \int_{0}^{1}f \, d g_{\rho}$$ for any $f \in \mathscr{C}[0,1]$. Furthermore, $\|\rho\|= \sup \qty{\abs{\rho(f)}: \norm{f}_{\infty}\leq 1}$ is equal to $g_{\rho}(1)$.
+\end{thm}
+
+\noindent \textit{Proof.} Let, $\mathscr{M}[0,1]$ be the set of all bounded functions defined on the interval $[0,1]$. It can be shown that $\mathscr{C}[0,1]$ is contained in $\mathscr{M}[0,1]$ and it is a positive cone. Since it is given $\rho$ is a positive linear functional, by theorem \ref{thm:hbepf} we can extend it to a positive linear functional $\tilde{\rho}:\mathscr{M}[0,1]\to \R$. Let us define $$g_{\rho}(t) = \tilde{\rho}\qty(\chi_{[0,t]})$$
+Note that $g_{\rho}(t)$ is \textbf{increasing} as $\tilde{\rho}$ is positive linear functional. Also it's not hard to see $\lim_{t\to 0^{+}}g_{\rho}(t) =0 = g_{\rho}(0)$. The right continuity of this function will follow from the continuity of the functional which can be seen from the following proposition. 
+\begin{prop}
+    Let $\rho : \mathscr{C}[0,1]\to \R$ be a linear functional. Then $\rho$ is positive if and only if, $\rho$ is continuous and $\rho(1) = \sup{\qty{\abs{\rho(f)}: \norm{f}_{\infty}\leq 1}}$
+\end{prop}
+
+\textit{Proof of the proposition.} If $\rho$ is positive functional, $\abs{f}\leq \norm{f}_{\infty}$ implies $\abs{\rho(f)} \leq \rho(1)$ so after taking sup over such functions we must have, $\norm{\rho}\leq \rho(1)$ and we also know $\rho(1) \leq \norm{\rho}$. Thus we have $\rho(1)=\norm{\rho}$. Continuity follows easily from here. 
+
+\vspace{0.2cm}
+
+\noindent Conversely, if $\rho$ is continuous and $\rho(1)$ is the norm of the functional (WLOG $\norm{\rho}=1$), then for $f \geq 0$ let $\rho(f)=a$. Take $s>0$ (small enough), $1-sf \leq 1$ which means $\norm{1-sf}\leq 1$.
+\begin{align*}
+    1-sa &\leq \abs{1-sa} =\abs{\rho(1-sf)}\\
+    &\leq \norm{1-sf}_{\infty} \norm{\rho} \leq 1
+\end{align*}
+This means $a \geq 0$. So the functional is positive. $\hfill \square$
+
+\vspace{0.2cm}
+
+
+
+\end{document}
+    </code>
+  </pre>
+ 
+pre code {
+    background-color: #eee;
+    border: 1px solid #999;
+    display: block;
+    padding: 20px;
+  }

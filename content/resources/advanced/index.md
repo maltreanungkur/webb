@@ -21,6 +21,29 @@ B.Math
    * *Assignment 3*: Singular Homology [problem and solutions](algtop3.pdf) and [Tex file](algtop3.tex).
    * *Assignment 4*: Cellular Homology [problem and solutions](algtop4.pdf) and [Tex file](algtop4.tex).
 
+### Differential Geometry
+> This course was taken by [Prof. Maneesh Thakur](https://isi.irins.org/profile/122628). The text for this course as follows:
+- (1st half classical geometry) [This notes on Differential geometry](https://edu.interkonyv.hu/konyvek/balazs-csikos-differential-geometry/) and Thorpe(for exercises).
+- (Manifold theory) [Introduction to manifolds](https://im0.p.lodz.pl/~kubarski/AnalizaIV/Wyklady/L-Tu-1441973990.pdf)-L.Tu
+- Tangent Spaces, Tangent Bundles, Vector Field, Flow, everything from the same book including Tensor Bundles.
+- (Lie groups, Connection and curvature, Riemannian geometry) [The book](https://www.hive.co.uk/Product/S-Kumaresan/A-Course-in-Differential-Geometry-and-Lie-Groups/23547500) of S.Kumaresan. 
+
+**Assignments** and additional homeworks as follows:
+  * *Assignment 1*: [Problems and solution](Diff1.pdf)
+  * *Assignment 2*: [Problems and Solution](Diff2.pdf)
+  * Pre Midsem [homework](PreMidsem.pdf)
+  * *Assignment 3*: [Problems and Solution](Diff3.pdf)
+  * *Assignment 4 and 5*: [Problems and Solution](Diff45.pdf)
+  * Post Midsem [homework](postmidsem.pdf)
+
+
+### Functional Spaces 
+> This course was taken by prof.[Soumyashant Nayak](https://www.isibang.ac.in/~soumyashant/teaching.html). The texts for this course as follows: 
+- (Introductory convex geometry) Class notes Latexed by **me** and **Soumya**. The [pdf](convex.pdf) and the [texfile](new.html).
+- (Lebesgue integral and Fourier series) Ananlysis- Tom Aplostole, Pricipal of mathematical analysis - Rudin. 
+
+**Assignments**
+  * *Assignment 1*: 
 
 
 ## Semester 4 (B.Math)
