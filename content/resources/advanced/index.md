@@ -40,10 +40,18 @@ B.Math
 ### Functional Spaces 
 > This course was taken by prof.[Soumyashant Nayak](https://www.isibang.ac.in/~soumyashant/teaching.html). The texts for this course as follows: 
 - (Introductory convex geometry) Class notes Latexed by **me** and **Soumya**. The [pdf](convex.pdf) and the [texfile](new.html).
-- (Lebesgue integral and Fourier series) Ananlysis- Tom Aplostole, Pricipal of mathematical analysis - Rudin. 
+- (Lebesgue integral and Fourier series) Analysis- Tom Apostle, Principal of mathematical analysis - Rudin. 
 
 **Assignments**
-  * *Assignment 1*: 
+  * *Assignment 1*: [Problems and solutions](Funcas-1.pdf)
+  * *Assignment 2*: [Problems and solutions](Funcas-2.pdf)
+  * *Assignment 3*: [Problems and solutions](Funcas-3.pdf)
+  * *Assignment 4*: [Problems and solutions](funcas-4.pdf)
+  * *Assignment 5*: [Problems and solutions](Funcas5.pdf)
+  * *Assignment 6*: [Problems and solutions](func6.pdf)
+  * *Assignment 7*: [Problems and solutions](Funcas-7.pdf)
+  * *Assignment 8*: [Problems and solutions](func-8.pdf)
+  * [Additional worksheet](func9.pdf)
 
 
 ## Semester 4 (B.Math)
