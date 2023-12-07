@@ -6,7 +6,7 @@ showDate: false
 ---
 
 
-## Education 
+## Short CV
 
 - (2021-present) **B.Math** at *Indian Statistical Institute*.
 
