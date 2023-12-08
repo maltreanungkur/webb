@@ -53,6 +53,37 @@ B.Math
   * *Assignment 8*: [Problems and solutions](func-8.pdf)
   * [Additional worksheet](func9.pdf)
 
+### Galois Theory
+> This course was taken by prof.[Anita Naolekar](https://www.isibang.ac.in/~statmath/homepage.html). The text (and the text that I followed) are given as follows:
+
+- (Followed in class) Abstract algebra-[Dummit and Foote](https://math.jhu.edu/~iyengar/df.pdf).
+- (Text I followed) Fields and Galois theory-[Patrick Morandi](https://eclass.uoa.gr/modules/document/file.php/MATH594/Morandi.pdf).
+- (Further) Fields and Galois theory - [J.Milne](https://www.jmilne.org/math/CourseNotes/FT.pdf)
+
+**Assignemt**
+
+- Assignment IA and IB - [pdf(IA)](gal-1.pdf) and [pdf(IB)](gal-2.pdf).
+- Assignment IIA and IIB - [pdf(IIA)](gal-3.pdf) and [pdf(IIB)](gal-4.pdf).
+
+**Furthers** 
+
+- This note was given by prof.B.Sury - [pdf](somefields.pdf).
+-  A beautiful problem set given by prof.B.sury- [pdf](fieldprobs.pdf)
+
+### Design and Analysis of algorithms 
+
+> This course was taken by prof.[Jaikumar Radhakrishnan](https://www.tcs.tifr.res.in/~jaikumar/mypage.html). Every thing about course is beautifully given in the following website. 
+
+- <iframe src="https://jaikumarcourses.bitbucket.io/Courses/ISIBangalore/2023-DAA/" height="300" width="630" title="description"></iframe>
+
+**Assignements**
+- The problems of the assignment can be found in the above webpage.
+- Assignment 1 - [pdf](cs-1.pdf)
+- Assignment 2 - [pdf](cs2.pdf)
+- Assignment 3 - [pdf](cs3.pdf)
+- Assignment 4 - [pdf](cs4.pdf)
+- Assignment 5 - [pdf](CS5.pdf)
+- Assignment 6 - [pdf](CS-6.pdf)
 
 ## Semester 4 (B.Math)
 Here you can get access to the study materials and assignments (with solution) of all the courses provided to B.Math Second Year Students (Sem -IV) on the year 2023. In general, five courses are offered in each semester. The courses offered this semester are listed below. Question paper of corresponding subjects of Midsem and Semestral exams can be found in the [official webpage of ISI](https://www.isibang.ac.in/~adean/infsys/database).
