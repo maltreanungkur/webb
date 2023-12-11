@@ -15,9 +15,10 @@
  pageRef = "posts"
  weight = 150
 
-#[[main]]
-#  name = "Parent"
-#  weight = 20
+[[main]]
+  name = "Miscs"
+  pageRef = "Misc"
+  weight = 200
 
 [[main]]
  name = "About"
@@ -45,7 +46,7 @@
   identifier = "envelope"
   pre = "envelope"
   url = "mailto:trishanmondal004@gmail.com"
-  weight = 200
+  weight = 210
 
 #[[main]]
 #  name = "example sub-menu 2"
