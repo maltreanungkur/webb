@@ -1,0 +1,125 @@
+% documentclass[11pt]{article}
+
+% Usepackages 
+\usepackage[utf8]{inputenc}
+\usepackage[hmargin={1.5 cm,1.5cm},
+   top=1.5cm, marginpar=3.5cm, bottom=1.5cm
+   ]{geometry}  
+\usepackage{subfiles}
+\usepackage{hyperref}
+\usepackage{physics}
+\usepackage[most]{tcolorbox}
+\usepackage{xparse}
+\usepackage{accents}
+\usepackage{pdfpages}
+\usepackage{wrapfig}
+\usepackage{changepage}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{bbm}
+\usepackage{tikz-cd}
+\usepackage{tikz}
+\usepackage{mathtools}
+\usepackage{titlesec}
+\usepackage{stackengine}
+\usepackage{scalerel}
+
+\hypersetup{colorlinks = true, linkcolor = blue, urlcolor = violet} % colour of hyperlink
+
+% Start a problem with \section{Problem #}
+
+\titleformat{\section}[hang]{\fontsize{14}{15}\sffamily\bfseries\centering}{\color{bondiblue}\S}{0.21em}{}
+
+% colours definition
+
+\definecolor{deepjunglegreen}{rgb}{0.40, 0.69, 0.29}
+\definecolor{columbiablue}{rgb}{0.61, 0.87, 1.0}
+\definecolor{bondiblue}{rgb}{0.0, 0.58, 0.71}
+\definecolor{britishracinggreen}{rgb}{0.0, 0.26, 0.15}
+% Problem box
+
+\newtcbtheorem[no counter]{prob}{\textcolor{bondiblue}{\textbf{\textsf{Problem.}}}}{
+  detach title,
+  fonttitle=\sffamily,
+  coltitle=black,
+  colbacktitle=white,
+  colback=white,
+  colframe=white,
+  leftrule=0.1mm,
+  rightrule= -0.1mm,
+  toprule=-0.1mm,
+  bottomrule=-0.1mm,
+  description font=\bfseries,
+  before upper={\tcbtitle},
+  title = $\mathbf{\S}$ 
+}{}
+
+% Lemma box/ claim box
+
+\newtcbtheorem[no counter]{Lemn}{\ts{Claim}--- }{
+  detach title,  
+ fonttitle=\sffamily,
+  coltitle=britishracinggreen,
+%   colbacktitle=white,
+  %colbacktitle=cosmiclatte,
+  colback=britishracinggreen!4,
+  colframe=britishracinggreen,
+  leftrule= 1mm,
+  rightrule=-0.2mm,
+  toprule=-0.2mm,
+  bottomrule=-0.2mm,
+  sharp corners,
+  attach title to upper,
+  separator sign none,
+  description font=\mdseries}{lemn}
+
+% Short commands
+
+\newcommand{\bb}[1]{\mathbb{#1}}
+\newcommand{\N}{\bb{N}}
+\newcommand{\Z}{\bb{Z}}
+\newcommand{\Q}{\bb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\bb{C}}
+\newcommand{\Op}[1]{\mathcal{O}_{#1}}
+\newcommand{\msk}{\medskip}
+\newcommand{\ssk}{\smallskip}
+\newcommand{\bsk}{\bigskip}
+\newcommand{\Qed}{\quad \blacksquare}
+\newcommand{\contra}{\rightarrow \leftarrow}
+\newcommand{\heart}{\ensuremath\heartsuit}
+\newcommand{\butt}{\rotatebox[origin=c]{180}{\heart}}
+\newcommand{\ltag}[2]{\label{#1} \tag{#2}}
+\newcommand{\floor}[1]{\lfloor {#1} \rfloor}
+\newcommand{\inp}[2]{\left\langle {#1}, {#2} \right\rangle}
+\newcommand{\vphi}{\varphi}
+\newcommand{\veps}{\varepsilon}
+\newcommand{\pdot}[2]{{#1} \cdot {#2}}
+\newcommand{\Area}{\operatorname{Area}}
+\newcommand{\ran}{\operatorname{ran}}
+\newcommand{\Vol}{\operatorname{Vol}} 
+\newcommand{\s}{\bb{S}}
+\newcommand{\fb}[1]{\mathbf{#1}}
+\newcommand{\T}{\mathbf{Top}}
+\newcommand{\p}{\partial}
+\newcommand{\ch}{\mathbf{Chain}^*}
+\newcommand{\cha}{\mathbf{Chain}^\text{ag}}
+\newcommand{\gr}{\mathbf{Graded groups}}
+\newcommand{\kc}{\mathcal{K}}
+\newcommand{\D}{\Delta}
+\newcommand{\de}{\delta}
+\newcommand{\ep}{\varepsilon}
+\newcommand{\coro}[1]{{\hspace*{0.6cm} \textcolor{purple}{\textsc{Corollary. }}}\textit{#1}}
+\newcommand{\examp}{\hspace{0.6cm} $\blacklozenge$ \textsc{Example} \textbf{:}} 
+\newcommand{\ts}[1]{\textbf{\textsf{#1}}}
+\newcommand{\cod}[1]{\textcolor{codepurple}{\texttt{#1}}}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\sol}{ \textbf{\textit{Solution.}} }
+\newcommand{\id}{\mathrm{id}}
+\newcommand{\theo}{\textcolor{bondiblue}{\texsy{Theorem}}}
+\newcommand{\defi}{\textcolor{violet}{\texsy{Definition}.}}
