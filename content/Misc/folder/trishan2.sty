@@ -65,8 +65,6 @@
   detach title,  
  fonttitle=\sffamily,
   coltitle=britishracinggreen,
-%   colbacktitle=white,
-  %colbacktitle=cosmiclatte,
   colback=britishracinggreen!4,
   colframe=britishracinggreen,
   leftrule= 1mm,
@@ -77,6 +75,24 @@
   attach title to upper,
   separator sign none,
   description font=\mdseries}{lemn}
+
+% Theorem box  
+
+
+\newtcbtheorem[number within=section]{Thm}{\textbf{Theorem} --}{
+ detach title,  
+ fonttitle=\sffamily,
+  coltitle=bondiblue,
+  colback=columbiablue!4,
+  colframe=bondiblue,
+  leftrule= 1mm,
+  rightrule=-0.2mm,
+  toprule=-0.2mm,
+  bottomrule=-0.2mm,
+  sharp corners,
+  attach title to upper,
+  separator sign none,
+  description font=\mdseries}{th}
 
 % Short commands
 

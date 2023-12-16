@@ -18,7 +18,7 @@ showDate: false
  
 - **Algebraic Topology**
    * Simplicial and Singular homology, their equivalances by *Acyclic model theorem* and furthers-[pdf](main.pdf) (This is a part of my VSRP 2023 report).
-   * Fixedpoint theorems (*Lefschetz*) and Jordan seperation theorem (generalization of *Jordan curve theorem*)-[pdf](fp-ord.pdf) (This is also a part of my VSRP 2023 report).
+   * Fixed-point theorems (*Lefschetz*) and Jordan seperation theorem (generalization of *Jordan curve theorem*)-[pdf](fp-ord.pdf) (This is also a part of my VSRP 2023 report).
    * Cohomology and Poincare duality-[pdf](chompoin.pdf).
 - **Algebra**
    * Kunneth Formula and Eilenberg-Zilber Theorem-[pdf](kunneth.pdf). 
@@ -30,7 +30,8 @@ showDate: false
 
 - **Analysis and convex geometry**
   * **Analysis III** course notes (Latexed by me and my friends)- [pdf](https://awnathan1893.github.io/Analysis3_Notes/pdfs/Analysis-3.pdf) and [here](https://awnathan1893.github.io/Analysis3_Notes/) you can find lecture wise notes.
-  * Hahn Banach seperation(extension) theorems and Riesz representation theorem  (Latexed by me and [soumya](https://omegasd18.github.io/))- [pdf](/content/resources/semsters/convex.pdf).
+  * Hahn Banach seperation(extension) theorems and Riesz representation theorem  (Latexed by me and [soumya](https://omegasd18.github.io/)) [pdf](/content/resources/semsters/convex.pdf).
+  * Short notes of Lebesgue integral and Fourier Series - [pdf](./funcINF.pdf)
 
 ## <span style="color: #EBF343;">Papers</span>
 The following papers/articles/notes are for my reference. It might be helpful for others too.
