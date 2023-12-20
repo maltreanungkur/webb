@@ -14,6 +14,8 @@ showDate: false
 {{< katex >}}
 
 ## <span style="color: #EBF343;">Notes</span>
+
+
 (If name of author is not mentioned, it's a note written by me. There can be some typo irrespective of authors. The blue leters contains link of the pdf/texfiles.)
  
 - **Algebraic Topology**
@@ -32,6 +34,9 @@ showDate: false
   * **Analysis III** course notes (Latexed by me and my friends)- [pdf](https://awnathan1893.github.io/Analysis3_Notes/pdfs/Analysis-3.pdf) and [here](https://awnathan1893.github.io/Analysis3_Notes/) you can find lecture wise notes.
   * Hahn Banach seperation(extension) theorems and Riesz representation theorem  (Latexed by me and [soumya](https://omegasd18.github.io/)) [pdf](/content/resources/semsters/convex.pdf).
   * Short notes of Lebesgue integral and Fourier Series - [pdf](./funcINF.pdf)
+
+
+
 
 ## <span style="color: #EBF343;">Papers</span>
 The following papers/articles/notes are for my reference. It might be helpful for others too.
