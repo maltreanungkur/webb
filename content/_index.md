@@ -10,3 +10,4 @@ I am a third year B.Math student at <a href="https://www.isibang.ac.in/" style="
 
 
 > Find my <a href="https://trishan8.github.io/posts/" style="color:yellow">blogs</a> here. (In the following recent section there may not have any blogs that's why I'm posting the direct link to the blogs page.)
+
