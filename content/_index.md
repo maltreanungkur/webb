@@ -3,7 +3,12 @@ title: "Trishan Mondal"
 description: "Welcome to my home page"
 ---
 {{< katex >}}
-<meta name="google-site-verification" content="K_LTHofQUHqpVsXAQLWW9bkMvMD1X1hUi4LtZprMwZI" />
+<html> 
+  <head>
+    <meta name="google-site-verification" content="K_LTHofQUHqpVsXAQLWW9bkMvMD1X1hUi4LtZprMwZI" />
+  </head>
+</html>
+
 I am a third year B.Math student at <a href="https://www.isibang.ac.in/" style="color:violet">Indian Statistical Institute</a>. My current interest includes Algebraic Geometry, Algebraic Topology. 
 
 
