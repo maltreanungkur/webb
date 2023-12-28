@@ -4,7 +4,7 @@ description: "Welcome to my website"
 ---
 {{< katex >}}
 
-<img src="featured.jpeg" width="300" height="250" alt="*picture*" align=right>
+<img src="1703785927346.jpg" width="300" height="250" alt="*picture*" align=right>
 
 <span style="color: #d2d5d8; font-family: 'Georgia'; font-size: 1em;">Student @ Theoretical Statistics and Mathematics depertment <br>
 Indian Statistiacal Institute, Bangalore <br>
