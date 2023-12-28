@@ -16,8 +16,8 @@ summaryLength = 0
 buildDrafts = false
 buildFuture = false
 
-# googleAnalytics = "G-XXXXXXXXX"
-google-site-verification = "tkb0SS5UTC08YsNjH669dNrqbNLavbdtgOXW3mYVBYM"
+googleAnalytics = "G-EW9JL2E5DM"
+
 
 [imaging]
   anchor = 'Center'
