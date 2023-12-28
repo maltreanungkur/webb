@@ -17,6 +17,7 @@ buildDrafts = false
 buildFuture = false
 
 # googleAnalytics = "G-XXXXXXXXX"
+google-site-verification = "tkb0SS5UTC08YsNjH669dNrqbNLavbdtgOXW3mYVBYM"
 
 [imaging]
   anchor = 'Center'
