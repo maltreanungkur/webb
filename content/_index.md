@@ -1,26 +1,23 @@
 ---
 title: "Trishan Mondal"
-description: "Welcome to my home page"
+description: "Welcome to my website"
 ---
 {{< katex >}}
 
-<!-- Google Analytics -->
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+<img src="featured.jpeg" width="300" height="250" alt="*picture*" align=right>
 
-ga('create', 'UA-XXXXX-Y', 'auto');
-ga('send', 'pageview');
-</script>
-<!-- End Google Analytics -->
+<span style="color: #d2d5d8; font-family: 'Georgia'; font-size: 1em;">Student @ Theoretical Statistics and Mathematics depertment <br>
+Indian Statistiacal Institute, Bangalore <br>
+Email : trishanmondal004[at]gmail[dot]com <br>
+</span>
+<span style="color: #364150; font-family: 'Georgia'; font-size: 1em;">Student email: bmat2144[at]isibang[dot]ac[dot]in</span>
 
-I am a third year B.Math student at <a href="https://www.isibang.ac.in/" style="color:violet">Indian Statistical Institute</a>. My current interest includes Algebraic Geometry, Algebraic Topology. 
+I am a third year undergraduate(B.Math) student at <a href="https://www.isibang.ac.in/" style="color:violet">Indian Statistical Institute</a>. My mathematical interests include Algebra, Topology, Geometry. Currently, I am focusing more on Algebraic Topology and Algebraic Geometry. <br>
 
 
-<a href="Resume.pdf"><button style="border-width:2px; border-style:solid; border-color:violet; padding: 0.2em; color:violet">Resume</button></a>
+- One can have a look at my resume --  <a href="Resume.pdf"><button style="border-width:2px; border-style:solid; border-color:violet; padding: 0.2em; color:violet">Resume</button></a>
 
 
 > Find my <a href="https://trishan8.github.io/posts/" style="color:yellow">blogs</a> here. (In the following recent section there may not have any blogs that's why I'm posting the direct link to the blogs page.)
 
+<hr style="height:2px;border-width:0;color:gray;background-color: #85C1E9 ">
