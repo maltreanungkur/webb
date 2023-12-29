@@ -7,6 +7,24 @@ series: ["Resources"]
 series_order: 2
 ---
 B.Math
+
+## Semester 6 (B.Math)
+  In this semester I have taken 5 courses(which is compulsory) and a Reading Seminar. Probable courses are as follows
+
+  ### Algebraic Geometry 1
+
+  ### Complex Analysis
+
+  ### Optimization 
+
+  ### Geometry 
+
+  ### Differential topology/ Harmonic Analysis (Not sure which one)
+
+  ### Reading Seminar 
+
+ This [link]() will redirect to a page, where every detail regarding this seminar can be found.
+
 ## Semester 5 (B.Math)
 
 ### Algebraic Topology 
