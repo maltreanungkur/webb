@@ -1,0 +1,55 @@
+---
+title: "Intersection Homology"
+draft: false
+showDate: false
+cardView: true
+showSummary: false
+groupbyYear: false
+sharingLinks: [""]
+showTableOfContents: false
+herostyle: "background" # valid options: basic, big, background, thumbAndBackground
+layoutBackgroundBlur: true # only used when heroStyle equals background or thumbAndBackground
+layoutBackgroundHeaderSpace: false
+showHero: true
+showPagination: false
+---
+{{< katex >}} 
+
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js"></script>
+</head>
+<body>
+    <script>
+      renderMathInElement(
+          document.body,
+          {
+              delimiters: [
+                  {left: "$$", right: "$$", display: true},
+                  {left: "\\[", right: "\\]", display: true},
+                  {left: "$", right: "$", display: false},
+                  {left: "\\(", right: "\\)", display: false}
+              ]
+          }
+      );
+    </script>
+</body>
+</html>
+
+<a style= "font-family: 'Bebas'; color: white; font-size: 15pt">This is a reading seminar organized by professors of Algebraic depertment. In this seminar we will learn about</a> *Intersection homology* <a style= "font-family: 'Bebas'; color: white; font-size: 15pt">and</a> *Perverse Sheaves* <a style= "font-family: 'Bebas'; color: white; font-size: 15pt">from the book of</a> *Kirwan and Wolf*.
+
+<center>
+   <a style= "font-family: 'Bebas'; font-variant: small-caps; color: white; font-size: 21pt"> References</a>
+</center>
+
+- <a style= "font-family: 'Bebas'; font-variant: small-caps; color: white; font-size: 14pt"> Main Text :</a> F. Kirwan, J. Woolf, *An introduction to intersection homology theory* [CRC Press, 2006] - [Pdf](./documents/Frances%20Kirwan,%20Jonathan%20Woolf%20-%20An%20introduction%20to%20intersection%20homology%20theory-Chapman%20and%20Hall_CRC%20(2006)%20(2).pdf)
+- <a style= "font-family: 'Bebas'; font-variant: small-caps; color: white; font-size: 14pt"> Furthers :</a> 
+  
+     1. L. G. Maxim, Intersection Homology & Perverse Sheaves - [Pdf](./documents/Laurenţiu%20G.%20Maxim%20.pdf).
+     2. M. Goresky, R. MacPherson, Stratified Morse theory - [Pdf](./documents/Stratified%20Morse%20Theory.pdf).
+     3. A. Dimca, Sheaves in topology - [Pdf](./documents/(Universitext)%20Alexandru%20Dimca.pdf).
+     4. A. Borel, Intersection cohomology - [Pdf](./documents/(Progress%20in%20Mathematics%2050)%20Armand%20Borel%20(auth.)%20.pdf).
+     5. V. Pati. Notes on intersection homology - [Pdf](./documents/Intersection%20homology(pati).pdf).
+

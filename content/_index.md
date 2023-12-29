@@ -2,6 +2,7 @@
 title: "Trishan Mondal"
 description: "Welcome to my website"
 ---
+
 {{< katex >}}
 
 <img src="featured.jpeg" width="310" height="250" alt="*picture*" align=right>
@@ -24,3 +25,8 @@ I am a third year undergraduate(B.Math) student at <a href="https://www.isibang.
 
 <hr style="height:0.1px;border-width:0;color:gray;background-color: #85C1E9 ">
 
+<div style ="border-left: double; padding: 0.6em"> 
+    <span style="font-family: 'Monospace'; color: white"> This semester (spring, 2024), a reading seminar is being organized by the professors of Algebraic Geometry depertment on the topic Intersection Homology. I will keep updating about this on this</span> <a herf="" style ="color: #f4bbbf">page</a>.
+</div>
+
+<hr style="height:3px;border-width:0;color:gray;background-color: #899db8">
