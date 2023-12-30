@@ -53,3 +53,20 @@ showPagination: false
      4. A. Borel, Intersection cohomology - [Pdf](./documents/(Progress%20in%20Mathematics%2050)%20Armand%20Borel%20(auth.)%20.pdf).
      5. V. Pati. Notes on intersection homology - [Pdf](./documents/Intersection%20homology(pati).pdf).
 
+<center>
+   <a style= "font-family: 'Bebas'; font-variant: small-caps; color: white; font-size: 21pt"> Schedule</a>
+</center>
+
+{{< timeline >}}
+
+{{< timelineItem icon="blank" header="Lecture 1" badge="05/1" subheader="Introduction" >}}
+    <!-- jjjj -->
+{{< /timelineItem >}}
+
+
+{{< timelineItem icon="blank" header="Lecture 2" badge="12/1" subheader="Overview talk by Prof. Suresh Nayak" >}}
+    
+{{< /timelineItem >}}
+
+
+{{< /timeline >}}

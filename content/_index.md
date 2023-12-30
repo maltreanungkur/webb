@@ -26,7 +26,7 @@ I am a third year undergraduate(B.Math) student at <a href="https://www.isibang.
 <hr style="height:0.1px;border-width:0;color:gray;background-color: #85C1E9 ">
 
 <div style ="border-left: double; padding: 0.6em"> 
-    <span style="font-family: 'Monospace'; color: white"> This semester (spring, 2024), a reading seminar is being organized by the professors of Algebraic Geometry depertment on the topic Intersection Homology. I will keep updating about this on this</span> <a herf="" style ="color: #f4bbbf">page</a>.
+    <span style="font-family: 'Bebas'; color: white"> This semester (spring, 2024), a reading seminar is being organized by the professors of Algebraic Geometry depertment on the topic Intersection Homology. I will keep updating about this on this</span> <a href="https://trishan8.github.io/resources/intersection-homology/"><button style="border-width:0px; border-style:solid; border-color:violet; padding: 0.2em; color:cyan">page</button></a>.
 </div>
 
 <hr style="height:3px;border-width:0;color:gray;background-color: #899db8">
