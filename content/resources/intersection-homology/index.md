@@ -59,12 +59,7 @@ showPagination: false
 
 {{< timeline >}}
 
-{{< timelineItem icon="blank" header="Lecture 1" badge="05/1" subheader="Introduction" >}}
-    <!-- jjjj -->
-{{< /timelineItem >}}
-
-
-{{< timelineItem icon="blank" header="Lecture 2" badge="12/1" subheader="Overview talk by Prof. Suresh Nayak" >}}
+{{< timelineItem icon="blank" header="Lecture 1" badge="12/1" subheader="Overview talk by Prof. Suresh Nayak" >}}
     
 {{< /timelineItem >}}
 
