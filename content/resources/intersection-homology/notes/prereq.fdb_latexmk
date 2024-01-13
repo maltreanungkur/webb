@@ -1,13 +1,18 @@
 # Fdb version 4
-["biber prereq"] 0 "prereq.bcf" "prereq.bbl" "prereq" 1705066945 -1
+["biber prereq"] 0 "prereq.bcf" "prereq.bbl" "prereq" 1705162465 -1
   "./ref.bib" 1704881261 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "prereq.bcf" 1705066944 107254 44e9398af84e14874c9184492baf0fdb "pdflatex"
+  "prereq.bcf" 1705162464 107254 44e9398af84e14874c9184492baf0fdb "pdflatex"
   (generated)
   "prereq.bbl"
   "prereq.blg"
   (rewritten before read)
-["pdflatex"] 1705066937 "c:/Users/trish/Downloads/Intersection-homology notes/prereq.tex" "prereq.pdf" "prereq" 1705066945 0
+["pdflatex"] 1705162461 "c:/Users/trish/trishan8.github.io/content/resources/intersection-homology/notes/prereq.tex" "prereq.pdf" "prereq" 1705162465 0
   "C:/Users/trish/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1704548290 196659 862a97ff76821cd574ca4528c4924162 ""
+  "C:/Users/trish/AppData/Local/MiKTeX/fonts/pk/ljfour/public/bbold/dpi657/bbold10.pk" 1705162334 13648 53db1d696e97632e028f60c6ed78a6ea ""
+  "C:/Users/trish/AppData/Local/MiKTeX/fonts/tfm/public/bbold/bbold10.tfm" 1676439122 788 aa2bfd021367054a224c4cf5a9967398 ""
+  "C:/Users/trish/AppData/Local/MiKTeX/fonts/tfm/public/bbold/bbold12.tfm" 1705162464 768 568afddd613f4818fa95373954d5df42 ""
+  "C:/Users/trish/AppData/Local/MiKTeX/fonts/tfm/public/bbold/bbold6.tfm" 1705162333 764 bc340104b2499eb440977e2d302aad8b ""
+  "C:/Users/trish/AppData/Local/MiKTeX/fonts/tfm/public/bbold/bbold8.tfm" 1705162331 768 b3927d32cc38bf306f676b7e9ddf7414 ""
   "C:/Users/trish/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs10.tfm" 1661309732 688 37338d6ab346c2f1466b29e195316aa4 ""
   "C:/Users/trish/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs5.tfm" 1661309735 684 3a51bd4fd9600428d5264cf25f04bb9a ""
   "C:/Users/trish/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1704548285 24224029 49f08f050c79c0e26a0520fc13a46824 ""
@@ -52,7 +57,6 @@
   "C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb" 1247596666 24457 5cbb7bdf209d5d1ce9892a9b80a307cc ""
   "C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1247596667 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1247596667 32626 5abc8bb2f28aa647d4c70f8ea38cc0d3 ""
-  "C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1247596673 34694 870c211f62cb72718a00e353f14f254d ""
   "C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/rsfs/rsfs10.pfb" 893413860 16077 4737ac34f0fb5608550f3780a0202c22 ""
   "C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qplb.pfb" 1525740614 336018 38fb73901e72aeab84e851f626e4f5a2 ""
   "C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qplr.pfb" 1525740614 331829 0b1eec2ff4b9ecccc8b468e348826067 ""
@@ -151,6 +155,8 @@
   "C:/Users/trish/AppData/Local/Programs/MiKTeX/tex/latex/base/inputenc.sty" 1698826601 5048 4a74b0804469fbfae7849704c4687a07 ""
   "C:/Users/trish/AppData/Local/Programs/MiKTeX/tex/latex/base/size11.clo" 1698826601 8464 a4a9a859b7fd5b6c1450673c4d301348 ""
   "C:/Users/trish/AppData/Local/Programs/MiKTeX/tex/latex/bbm/bbm.sty" 1227195129 1684 1e0d54b051369c3f457872824cac219f ""
+  "C:/Users/trish/AppData/Local/Programs/MiKTeX/tex/latex/bbold/bbold.sty" 1188670004 1872 b8dfd92843f5ac03d85dbd86854854d5 ""
+  "C:/Users/trish/AppData/Local/Programs/MiKTeX/tex/latex/bbold/ubbold.fd" 1188670004 1838 7d4e4adb94d2e4ed81c2c1d4be170c29 ""
   "C:/Users/trish/AppData/Local/Programs/MiKTeX/tex/latex/biblatex/bbx/alphabetic.bbx" 1679055682 1731 ebd75bda3dd71a7cbd30fde6e3bb6391 ""
   "C:/Users/trish/AppData/Local/Programs/MiKTeX/tex/latex/biblatex/bbx/standard.bbx" 1679055682 25680 409c3f3d570418bc545e8065bebd0688 ""
   "C:/Users/trish/AppData/Local/Programs/MiKTeX/tex/latex/biblatex/biblatex.cfg" 1679055682 69 249fa6df04d948e51b6d5c67bea30c42 ""
@@ -253,13 +259,13 @@
   "C:/Users/trish/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/trish/AppData/Local/Programs/MiKTeX/tex/latex/wrapfig/wrapfig.sty" 1044403200 26220 3701aebf80ccdef248c0c20dd062fea9 ""
   "C:/Users/trish/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
-  "c:/Users/trish/Downloads/Intersection-homology notes/prereq.tex" 1705066941 8839 fc4b6407436987694509e50429b4550e ""
-  "prereq.aux" 1705066944 952 0a56f219eb410505cb03514e2d47977b "pdflatex"
+  "c:/Users/trish/trishan8.github.io/content/resources/intersection-homology/notes/prereq.tex" 1705066941 8839 fc4b6407436987694509e50429b4550e ""
+  "prereq.aux" 1705162464 952 0a56f219eb410505cb03514e2d47977b "pdflatex"
   "prereq.bbl" 1704994540 486 ee04f40f768daeed26442158e95aba61 "biber prereq"
-  "prereq.out" 1705066944 1116 9116a1978940cc79f402dac46ab69447 "pdflatex"
-  "prereq.run.xml" 1705066944 2318 b8d9f5f51127880042a4537ebd727ac2 "pdflatex"
+  "prereq.out" 1705162464 1116 9116a1978940cc79f402dac46ab69447 "pdflatex"
+  "prereq.run.xml" 1705162464 2318 b8d9f5f51127880042a4537ebd727ac2 "pdflatex"
   "prereq.tex" 1705066941 8839 fc4b6407436987694509e50429b4550e ""
-  "trishnote.sty" 1704994680 6137 e1a665b1f0c25ad97c5a88cb969db112 ""
+  "trishnote.sty" 1705162325 6157 d7973114e01ee53725ff239266718fda ""
   (generated)
   "prereq.aux"
   "prereq.bcf"

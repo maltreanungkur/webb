@@ -25,17 +25,79 @@
 \end{itemize}
 
 \section{Dualities}
-We can compute the singular(simplicial) homology(cohomology) for $X$ with the coefficients in $\R$. Since $X$ is compact orientable manifold we can talk about the cup product pairing as follows: 
+ As a real manifold $X$ has dimension $2n$. We can compute the singular(simplicial) homology(cohomology) for $X$ with the coefficients in $\R$. Since $X$ is compact orientable manifold we can talk about the cup product pairing as follows: 
 \[H^{i}(X;\R) \times H^{2n-i}(X;\R) \xrightarrow{\smile} H^{2n}(X;\R) \cong \R\]
 
 \noindent is a `non-degenerate' pairing. Thus we have \textbf{Poincare Duality}, $$H^{2n-i}_{\text{Sing}}(X;\R) \cong H^{i}_{\text{Sing}}(X;\R)^* \cong H_i^{\text{sing}}(X;\R)$$
 
-\noindent Since $X$ is a smooth manifold we can talk about de-Rahm cohomology. In a shofesticated language `de-Rahm cohomology is a cohomology of soft-resolution of constant sheaf'. In this case also we have the following as non-degenerate, 
+\noindent Since $X$ is a smooth manifold we can talk about de-Rahm cohomology. In a sophisticated language `de-Rahm cohomology is a cohomology of soft-resolution of constant sheaf'. In this case also we have the following as non-degenerate, 
 \[H^{i}_{DR}(X;\R) \times H^{2n-i}_{DR}(X;\R) \xrightarrow{\wedge} H^{2n}_{DR}(X;\R) \xrightarrow[\int - \operatorname{vol-form}]{\sim} \R\]
 Thus again we have the dualiy, $H^{2n-i}_{DR}(X;\R) \cong H^{i}_{DR}(X;\R)^*$. Connecting de-Rahm cohomology and singular(simplicial) cohomology with coefficients in $\R$, there is a beautiful theorem by de-Rahm stated as follows, 
 
 \begin{Thm}{De-Rahm's Theorem}{}
      There is an isomorphism between the singular(simplicial) cohomology with coefficients in $\R$ and de-Rahm cohomology which is compatible with the product structure on both the V.S. 
 \end{Thm}
+
+\section{Hodge Theorems}
+
+There are two different versions of `Hodge Theorem'. The metric (Riemannian) on $X$ induces metric on de-Rahm complex $\Omega^{\bullet}(X)$. It is defined by, $$(\omega,\eta) := \int_{X} \qty(p \mapsto \inp{\omega}{\eta}_p) \operatorname{Vol}_X$$
+With respect to this inner product the exterior derivative $d$ has an adjoint $\de$ such that, $$(d\omega_1,\omega_2)=(\omega_1,\de \omega_2)$$
+$\ast$ We can write down the adjoint explicitly, for any $\alpha \in \Omega^k(X)$, $\de \alpha = (-1)^k (\ast)^{-1} d\alpha$ where $\ast$ is the `Hodge star operator' $\ast : \wedge^k (T_pX)^{\ast} \to \wedge^{2n-k} (T_pX)^{\ast}$, given by $(\theta_1,\cdots,\theta_k)\mapsto (\theta_{k+1},\cdots,\theta_{2n})$ where $\qty{\theta_j}$ is an oriented orthonormal basis of $(T_pX)^{\ast}$.  Set, $\D = \de d + d \de$ be the Laplacian. \textbf{Harmonic} forms are elements of $\Omega^{\bullet}(X)$ lies in the kernel of $\D$. With this setup we are ready to state `Hodge theorem 1'. This theorem gives us a decomposition of $\Omega^{k}(X)$. 
+
+\begin{Thm}{Hodge Theorem I}{}
+   Every element of $H^k_{DR}(X;\R)$ is uniquely represented by `Harmonic forms' of degree $k$. Also $\Omega^k$ admits the following decomposition, 
+   \[\Omega^k(X)\cong H^k_{DR}(X;\R)\oplus d(\Omega^{k+1})\oplus \de \qty(\Omega^{k+1})\]
+\end{Thm}
+\noindent We have perviously mentioned there is a `complex structure' on the Tangent space of $X$. As of now we have not used this structure. \newcommand{\om}{\mathbf{\Omega}}
+
+\vspace*{0.2cm}
+
+\noindent \textbf{\textcolor{darkcerulean}{\S}  The presence of complex structure $I$}
+
+\vspace*{0.2cm}
+
+\noindent The complex structure gives rise to  Eigen decomposition of complexified tangent/co-tangent bundles on $X$. Thus we have, 
+$$\om^{1}_{X,\C}:= \om^1_{X}\otimes \C \cong \om_X^{1,0} \oplus \om_X^{0,1}$$
+Then, $\om_{X,\C}^k= \wedge^k \om^1_{X,\C}\cong \bigoplus_{p+q=k}\Omega^{p,q}_{X}$. Here, $\om_{X}^{p,q} = \wedge^p \om^{1,0}_X \otimes \wedge^q \om^{0,1}$. Thus, $\om_X^{p,q}$ is the V.S of the smooth $(p,q)$-forms $dz_1\wedge\cdots \wedge dz_p \wedge d\bar{z}_{p+1} \cdots \wedge d\bar{z}_{p+q}$. we can note $\bar{\om^{p,q}} = \om^{q,p}$. With this setup we are ready to note the Hodge theorem II. 
+
+\begin{Thm}{Hodge Theorem II}{}
+    \hspace*{0.1cm} Every Harmonic form in $H^k(X;\C)$ decomposes as a sum of harmonic $(p,q)$-forms of a bi-degree, where $p+q=k$. Thus, \[H^k_{DR}(X,\C)\cong \oplus_{p+q=k} H^{p,q}(X;\C)\]
+\end{Thm}
+
+\coro{If $k$ is odd then $\dim_{\C}(H_{DR}^k(X;\C))$ even.}
+
+\section{Hard Lefschetz Theorem}
+
+The hermitian metric $\mathfrak{h}$ on $TX$ via its decomposition gives rise to an alternating $2$-forms can be shown to be a $(1,1)$-form, call it $\omega$. Using this we get a linear map,
+ $$L: H^{k}_{DR}(X;\R)\xrightarrow{\text{product with }\wedge \, \omega} H^{k+2}(X;\R)$$
+
+\noindent \textcolor{darkcerulean}{\textbf{Hard Lefschetz Theorem --}} The map, $L^{n-k}:H^k_{DR}(X,\R)\to H^{2n}_{DR}(X;\R)$ induces an isomorphism for $k \leq n$. 
+
+\coro{$L$ is injctive for $k<n$. Thus the odd degree Betti number $h^i:= \dim_{\R}H^k(X;\R)$ increases upto the middle degree and then decreases there after.} 
+
+Thus we havethe following \textsc{hodge diagram}.
+
+\[\begin{tikzcd}
+	&&& {h^{0,0}} \\
+	&& {h^{1,0}} && {h^{0,1}} \\
+	& {h^{2,0}} && {h^{1,1}} && {h^{0,2}} \\
+	{h^{n,0}} &&&&&& {h^{0,n}} \\
+	\\
+	\\
+	&&& {h^{n,n}}
+	\arrow[dashed, no head, from=3-2, to=4-1]
+	\arrow[dashed, no head, from=3-6, to=4-7]
+	\arrow[dashed, no head, from=4-1, to=7-4]
+	\arrow[dashed, no head, from=4-7, to=7-4]
+\end{tikzcd}\]
+
+\noindent In the above diagram $i$-th row sums up to give $i$-th Betti numbers of $X$. One more interesting result due to `Lefschetz' is `Hyperplane Theorem'.
+
+\begin{Thm}{}{}
+    If $\mathcal{H}$ is a generic Hyperplane in $\C P^N$ then the natural map $H^i(X;\C) \to H^i(X\cap \mathcal{H};\C)$ is isomorphism for $i<n$ and for $i=n$ it is injection. 
+\end{Thm}
+
+\section{All results stated above fails for Singular varieties}
+
 
 \end{document}

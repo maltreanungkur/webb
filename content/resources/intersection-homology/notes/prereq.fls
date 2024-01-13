@@ -1,6 +1,6 @@
-PWD c:\Users\trish\Downloads\Intersection-homology notes
+PWD c:\Users\trish\trishan8.github.io\content\resources\intersection-homology\notes
 INPUT C:\Users\trish\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\trish\Downloads\Intersection-homology notes\prereq.tex
+INPUT c:\Users\trish\trishan8.github.io\content\resources\intersection-homology\notes\prereq.tex
 OUTPUT prereq.log
 INPUT C:\Users\trish\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\trish\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
@@ -98,6 +98,8 @@ INPUT C:\Users\trish\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsgen.sty
 INPUT C:\Users\trish\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsbsy.sty
 INPUT C:\Users\trish\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsbsy.sty
 INPUT C:\Users\trish\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsopn.sty
+INPUT C:\Users\trish\AppData\Local\Programs\MiKTeX\tex\latex\bbold\bbold.sty
+INPUT C:\Users\trish\AppData\Local\Programs\MiKTeX\tex\latex\bbold\bbold.sty
 INPUT C:\Users\trish\AppData\Local\Programs\MiKTeX\tex\latex\tcolorbox\tcolorbox.sty
 INPUT C:\Users\trish\AppData\Local\Programs\MiKTeX\tex\latex\tcolorbox\tcolorbox.sty
 INPUT C:\Users\trish\AppData\Local\Programs\MiKTeX\tex\latex\pgf\basiclayer\pgf.sty
@@ -430,8 +432,15 @@ INPUT C:\Users\trish\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmex10.tf
 INPUT C:\Users\trish\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
 INPUT C:\Users\trish\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\trish\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs10.tfm
+INPUT C:\Users\trish\AppData\Local\Programs\MiKTeX\tex\latex\bbold\ubbold.fd
+INPUT C:\Users\trish\AppData\Local\Programs\MiKTeX\tex\latex\bbold\ubbold.fd
+INPUT C:\Users\trish\AppData\Local\Programs\MiKTeX\tex\latex\bbold\ubbold.fd
+INPUT C:\Users\trish\AppData\Local\MiKTeX\fonts\tfm\public\bbold\bbold10.tfm
+INPUT C:\Users\trish\AppData\Local\MiKTeX\fonts\tfm\public\bbold\bbold8.tfm
+INPUT C:\Users\trish\AppData\Local\MiKTeX\fonts\tfm\public\bbold\bbold6.tfm
 INPUT C:\Users\trish\AppData\Local\Programs\MiKTeX\fonts\tfm\public\tex-gyre\rm-qplb.tfm
 INPUT C:\Users\trish\AppData\Local\Programs\MiKTeX\fonts\tfm\public\tex-gyre\rm-qplb.tfm
+INPUT C:\Users\trish\AppData\Local\MiKTeX\fonts\tfm\public\bbold\bbold12.tfm
 INPUT C:\Users\trish\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx10.tfm
 INPUT C:\Users\trish\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx8.tfm
 INPUT C:\Users\trish\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx6.tfm
@@ -449,6 +458,8 @@ INPUT .\prereq.out
 INPUT .\prereq.out
 INPUT prereq.run.xml
 OUTPUT prereq.run.xml
+INPUT C:\Users\trish\AppData\Local\MiKTeX\fonts\pk\ljfour\public\bbold\dpi657\bbold10.pk
+INPUT C:\Users\trish\AppData\Local\MiKTeX\fonts\pk\ljfour\public\bbold\dpi657\bbold10.pk
 INPUT C:\Users\trish\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx10.pfb
 INPUT C:\Users\trish\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx10.pfb
 INPUT C:\Users\trish\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx8.pfb
@@ -471,8 +482,6 @@ INPUT C:\Users\trish\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\c
 INPUT C:\Users\trish\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Users\trish\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
 INPUT C:\Users\trish\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
-INPUT C:\Users\trish\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\symbols\msbm10.pfb
-INPUT C:\Users\trish\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\symbols\msbm10.pfb
 INPUT C:\Users\trish\AppData\Local\Programs\MiKTeX\fonts\type1\public\tex-gyre\qplb.pfb
 INPUT C:\Users\trish\AppData\Local\Programs\MiKTeX\fonts\type1\public\tex-gyre\qplb.pfb
 INPUT C:\Users\trish\AppData\Local\Programs\MiKTeX\fonts\type1\public\tex-gyre\qplr.pfb
