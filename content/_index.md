@@ -5,10 +5,10 @@ description: "Welcome to my website"
 
 {{< katex >}}
 
-<img src="featured.jpeg" width="310" height="250" alt="*picture*" align=right>
+<img src="featured.jpg" width="310" height="250" alt="*picture*" align=right>
 
 <span style="color: #d2d5d8; font-family: 'Garamond'; font-size: 1em;">Student @ Theoretical Statistics and Mathematics depertment <br>
-Indian Statistiacal Institute, Bangalore <br>
+Indian Statistical Institute, Bangalore <br>
 Email : trishanmondal004[at]gmail[dot]com <br>
 </span>
 <span style="color: #364150; font-family: 'Georgia'; font-size: 1em;">Student email: bmat2144[at]isibang[dot]ac[dot]in</span>

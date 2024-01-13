@@ -59,9 +59,18 @@ showPagination: false
 
 {{< timeline >}}
 
-{{< timelineItem icon="blank" header="Lecture 1" badge="12/1" subheader="Overview talk by Prof. Suresh Nayak" >}}
-    
+{{< timelineItem icon="" header="Lecture 1" badge="12/1" subheader="Overview talk by Prof. Suresh Nayak" >}}
+     Notes taken by me (Latexed) - <a href="./notes/overview.pdf"> Overview Talk </a>.
 {{< /timelineItem >}}
 
+{{< timelineItem icon="blank" header="Lecture 2" badge="19/1" subheader="Prognadipto Majumdar and Eeshan Pandey" >}}
+     Notes by me (Latexed)- <a href="./notes/prereq.pdf">Prerequisites</a>.<br>
+
+     In this lecture we will cover some prerequisite needed for this seminar like, review of singular, simplicial, Borel-Moore (co)homology etc and then Sheaf theory, sheaf cohomology (both from resolution and Derived functor point of view), cech cohomology, their relations (in some case). <br>
+{{< /timelineItem >}}
+
+{{< timelineItem icon="blank" header="Lecture 3" badge="26/1" subheader="Me and Soumya Dasgupta" >}}
+     Introduction to `Intersection Homology'.
+{{< /timelineItem >}}
 
 {{< /timeline >}}

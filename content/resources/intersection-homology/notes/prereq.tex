@@ -1,0 +1,97 @@
+\documentclass[11pt]{article}
+\usepackage{trishnote}
+\usepackage{tgpagella}  % for sample text
+
+\titles{Pre-Requisites}
+\author{\textsc{Trishan Mondal} \\[0.15cm]
+  \href{https://www.isibang.ac.in}{Indian Statistical Institute, Bangalore}}
+\date{}
+
+
+\begin{document}
+    \maketitle
+    \section{Basics of Homology and Cohomology}
+        Here we need to know about Simplicial and singular Homology as well as cohomology. We will assume these are known to readers. Rather we will start with ``Homology with closed support'' which is known as `Borel-Moore' Homology (as it might not be part of normal Algebraic Topology texts). Recall, in the singular/simplicial homology(cohomology) theory we defined the chains as \textit{finite} linear sum of simplices. It is also possible to work with infinite linear combinations. (Here we will only talk about triangulable spaces). 
+
+        \vspace*{0.2cm}
+
+       \noindent Let, $\mathcal{T}$ be a triangulation of the space $X$. With respect to this triangulation, $C^{BM}_n(\mathcal{T};\F)$ be the space of all formal linear combinations, $\Psi = \sum \Psi_{\sigma}\sigma$ where the sum runs over the set of all $n$-simplices of $\abs{\mathcal{T}}$. This sum need not to be finite. Here, the coefficients are from the field $\F$. Let's define `Borel-Moore complex' of $X$ as, $$C^{BM}_n(X;\F) :=\, \operatorname{colim} C^{BM}_n(\mathcal{T};\F)$$
+       the colimit is taken with respect to the refinement of triangulation $\mathcal{T}$. We can define the boundary map $\p$ for $C^{BM}_n(\mathcal{T};\F) \to C^{BM}_{n-1}(\mathcal{T};\F)$. This can be extended to $C^{BM}_n(X;\F) \to C^{BM}_{n-1}(X;\F)$ in a natural way. The homology groups corresponding to this chain complex is known as `Borel-Moore' homology theory. 
+
+       \vspace*{0.2cm}
+
+      \noindent \textcolor{red}{\textbf{Remark :}} If $X$ is a compact space then the formal sum of $n$-simplices can have finite sum only. In that case simplicial/singular homology are equivalent to the Borel-Moore homology. 
+
+    \section{Sheaf Cohomology, Cech Cohomology}
+
+    \subsection{Category of Sheaves as Abelian Category}
+
+    The Sheaves on a topological space $X$ forms a Category $\sh$ where the objects are the `sheaves' and maps are the `sheaf morphisms' (remember we are talking about the sheaf $\fcr$ which we can treat as a functor $\fcr: \operatorname{Open}(X)\to \operatorname{Vec}_{k}$). Note that: 
+    \begin{itemize}
+      \item[1.] The maps $\hm_{\sh}(\fcr,\gcr)$ form an Abelian group under the operation $$(\psi + \phi)(U)(s)= \psi(U)(s)+ \phi(U)(s)$$  and the composition of such morphisms are biadditive.
+      \item[2.] There is a zero-sheaf. 
+      \item[3.] We can form the direct sum of sheaves just by defining, $$(\fcr \oplus \gcr)(U) = \fcr(U) \oplus \gcr(U)$$   
+      \item[4.] By restricting on the stalks we can see kernal of the morphisms $\phi : \fcr \to \gcr$ satisfy the universal properties represented by certain diagrams. 
+      \item[5.] The morphism $\phi : \fcr \to \gcr$ gives us two short exact sequence containing, $\ker \phi$, $\im \phi$ and $\coke \phi$.
+    \end{itemize}
+
+    \noindent Thus $\sh$ is an Abelian Category. We can talk about left exact and right exact functors. If we are given a topological space $X,Y$ with a continuous map $f : X\to Y$. It will induce a covariant (contravariant) functor $f_{\ast}: \sh \to \shy$($f^{\ast} : \shy \to \sh$ as well).
+
+    \begin{Def}{(Pushforward/ Pullback of sheaf)}{}
+           Let $f: X \to Y$ be a continuous map. If $\fcr \in \sh$, the \textbf{push-forward} of $\fcr$ under $f$ is the sheaf on $Y$ given by the section $$\Gamma(U,f_{\ast}\fcr)= \Gamma(f^{-1}(U),\fcr)$$
+           Similarly, \textbf{pullback} of a sheaf $\gcr \in \shy$ associated to the sheaf with the section, $$\Gamma(U,f^{\ast}\gcr)= \,\underset{f(U)\subset V}{\colim} \, \Gamma(V,\gcr)$$
+    \end{Def}
+
+   \noindent Now we will look at some properties of `push-forward'. If $s \in \Gamma(\fcr,U)$ then the \textbf{support}($\abs{s}$) of this $s$ is defined to be the clousre of $\qty{x \in U : s_x \neq 0}$. We can also define push-forward with \textit{proper support} as a sheaf given by the functor, $$\Gamma(f_{!}\fcr,U)= \qty{s \in \Gamma(\fcr, f^{-1}(U))| f : \abs{s} \to Y \text{ is a proper map}}$$ 
+
+   \vspace*{0.2cm}
+
+   \noindent \textcolor{link}{\textbf{Prop 1:}} It's not hard to see the stalk $\qty(f^{\ast}\gcr)_{x} \cong \gcr_{f(x)}$. Using this we can say, pullback $f^{\ast}$ is a exact functor.
+  
+   \vspace*{0.2cm}
+
+   \noindent \prop{2} The push-forward functor (or `push-forward functor with prope support') is left-exact but not exact. 
+   \noindent \textit{Proof}. If we have an exact sequence of sheaves, $0 \to \fcr \to \gcr \to \hcr \to 0$. We know the section functor $\Gamma(U,-)$ is left exact. Thus we have the following exact sequence, 
+   \[ 0 \to \Gamma(U,\fcr)\to \Gamma(U,\gcr) \to \Gamma(U,\hcr)\] 
+   Thus for $V$ a open set in $Y$ we can say the following is exact (By putting $U = f^{-1}U$), 
+   \[ 0 \to \Gamma(U,f_{\ast}\fcr)\to \Gamma(U,f_{\ast}\gcr) \to \Gamma(U,f_{\ast}\hcr)\] 
+  
+  \begin{Thm}{}{}
+     \hspace*{0.1cm} The push-forward $f_{\ast}$ and pullback $f^{\ast}$ is adjoint functor. In other words there is an isomorphism, $$\hm_{\sh}(f^{\ast}\gcr,\fcr) \cong \hm_{\shy}(\gcr,f_{\ast}\fcr)$$
+  \end{Thm}
+  
+
+ \subsection{Injective Resolution and Sheaf Cohomology}
+
+ Let, $\fcr$ be a sheaf on the topological space $X$. We will construct a sheaf $\I^0(\fcr)$ such that $\fcr \to \I^0(\fcr)$ is injective. Recall the construction of Etale space $\pi:E_{\fcr} \to X$ corresponding the sheaf ${\fcr}$. For every open set $U \subset X$, $\Gamma(U,\fcr)$ is given by the set of continuous section of the map $\pi$ restricted on the set $U$. If we define the sheaf $\I^{0}(\fcr)$ with the sections,  $$\Gamma(U,\I^{0}(\fcr)) = \qty{\text{sections (continuous or discontinuous) of }\pi|_{U}}=\prod_{x \in U} \fcr_x$$
+It's not hard to see that, $\I^{0}\fcr$ is a sheaf and there is a natural injective map $\fcr \to \I^0(\fcr)$. This will give rise to an exact sequence of sheaves, $$0 \to \fcr \to \I^{0}\fcr \to \mathcal{Q}^{0} \to 0$$ Here, $\mathcal{Q}$ is the quotient sheaf, with sections, $\Gamma(U,\mathcal{Q}^0)= \Gamma\qty(U,\frac{\Gamma(U,\fcr)}{\Gamma(U,\I^0\fcr)})$. We can apply the same construction on $\Q$ to get the SES, $$0 \to \mathcal{Q}^0 \to \I^{0}(\mathcal{Q}^0) \to \mathcal{Q}^{1} \to 0$$ Just for notational purpose write $\I^0(\mathcal{Q}^0) = \I^1\fcr$. We can carry out the same construction to get banch of SES, which combining will give us a long exact sequence as follows: $$0 \to \fcr \to \I^{0}\fcr \to \I^{1}\fcr \to \cdots $$
+Let's apply the left-exact functor $\Gamma(X,-)$ to the above LES to get the following complex, $$0 \to \Gamma(X,\fcr) \to \Gamma(X,\I^{0}\fcr) \to \Gamma(X,\I^{1}\fcr) \to \cdots$$
+We can define the sheaf cohomology of $X$ as, $$H^i(X;\fcr) := \frac{\ker\qty(\Gamma(X,\I^{i}\fcr) \to \Gamma(X,\I^{i+1}\fcr))}{\im \qty(\Gamma(X,\I^{i-1}\fcr) \to \Gamma(X,\I^{i}\fcr))}$$
+The above construction of injective resolution for a sheaf $\fcr$ is called \textbf{Godement resolution}. Now note that, $H^0(X,\fcr)$ is $\ker \qty( \Gamma(X, \I^0\fcr) \to \Gamma(U,\I^1\fcr))$ by definition. This map is given by the composition $\I^{0}\fcr \to \mathcal{Q}^0 \hookrightarrow \I^1\fcr$, applying global section functor we get, $\Gamma(X,\mathcal{Q}^0) \to \Gamma(X,\I^1\fcr)$ is injective and hence:
+
+\begin{align*}
+  \ker \qty( \Gamma(X, \I^0\fcr) \to \Gamma(X,\I^1\fcr)) &= \ker \qty(\Gamma(X, \I^0\fcr) \to \Gamma(X,\mathcal{Q}^0)) \\
+  &= \im \qty(\Gamma(X,\fcr) \to \Gamma(X,\I^0\fcr)) \\
+  & \cong \Gamma(X,\fcr)
+\end{align*}
+Thus the $0$-th sheaf cohomology is ismorphic to the global section of the sheaf $\fcr$. 
+
+\begin{Def}{(Flasque Sheaf) }{}
+   A sheaf $\fcr$ is a Flasque sheaf if for every open set $U \subset X$ the natural map $\Gamma(X,\fcr) \to \Gamma(U,\fcr)$ is surjective.  
+\end{Def}
+
+\noindent In the above Godement resolution $\I^0 \fcr$ is a flasque sheaf (clear from the definition). By induction we can say, $I^k \fcr$ is flasque. 
+
+\vspace*{0.2cm}
+
+\noindent \textcolor{link}{Some properties of flasque sheaf}:
+\begin{itemize}
+  \item[1.] If $0 \to \fcr \to \gcr \to \hcr \to 0$ is a exact sequence of shevaes with $\fcr$ being flasque, we can say the following is an exact sequence, $$0 \to \Gamma(U,\fcr) \to \Gamma(U,\gcr) \to \Gamma(U,\hcr) \to 0$$
+  \item[2.] $\I^k(-)$ is an exact functor. 
+  \item[3.] $\Gamma(X,\I^k(-))$ is an exact functor. 
+  \item[4]$^{\textcolor{red}{*}}$. If $\fcr$ is a flasque sheaf, the sheaf cohomology $H^i(X,\fcr)$ is trivial for $i > 0$.     
+\end{itemize}
+
+\subsection{\v{C}ech Cohomology}
+
+\end{document}

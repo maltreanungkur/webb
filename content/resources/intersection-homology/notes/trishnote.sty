@@ -1,0 +1,178 @@
+% This is for reportes/notes do
+% document class article is preferred
+
+\ProvidesPackage{trishnote}
+% Usepackages
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1.5cm,top=1.5cm,headheight=16pt,headsep=0.1in,heightrounded]{geometry}
+\usepackage{hyperref}
+\usepackage{physics}
+\usepackage[most]{tcolorbox}
+\usepackage{xparse}
+\usepackage{accents}
+\usepackage{pdfpages}
+\usepackage{wrapfig}
+\usepackage{changepage}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{bbm}
+\usepackage{tikz-cd}
+\usepackage{tikz}
+\usepackage{mathtools}
+\usepackage{titlesec}
+\usepackage{mathrsfs}
+\usepackage{stackengine}
+\usepackage{scalerel}
+\usepackage[backend=biber, style=alphabetic, sorting=ynt]{biblatex}
+%page style 
+
+\usepackage{fancyhdr}
+    \pagestyle{fancy}
+    \fancyhf{}
+      \fancyhead[L]{\author}
+      \fancyhead[RO]{\nouppercase{\rightmark \hfill  \textsc{Trishan Mondal}}}
+    % \lhead{\nouppercase{\textsc{Trishan Mondal}}}      % Set chapter in left header.
+    % \rhead{\nouppercase{\thesection}}
+
+
+% references, link colour, section subsections
+\definecolor{link}{HTML}{912791}
+
+\addbibresource{ref.bib} %bib \ ref
+\hypersetup{colorlinks = true, linkcolor = blue, urlcolor = link} %link colours
+
+\titleformat{\section}[hang]{\fontsize{13}{14}\scshape\centering}{\thesection .}{0.21em}{} %section style
+\titleformat{\subsection}[hang]{\fontsize{12}{13}\bfseries}{$\S\,$\textcolor{purple}\thesubsection}{0.21em}{}
+
+% short commands
+    \newcommand{\titles}[1]{\title{\textbf{#1}}}
+ % General math commands
+     \newcommand{\bb}[1]{\mathbb{#1}}
+     \newcommand{\N}{\bb{N}}
+     \newcommand{\Z}{\bb{Z}}
+     \newcommand{\Q}{\bb{Q}}
+     \newcommand{\R}{\mathbb{R}}
+     \newcommand{\C}{\bb{C}}
+     \newcommand{\msk}{\medskip}
+     \newcommand{\ssk}{\smallskip}
+     \newcommand{\bsk}{\bigskip}
+     \newcommand{\Qed}{$\hfill \blacksquare$}
+     \newcommand{\contra}{\rightarrow \leftarrow}
+     \newcommand{\floor}[1]{\lfloor {#1} \rfloor}
+     \newcommand{\inp}[2]{\left\langle {#1}, {#2} \right\rangle}
+     \newcommand{\vphi}{\varphi}
+     \newcommand{\veps}{\varepsilon}
+     \newcommand{\ltag}[2]{\label{#1} \tag{#2}}
+     \newcommand{\pdot}[2]{{#1} \cdot {#2}}
+     \newcommand{\fb}[1]{\mathbf{#1}}
+     \newcommand{\D}{\Delta}
+     \newcommand{\ep}{\varepsilon}
+     \newcommand{\ts}[1]{\textbf{\textsf{#1}}}
+     \newcommand{\prf}{\textbf{\textit{Proof.}}}
+ % some symbols
+     \newcommand{\heart}{\ensuremath\heartsuit} % heart symbol
+     \newcommand{\butt}{\rotatebox[origin=c]{180}{\heart}} % spade symbol
+     \newcommand\dangersignb[1][2ex]{% black warnning symbol
+     \scaleto{\stackengine{0.3pt}{\scalebox{1.1}[.9]{%
+     \color{red}$\blacktriangle$}}{\tiny\bfseries !}{O}{c}{F}{F}{L}}{#1}%
+      }
+      \newcommand\dangersignw[1][2ex]{% white warning symbol
+      \scaleto{\stackengine{0.3pt}{\scalebox{1.1}[.9]{%
+      \color{red}$\blacktriangle$}}{\color{white}\tiny\bfseries !}{O}{c}{F}{F}{L}}{#1}%
+      }
+ % Mainly for analysis
+     \newcommand{\Area}{\operatorname{Area}}
+     \newcommand{\ran}{\operatorname{ran}}
+     \newcommand{\Vol}{\operatorname{Vol}} 
+ % Mainly topology and algebra
+     \newcommand{\s}{\bb{S}}
+     \newcommand{\T}{\mathbf{Top}}
+     \newcommand{\p}{\partial}
+     \newcommand{\ch}{\mathbf{Chain}^*}
+     \newcommand{\cha}{\mathbf{Chain}^\text{ag}}
+     \newcommand{\gr}{\mathbf{Graded groups}}
+     \newcommand{\kc}{\mathcal{K}}
+     \newcommand{\tor}{\operatorname{Tor}^1_1}
+     \newcommand{\coker}{\operatorname{coker}}
+     \newcommand{\de}{\delta}
+     \newcommand{\hm}{\operatorname{Hom}}
+     \newcommand{\ext}{\operatorname{Ext}}
+     \newcommand{\extt}{\operatorname{Ext}^{\Z}_1}
+     \newcommand{\hmm}[1]{\hm({#1},\Z)}
+     \newcommand{\tens}[2]{{#1}\otimes {#2}}
+     \newcommand{\les}{ Long exact sequence}
+     \newcommand{\es}{ exact sequence}
+     \newcommand{\ess}{ short exact sequence}
+     \newcommand{\F}{\mathbb{F}}
+     \newcommand{\im}{\operatorname{Im}}
+     \newcommand{\coke}{\operatorname{coker}}
+     \newcommand{\gcr}{\mathscr{G}} 
+     \newcommand{\hcr}{\mathscr{H}}
+     \newcommand{\fcr}{\mathscr{F}}
+     \newcommand{\sh}{\mathbf{Sh}(X)}
+     \newcommand{\shy}{\mathbf{Sh}(Y)}
+     \newcommand{\colim}{\operatorname{colim}}
+     \newcommand{\prop}[1]{\textcolor{link}{\textbf{Prop {#1}:}}}
+     \newcommand{\I}{\mathcal{I}}
+ % New colour defining 
+     \definecolor{electricviolet}{rgb}{0.56, 0.0, 1.0} %
+     \definecolor{electricviolet}{rgb}{0.56, 0.0, 1.0} %
+     \definecolor{darkcyan}{rgb}{0.0, 0.55, 0.55}      %   
+     \definecolor{darkcerulean}{rgb}{0.03, 0.27, 0.49}     %
+     \definecolor{grrr}{HTML}{fcfcfa}
+% Theorem Boxs i.e theorem, claim, lemma, corrolary 
+
+   % Theorem box
+      \newtcbtheorem[number within=section]{Thm}{\textcolor{darkcerulean}{\textbf{Theorem}}}{
+      detach title,
+      fonttitle=\bfseries,
+      coltitle=black,
+      colbacktitle=white,
+      colback=grrr,
+      colframe=black,
+      sharp corners,
+      bottomrule= -0.1cm,
+      rightrule=-0.1cm,
+      toprule=-0.1cm,
+      leftrule=0.065cm,
+      separator sign none,description delimiters parenthesis,
+      description font=\scshape,
+      before upper={\tcbtitle}}{th}
+   
+    % corrolary 
+    \newcommand{\coro}[1]{{
+        
+    \vspace*{0.2cm}
+
+    \hspace*{0.6cm} \textcolor{purple}{\textsc{Corollary. }}}\textit{#1} 
+    
+    \vspace*{0.2cm} \noindent}
+ 
+    % Lemma
+    
+    \newcommand{\Lem}[1]{
+
+      \vspace*{0.2cm}
+
+      \noindent \hspace*{0.2cm} {${\S}$} \ts{Lemma --} \textit{#1}
+
+      \vspace*{0.2cm}
+    }
+
+  \newtcbtheorem[number within=section]{Def}{\textsc{Definition.}}{
+    breakable,enhanced,
+    detach title,
+    fonttitle=\bfseries,
+    coltitle=black,
+    colbacktitle=white,
+    colback=white,
+    colframe=white,
+    description font=\sffamily,
+    before upper={\tcbtitle},
+    separator sign none,
+    description delimiters none}{df}
