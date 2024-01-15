@@ -32,7 +32,7 @@
 
 \noindent Since $X$ is a smooth manifold we can talk about de-Rahm cohomology. In a sophisticated language `de-Rahm cohomology is a cohomology of soft-resolution of constant sheaf'. In this case also we have the following as non-degenerate, 
 \[H^{i}_{DR}(X;\R) \times H^{2n-i}_{DR}(X;\R) \xrightarrow{\wedge} H^{2n}_{DR}(X;\R) \xrightarrow[\int - \operatorname{vol-form}]{\sim} \R\]
-Thus again we have the dualiy, $H^{2n-i}_{DR}(X;\R) \cong H^{i}_{DR}(X;\R)^*$. Connecting de-Rahm cohomology and singular(simplicial) cohomology with coefficients in $\R$, there is a beautiful theorem by de-Rahm stated as follows, 
+Thus again we have the duality, $H^{2n-i}_{DR}(X;\R) \cong H^{i}_{DR}(X;\R)^*$. Connecting de-Rahm cohomology and singular(simplicial) cohomology with coefficients in $\R$, there is a beautiful theorem by de-Rahm stated as follows, 
 
 \begin{Thm}{De-Rahm's Theorem}{}
      There is an isomorphism between the singular(simplicial) cohomology with coefficients in $\R$ and de-Rahm cohomology which is compatible with the product structure on both the V.S. 
@@ -99,5 +99,43 @@ Thus we havethe following \textsc{hodge diagram}.
 
 \section{All results stated above fails for Singular varieties}
 
+\textbf{Example 1:} For, $X = v(yz)$ the `Poincare duality' fails.
+\begin{itemize}
+    \item[] We can write $X= V(y)\cap V(z)$ and $P =[1,0,0]$ is the point of intersection of $V(y)$ and $V(z)$. It's not hard to see $V(y)$ and $V(z)$ are $\C P^1$ thus the space $X$ is wedge of two $\C P^1$ in other words it's homeomorphic to $\s^2 \vee \s^2$. We can note that,\[H_i(X;\C)=\begin{cases}
+        \C & i=0\\
+        0 & i=1 \\
+        \C \oplus \C & i=2 
+        \end{cases}\]
+    clearly, the `Poincare duality' fails in this case. But if we normalize the space $X$ to get two disjoint union of $\s^2$ in this case the duality will hold. (We will see this normalizaion helps in more general case when we will deal with intersection homology).    
+\end{itemize}
+\textbf{Example 2:} For $X = V(x^3+y^3-xyz)$. it doesn't admit the `Hodge decomposition'.
+\begin{itemize}
+    \item[] By change of variable (kind of Grobner basis) we can see $X= V(y^2z-x^2(x+z))$. It can be shown there is a blow-up map $\pi :\C P^1\to X$ serves as a `quotient map' with $\pi^{-1}{[0:0:1]}$ is two point. So, $X$ is a $\s^2$ with two points being pinched. Thus, \[H_i(X;\C)=\begin{cases}
+        \C & i=0\\
+        0 & i=1, i>2 \\
+        \C  & i=2 
+        \end{cases}\]
+    In this case, there is no `Hodge decomposition' of $X$. As dimension of $H^1$ is $1$(odd).
+\end{itemize}
+
+\pagebreak
+
+\textbf{Example 3:} For $X = V(x_ix_j : i \in \qty{0,1}, j \in \qty{3,4})$, `Lefschetz intersection' theorem do not hold. 
+\begin{itemize}
+    \item[] $X$ is unioun of two copies of $\C P^2$. $X = \qty{x_0=x_1=0} \cup \qty{x_3=x_4=0}$, meets in single point $[0:0:1:0:0]$. Thus, \[
+        H_i(X;\C)=\begin{cases}
+            \C & i=0\\
+            \C \oplus \C & i=2,4 \\
+            0  & \text{otherwise}
+        \end{cases}
+    \] 
+    Take a generic hyperplane $\mathcal{H}$ in $\C P^4$. Then $X \cap \mathcal{H}$ is disjoint union of two  $\C P^1$. The cohomology of $X \cap \mathcal{H}$ is $\C \oplus \C$ for $i=0,2$ and trivial for other indices. Thus `Lefschetz intersection theorem' fails here.
+\end{itemize}
+
+\noindent \textcolor{darkcerulean}{Through-out this redaing seminar we will try to develop the notion of Intersection homology, $IH_{\ast}(X)$ so that the properties (mentioned above) can be generalized for `singular projective varieties' with this homology theory.}
+
+\begin{center}
+     ------------------------- 
+\end{center}
 
 \end{document}
