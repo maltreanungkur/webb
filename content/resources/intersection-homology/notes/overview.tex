@@ -75,7 +75,9 @@ The hermitian metric $\mathfrak{h}$ on $TX$ via its decomposition gives rise to 
 
 \coro{$L$ is injctive for $k<n$. Thus the odd degree Betti number $h^i:= \dim_{\R}H^k(X;\R)$ increases upto the middle degree and then decreases there after.} 
 
-Thus we havethe following \textsc{hodge diagram}.
+\pagebreak
+
+Thus we have the following \textsc{hodge diagram}.
 
 \[\begin{tikzcd}
 	&&& {h^{0,0}} \\
@@ -101,7 +103,7 @@ Thus we havethe following \textsc{hodge diagram}.
 
 \textbf{Example 1:} For, $X = v(yz)$ the `Poincare duality' fails.
 \begin{itemize}
-    \item[] We can write $X= V(y)\cap V(z)$ and $P =[1,0,0]$ is the point of intersection of $V(y)$ and $V(z)$. It's not hard to see $V(y)$ and $V(z)$ are $\C P^1$ thus the space $X$ is wedge of two $\C P^1$ in other words it's homeomorphic to $\s^2 \vee \s^2$. We can note that,\[H_i(X;\C)=\begin{cases}
+    \item[] We can write $X= V(y)\cap V(z)$ and $P =[1,0,0]$ is the point of intersection of $V(y)$ and $V(z)$. It's not hard to see $V(y)$ and $V(z)$ are $\C P^1$ thus the space $X$ is wedge of two $\C P^1$ in other words it's homeomorphic to $\s^2 \vee \s^2$. We can note that,\[H^i(X;\C)=\begin{cases}
         \C & i=0\\
         0 & i=1 \\
         \C \oplus \C & i=2 
@@ -110,7 +112,7 @@ Thus we havethe following \textsc{hodge diagram}.
 \end{itemize}
 \textbf{Example 2:} For $X = V(x^3+y^3-xyz)$. it doesn't admit the `Hodge decomposition'.
 \begin{itemize}
-    \item[] By change of variable (kind of Grobner basis) we can see $X= V(y^2z-x^2(x+z))$. It can be shown there is a blow-up map $\pi :\C P^1\to X$ serves as a `quotient map' with $\pi^{-1}{[0:0:1]}$ is two point. So, $X$ is a $\s^2$ with two points being pinched. Thus, \[H_i(X;\C)=\begin{cases}
+    \item[] By change of variable (kind of Grobner basis) we can see $X= V(y^2z-x^2(x+z))$. It can be shown there is a blow-up map $\pi :\C P^1\to X$ serves as a `quotient map' with $\pi^{-1}{[0:0:1]}$ is two point. So, $X$ is a $\s^2$ with two points being pinched. Thus, \[H^i(X;\C)=\begin{cases}
         \C & i=0\\
         0 & i=1, i>2 \\
         \C  & i=2 
@@ -120,10 +122,10 @@ Thus we havethe following \textsc{hodge diagram}.
 
 \pagebreak
 
-\textbf{Example 3:} For $X = V(x_ix_j : i \in \qty{0,1}, j \in \qty{3,4})$, `Lefschetz intersection' theorem do not hold. 
+\noindent \textbf{Example 3:} For $X = V(x_ix_j : i \in \qty{0,1}, j \in \qty{3,4})$, `Lefschetz intersection' theorem do not hold. 
 \begin{itemize}
     \item[] $X$ is unioun of two copies of $\C P^2$. $X = \qty{x_0=x_1=0} \cup \qty{x_3=x_4=0}$, meets in single point $[0:0:1:0:0]$. Thus, \[
-        H_i(X;\C)=\begin{cases}
+        H^i(X;\C)=\begin{cases}
             \C & i=0\\
             \C \oplus \C & i=2,4 \\
             0  & \text{otherwise}
