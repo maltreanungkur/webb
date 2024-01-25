@@ -12,18 +12,30 @@ B.Math
   In this semester I have taken 5 courses(which is compulsory) and a Reading Seminar. Probable courses are as follows
 
   ### Algebraic Geometry 1
+  > This course is taken by Prof. *Ramesh Shrikantan*. 
+   - (Text 1) Miles Ried.
+   - (Text 2) Fulton 
+   - (Text 3) Harris
 
+   **Homeworks**
+   - Assignment-1 [Problems and Solutions](AGHW1.pdf)
   ### Complex Analysis
+ > This course in taken by prof. *Jaydeb Sarker*. 
 
+  - The Notes of this course can be found [here](https://awnathan1893.github.io/ComplexAnalysis_Notes/). These notes are latexed by a group of people including me.
+
+  **Homeworks**
+   - Assignment-1 [Problems and Solutions](CAHW1.pdf)
   ### Optimization 
 
   ### Geometry 
 
-  ### Differential topology/ Harmonic Analysis (Not sure which one)
-
+  ### Differential topology
+  > This course is taken br prof. *Suresh Nayak*.
+  - Mainly we will follow the book of `Guillemin and Pollack`.
   ### Reading Seminar 
 
- This [link]() will redirect to a page, where every detail regarding this seminar can be found.
+  > This [link](https://trishan8.github.io/resources/intersection-homology/) will redirect to a page, where every detail regarding this seminar can be found.
 
 ## Semester 5 (B.Math)
 

@@ -74,7 +74,7 @@ showPagination: false
 {{< /timelineItem >}}
 
 {{< timelineItem icon="blank" header="Lecture 4" badge="02/02" subheader="Trishan Mondal" >}}
-     Contd..
+     Contd. .
 {{< /timelineItem >}}
 
 {{< /timeline >}}
