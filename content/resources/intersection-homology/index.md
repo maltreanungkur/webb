@@ -69,12 +69,13 @@ showPagination: false
      In this lecture we will cover some prerequisite needed for this seminar like, review of singular, simplicial, Borel-Moore (co)homology etc and then Sheaf theory, sheaf cohomology (both from resolution and Derived functor point of view), cech cohomology, their relations (in some case). <br>
 {{< /timelineItem >}}
 
-{{< timelineItem icon="blank" header="Lecture 3" badge="02/02" subheader="Soumya Dasgupta" >}}
-     Introduction to `Intersection Homology'.
+{{< timelineItem icon="" header="Lecture 3" badge="02/02" subheader="Soumya Dasgupta" >}}
+    Notes by Soumya - <a href="./notes/IH_notes.pdf">Introduction</a>.<br>
+     Introduction to stratified spaces, Psudomanifold, Perversity and `Intersection Homology' with examples. Heading towards resolving Poincare duality - Normalization of topological spaces.
 {{< /timelineItem >}}
 
-{{< timelineItem icon="blank" header="Lecture 4" badge="02/02" subheader="Trishan Mondal" >}}
-     Contd. .
+{{< timelineItem icon="blank" header="Lecture 4" badge="09/02" subheader="Trishan Mondal" >}}
+      Functoriality, ...
 {{< /timelineItem >}}
 
 {{< /timeline >}}
