@@ -1,0 +1,47 @@
+\documentclass[11pt]{article}
+\usepackage{trishnote}
+\usepackage{tgpagella}  % for sample text
+
+\titles{First properties of intersection homology}
+\author{ \textsc{Trishan Mondal} \\[0.15cm]
+  \href{https://www.isibang.ac.in}{Indian Statistical Institute, Bangalore}}
+\date{}
+
+\begin{document}
+\maketitle 
+
+\begin{abstract}
+    \noindent In this talk, we will discuss the homological properties of intersection homology like pushforward maps, excision and Mayer-Vietoris. We will compute the intersection homology of cones. We then discuss Whitney stratifications for complex quasi-projective varieties and the associated pseudomanifold structure on their underlying topological space. We will conclude with a discussion of Poincaré duality, Lefschetz hyperplane and hard Lefschetz theorems in the context of intersection homology.
+\end{abstract}
+
+\section{Functoriality of Intersection Homology}
+
+\noindent In the last talk we have seen the definition of Intersection Homology, including some examples. Now we want to see how different Intersection homology theory is from ordinary homology theory. In order to see this we will begin with `functoriality'. Suppose we have a continuous map $f:X\to Y$. Does it naturlly induce a map $f_{\ast} : I^{p}S_{\ast}(X)\to I^{q}S_{\ast}(Y)$ in `intersection chain complexes'? where $p$ and $q$ are different perversity (GM) for the spaces $X$ and $Y$. For any $\sigma \in I^pS_{i}(X)$ we expect $f \circ \sigma \in I^qS_i(Y)$. We will see with an example, it is not the case. What can go wrong? 
+
+\begin{itemize}
+    \item[] Filtration of $X$ and $Y$ could be arbitraty and perversity depends on filtration, so does $\bar{p}$-allowable chains. For \textbf{example}, consider the space $X = \qty{\text{pt}}$ with natural stratification and $Y$ is a stratified space. $f:X \to Y$ be a continuous map. We have $IS_i(X)=S_i(X)$ and $f(\sigma)$ will be allowable with respect to $S$ if, $i \leq i -\codim (S) + \bar{q}(S)$. But for GM perversity it is not possible. 
+\end{itemize}
+
+\noindent There is one more proble. We know ordinary homology theory is homotopy invariant but Intersection Homology is not a homotopy invariant. We will shortly see a result regarding Intersection homology of open cone of compact manifold. We know open cone over any sapce is contractible  but the Intersection homology of open cone is not same as Intersection homology of point. One more constrcutive example. 
+
+\begin{itemize}
+    \item[] \textbf{Example -- } Let, $X = \s^4 \vee \s^4$ and $Y = \s^4 \cup_{\C P^1 } \C P^2$. Now if we look at the inclusion $\C P^1 \hookrightarrow \C P^2$, it is a cofibration. Thus if we contract $\C P^1$ in $Y$ we will get, $\s^4 \vee \s^4 = X$. So, $X$ and $Y$ is homotopy equaivalent. But from talk $3$ we know, \begin{align*}
+        I^{p}H_{k}(X) = \begin{cases}
+            \F \oplus \F  & \text{ for } k = 0,4 \\
+            0 & \text{otherwise}
+        \end{cases}
+    \end{align*}
+    Again normalizaion of the space $Y$ is $\s^4 \sqcup \C P^2$. Both $\s^4$ and $\C P^2$ are manifold, so $IH_{\ast}(Y) \cong H_{\ast}(Y)$. For index $2$ we will have the intersection homology group as $\F$, which doesn't match with intersection homology group of $X$.
+\end{itemize}
+
+\noindent To relove the issue we will define a special class of map between stratified space so that it will naturally induce map in intersection chain complexes. Thus we will come up with the following definitions. 
+
+\begin{Def}{(Stratum-Preserving map)}{}
+      $f : X \to Y$ is called startum preserving, if for each stratum $T$ of $Y$, the inverse image $f^{-1}(T)$ is union of strata of $X$. Equivalently image $f(S)$ is contained in a single starta of $Y$.
+\end{Def}
+
+\begin{Def}{($(\bar{p},\bar{q})$-stratified map)}{}
+    A stratum preserving map $f : X \to Y$ is said to be $(\bar{p},\bar{q})$-stratum preserving if for any stratum $S\subset X$ contained in startum $T \subset Y$ satisfying , $$\bar{p}(S)-\codim_X(S) \leq \bar{q}(T) - \codim_{Y}(T)$$
+\end{Def}
+
+\end{document} 

@@ -75,7 +75,8 @@ showPagination: false
 {{< /timelineItem >}}
 
 {{< timelineItem icon="blank" header="Lecture 4" badge="09/02" subheader="Trishan Mondal" >}}
-      Functoriality, ...
+    Notes by me - <a href="./notes/talk5.pdf">Introduction</a>.<br>
+      In this talk, we will discuss the homological properties of intersection homology like pushforward maps, excision and Mayer-Vietoris. We will compute the intersection homology of cones. We then discuss Whitney stratifications for complex quasi-projective varieties and the associated pseudomanifold structure on their underlying topological space. We will conclude with a discussion of Poincaré duality, Lefschetz hyperplane and hard Lefschetz theorems in the context of intersection homology.
 {{< /timelineItem >}}
 
 {{< /timeline >}}
