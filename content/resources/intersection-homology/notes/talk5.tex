@@ -22,7 +22,7 @@
     \item[] Filtration of $X$ and $Y$ could be arbitraty and perversity depends on filtration, so does $\bar{p}$-allowable chains. For \textbf{example}, consider the space $X = \qty{\text{pt}}$ with natural stratification and $Y$ is a stratified space. $f:X \to Y$ be a continuous map. We have $IS_i(X)=S_i(X)$ and $f(\sigma)$ will be allowable with respect to $S$ if, $i \leq i -\codim (S) + \bar{q}(S)$. But for GM perversity it is not possible. 
 \end{itemize}
 
-\noindent There is one more proble. We know ordinary homology theory is homotopy invariant but Intersection Homology is not a homotopy invariant. We will shortly see a result regarding Intersection homology of open cone of compact manifold. We know open cone over any sapce is contractible  but the Intersection homology of open cone is not same as Intersection homology of point. One more constrcutive example. 
+\noindent There is one more problem. We know ordinary homology theory is homotopy invariant but Intersection Homology is not a homotopy invariant. We will shortly see a result regarding Intersection homology of open cone of compact manifold. We know open cone over any sapce is contractible  but the Intersection homology of open cone is not same as Intersection homology of point. One more constrcutive example. 
 
 \begin{itemize}
     \item[] \textbf{Example -- } Let, $X = \s^4 \vee \s^4$ and $Y = \s^4 \cup_{\C P^1 } \C P^2$. Now if we look at the inclusion $\C P^1 \hookrightarrow \C P^2$, it is a cofibration. Thus if we contract $\C P^1$ in $Y$ we will get, $\s^4 \vee \s^4 = X$. So, $X$ and $Y$ is homotopy equaivalent. But from talk $3$ we know, \begin{align*}
@@ -37,11 +37,82 @@
 \noindent To relove the issue we will define a special class of map between stratified space so that it will naturally induce map in intersection chain complexes. Thus we will come up with the following definitions. 
 
 \begin{Def}{(Stratum-Preserving map)}{}
-      $f : X \to Y$ is called startum preserving, if for each stratum $T$ of $Y$, the inverse image $f^{-1}(T)$ is union of strata of $X$. Equivalently image $f(S)$ is contained in a single starta of $Y$.
+     A continuous map between startified spaces, $f : X \to Y$ is called startum preserving, if for each stratum $T$ of $Y$, the inverse image $f^{-1}(T)$ is union of strata of $X$. Equivalently image $f(S)$ is contained in a single starta of $Y$.
 \end{Def}
 
 \begin{Def}{($(\bar{p},\bar{q})$-stratified map)}{}
     A stratum preserving map $f : X \to Y$ is said to be $(\bar{p},\bar{q})$-stratum preserving if for any stratum $S\subset X$ contained in startum $T \subset Y$ satisfying , $$\bar{p}(S)-\codim_X(S) \leq \bar{q}(T) - \codim_{Y}(T)$$
 \end{Def}
+
+\noindent \textbf{Example \textcolor{darkcerulean}{1.1} -- } Let, $Y = X\times I$ be the space where $X$ comes with it's stratifications and $I$ is trivially filtered. The strata of $Y$ have form $S \times I$ where $S$ is a strata of $X$. The codimension of $S$ in $X$ is equal to codimension of $S \times I$ in $Y$. Let's take the perversity $q(S\times I) = p(S)$. Let, $f : X \to X \times I$ be the inclusion $x \mapsto (x,i_0)$. Then $f$ is $(p,q)$-stratified.
+
+\vspace*{0.2cm}
+
+\noindent \examp{1.2} (\textit{Placid Maps}) A stratified map $f : X \to Y$ is called placid if for ecah stratum $T\subset Y$ we have $\codim_Y(T) \leq\codim_X(f^{-1}(T))$. Now any placid map is a $(p,p)$-stratified map (using growth conditions of GM perversity).
+
+\vspace*{0.2cm}
+
+\prop{1.1} If $X$ and $Y$ are filtered space and $f : X \to Y$ is $(p,q)$-stratified then $f$ induces a map of intersection chain complexes (singular) $f_{\ast} : I^pS_{\ast}(X) \to I^qS_{\ast}(Y)$. 
+
+\vspace*{0.2cm}
+
+\noindent \textit{proof.} If $\sigma : \D^i \to X$ is a $p$-allowable simplex then for composition $f \circ \sigma$ we must consider $(f\sigma)^{-1}(T) = \sigma^{-1}f^{-1}(T)$ for singular strata of $Y$. Now, \[\sigma^{-1}f^{-1}(T) \subset \bigcup_{S : f(S)\subset T}\sigma^{-1}(S)\] For each such $S$ we have, \begin{align*}
+    \sigma^{-1}(S) & \subset \qty{i - \codim(S) + p(S)}-\text{skeleta of } \D^i \\
+    & \subset \qty{i - \codim(T) + q(T)}-\text{skeleta of } \D^i
+\end{align*} Thus $f\circ \sigma$ is $q$-allowable. Thus we get a map $f_{\ast}: I^pS_{\ast}(X) \to I^qS_{\ast}(Y)$. $\hfill \blacksquare$
+
+\vspace*{0.2cm}
+
+\noindent Now we note that, this map is natural i.e. the following diagram commutes , \[\begin{tikzcd}
+    {I^pS_i(X)} & {I^qS_i(Y)} \\
+    {I^pS_{i-1}(X)} & {I^qS_{i-1}(Y)}
+    \arrow["{\p_i^X}"', from=1-1, to=2-1]
+    \arrow["{\p_i^Y}", from=1-2, to=2-2]
+    \arrow["{f_{\ast}}", from=1-1, to=1-2]
+    \arrow["{f_{\ast}}"', from=2-1, to=2-2]
+    \end{tikzcd}\] So, cycle maps to cycle and boundary goes to boundary, in other words $f$ induce a map is Intersection homology groups $f_{\ast}: I^pH_{\bullet}(X) \to I^qH_{\bullet}(Y)$. Just for technicality we must mark this result that, a placid  map $f$, induce $f_{\ast}:I^pH_{\bullet}(X) \to I^pH_{\bullet}(Y)$. As a corollary to the previous proposition we can say, 
+
+    \coro{ If $f$ is a startified homeomorphism and the perversities of $X$ corespond a perversity $q$ on $Y$ (i.e. $p(S)=q(T)$ if $f(S)=T$), then $I^pH_{\ast}(X) \simeq I^qH_{\ast}(Y)$.}
+
+    \noindent Now we will strenthen the conditions on the map so that we can obtain a version of homotopy invariance for intersection homology.
+
+    \begin{Def}{(Codimension Preserving)}{}
+        A stratum preserving map is codimension preserving, if for each stratum $T$ of $Y$ we have $$\codim_YT =\codim_Xf^{-1}(T)$$
+    \end{Def}
+
+  \noindent As an \textbf{Example} we can note, the map $f : X \to X \times I$ by $x \mapsto (x,i_0)$ is codimension preserving. With this we are ready to define stratum-preserving homotopy equivalance.
+
+  \begin{Def}{(Stratified Homotopic maps)}{}
+     Let, $X,Y$ are filtered spaces with perversities $p,q$ and $X\times I$ has product filtration (as we discussed above) and by abuse of notation $p(S)=p(S \times I)$. Two codimension preserving map $f$ and $g$ from $X$ to $Y$ are homotopic if, there is a codimension preserving map $$H : X \times I \to Y$$ with $f = H|_{X\times \qty{0}}$ and $g= H|_{X \times \qty{1}}$.
+
+     \vspace*{0.2cm}
+
+     \noindent A \textbf{stratum preserving homotopy equivalance} between pseudomanifold $X$ and $Y$ is a pair of codimension preserving map $f: X \to Y$ and $g:Y \to X$  so that $f \circ g $ and $g \circ f$ are homotopic via stratified homotopies, $$H : X \times I \to X \, \text{ and } K: Y \times I \to Y$$
+  \end{Def}
+
+  \begin{Thm}{Friedman \cite{Friedman_2003}}{}
+          If $f$ is a stratum-preserving homotopy equivalance, then the natural map $$f_{\ast}:I^pH_i(X) \xrightarrow{\simeq} I^pH_i(Y)$$
+  \end{Thm}
+
+  \noindent (\textbf{Kunneth}) As an application to the theorem we can say, the inclusion $X \hookrightarrow X \times (0,1)$ is a stratum preserving homotopy equivalance. Thus for a perversity $p$ we must have, \[\text{  }  I^pH_i(X) \simeq I^pH_i(X\times (0,1))\] \textsc{Remark:} \textit{All the definition above depends on a stratification of the space. We could re write the definitions conditionally. For example the definition of placid maps. We will prove that intersection homology is a topological invariant using sheaf theoretic intersection homology. This in particularlly means intersection homology is independent of startification.}
+
+  \section{Relative Intersection Homology and Mayer-Vietoris sequences}
+
+  Recall. For a topological space $X$ and $Y \subset X$, the relative chain complex $S_i(X,Y) = S_i(X)/S_i(Y)$ makes sense. Thus we can define relative homology groups easily. But for intersection homology there is a problem of defining the quotient $I^pS_i(X)/I^pS_i(Y)$. 
+  \begin{itemize}
+    \item[] The problem in this case is that, $p$-allowable chains of $Y$ depends on the filtration of $Y$ which might not be related to the startification of $X$. For \textbf{Example}, $X$ be a stratified space with a perversity $p$ and $Y =\qty{x}$ is a subspace of $X$. For $Y$, the filtration should be same as a $0$-dim manifold. And $\qty{x}$ is the only regular starta of $Y$. So for any perversity $p$, $p(\qty{x})=0$. So, $I^pS_{\ast}(Y) = S_{\ast}(Y)$. If $Y$ was in the singular starta of $X$, the intersection chains of $X$ can't pass through $\qty{x}=Y$. Then we will not have, \[I^p(Y)\subset I^p(X)\]
+    This is the problem!
+  \end{itemize}
+In order to resolve it we might take a subspace $Y$ so that it adopts the filtration from filtration of space $X$ (If the subspace adopts filtration from the space $X$, then it will automatically adopts perversity of $X$). For simplicity we will take $Y$ to be the open set of $X$. Let, $\emptyset \subset X_0 \subset \cdots X_n=X$ be the filtration (stratification) of pseudomanifold $X$. Then $Y$ admits the following filtration, \[\emptyset \subseteq X_0\cap Y \subseteq \cdots \subseteq X_n\cap Y=Y\]
+Then, $I^pS_i(Y)$ can be trated as sub-complex of $I^pS_i(X)$ and we can talk about relative intersection chain complex $I^pS_i(X,Y) := I^pS_i(X)/I^pS_i(Y)$. We will have the following\ess for each $i$, \[0 \to I^pS_i(Y) \to I^pS_i(X) \to I^pS_i(X)/I^pS_i(Y)\to 0\] \cite{GM_1990} combining these\ess we must have the\les   \[\cdots \to I^pH_i(Y) \to I^pH_i(X) \to I^pH_i(X,Y) \to I^pH_{i-1}(Y)\to I^pH_{i-1}(X)\to \cdots\]
+
+
+%%%%%%%%%%%%%%%%%%%
+  \pagebreak
+
+  \printbibliography[ 
+        heading=bibintoc,
+        title={Bibliography}
+    ]
 
 \end{document} 

@@ -16,5 +16,65 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{ynt/global//global/global}
+    \entry{Friedman_2003}{article}{}
+      \name{author}{1}{}{%
+        {{hash=0ae9f05a96dd477513bb21c886ab06f3}{%
+           family={Friedman},
+           familyi={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{0ae9f05a96dd477513bb21c886ab06f3}
+      \strng{fullhash}{0ae9f05a96dd477513bb21c886ab06f3}
+      \strng{bibnamehash}{0ae9f05a96dd477513bb21c886ab06f3}
+      \strng{authorbibnamehash}{0ae9f05a96dd477513bb21c886ab06f3}
+      \strng{authornamehash}{0ae9f05a96dd477513bb21c886ab06f3}
+      \strng{authorfullhash}{0ae9f05a96dd477513bb21c886ab06f3}
+      \field{labelalpha}{Fri03}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Stratified fibrations and the intersection homology of the regular neighborhoods of bottom strata}
+      \field{year}{2003}
+      \verb{urlraw}
+      \verb https://arxiv.org/pdf/math/0307254.pdf
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/pdf/math/0307254.pdf
+      \endverb
+    \endentry
+    \entry{GM_1990}{article}{}
+      \name{author}{2}{}{%
+        {{hash=44b0ca83470fe728b3a10b7140bc53bf}{%
+           family={Goresky},
+           familyi={G\bibinitperiod}}}%
+        {{hash=7a1678791abfb6829c3df9c3af24ff2d}{%
+           family={MacPherson},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{290ca5533987a514d524e01f74b6947d}
+      \strng{fullhash}{290ca5533987a514d524e01f74b6947d}
+      \strng{bibnamehash}{290ca5533987a514d524e01f74b6947d}
+      \strng{authorbibnamehash}{290ca5533987a514d524e01f74b6947d}
+      \strng{authornamehash}{290ca5533987a514d524e01f74b6947d}
+      \strng{authorfullhash}{290ca5533987a514d524e01f74b6947d}
+      \field{labelalpha}{GMre}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Morse Theory and Intersection Homology}
+      \field{year}{Not sure}
+      \verb{urlraw}
+      \verb https://www.math.ias.edu/~goresky/pdf/MorseIHHigh.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.math.ias.edu/~goresky/pdf/MorseIHHigh.pdf
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
 \endinput
 
