@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.6)  7 FEB 2024 02:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.6)  7 FEB 2024 13:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1059,29 +1059,38 @@ LaTeX Font Info:    Trying to load font information for U+rsfs on input line 12.
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 ) [1
 
-{C:/Users/trish/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/tex-gyre/q-rm.enc}{C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/tex-gyre/q-rm-sc.enc}] [2] [3] [4] [5] (talk5.aux)
+{C:/Users/trish/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/tex-gyre/q-rm.enc}{C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/tex-gyre/q-rm-sc.enc}] [2] [3]
+
+LaTeX Warning: Command \o invalid in math mode on input line 146.
+
+[4]
+Underfull \hbox (badness 1163) in paragraph at lines 174--176
+[][][]\OT1/qpl/b/sc/10.95 (Poincar[]e Du-al-ity for Pseu-do-man-i-folds, Chain Ver-sion)[]\OT1/qpl/m/n/10.95 If $\OML/cmm/m/it/10.95 X[]$ \OT1/qpl/m/n/10.95 is an ori-ented n-
+ []
+
+[5] [6] [7] [8] (talk5.aux)
  ***********
 LaTeX2e <2023-11-01>
 L3 programming layer <2023-12-11>
  ***********
 Package rerunfilecheck Info: File `talk5.out' has not changed.
-(rerunfilecheck)             Checksum: 878730B6ADC944AC5918C8A0A570B5FA;698.
+(rerunfilecheck)             Checksum: C1B34D1EA8247D75341DE2CCAC3E6066;1552.
 Package logreq Info: Writing requests to 'talk5.run.xml'.
 \openout1 = `talk5.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 38713 strings out of 474495
- 781202 string characters out of 5743936
+ 38735 strings out of 474495
+ 781510 string characters out of 5743936
  1953460 words of memory out of 5000000
- 60368 multiletter control sequences out of 15000+600000
+ 60381 multiletter control sequences out of 15000+600000
  607929 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 116i,16n,121p,774b,1556s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 116i,17n,121p,919b,1556s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qplb.pfb><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qplr.pfb><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qplri.pfb>
-Output written on talk5.pdf (5 pages, 352927 bytes).
+Output written on talk5.pdf (8 pages, 388279 bytes).
 PDF statistics:
- 187 PDF objects out of 1000 (max. 8388607)
- 15 named destinations out of 1000 (max. 500000)
- 181 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 221 PDF objects out of 1000 (max. 8388607)
+ 24 named destinations out of 1000 (max. 500000)
+ 213 words of extra memory for PDF output out of 10000 (max. 10000000)
 

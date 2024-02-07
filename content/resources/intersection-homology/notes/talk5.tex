@@ -106,8 +106,134 @@
 In order to resolve it we might take a subspace $Y$ so that it adopts the filtration from filtration of space $X$ (If the subspace adopts filtration from the space $X$, then it will automatically adopts perversity of $X$). For simplicity we will take $Y$ to be the open set of $X$. Let, $\emptyset \subset X_0 \subset \cdots X_n=X$ be the filtration (stratification) of pseudomanifold $X$. Then $Y$ admits the following filtration, \[\emptyset \subseteq X_0\cap Y \subseteq \cdots \subseteq X_n\cap Y=Y\]
 Then, $I^pS_i(Y)$ can be trated as sub-complex of $I^pS_i(X)$ and we can talk about relative intersection chain complex $I^pS_i(X,Y) := I^pS_i(X)/I^pS_i(Y)$. We will have the following\ess for each $i$, \[0 \to I^pS_i(Y) \to I^pS_i(X) \to I^pS_i(X)/I^pS_i(Y)\to 0\] \cite{GM_1990} combining these\ess we must have the\les   \[\cdots \to I^pH_i(Y) \to I^pH_i(X) \to I^pH_i(X,Y) \to I^pH_{i-1}(Y)\to I^pH_{i-1}(X)\to \cdots\]
 
+\noindent The relative groups also have the following excisive property which can be proved easily by sheaf theoretic treatments (we will see later). Otherwise we can just adopt the proof of sigular homology theory.
+
+\vspace*{0.2cm}
+
+\noindent \prop{2.1}(Goresky and MacPherson \cite{GM_1990}) \textit{Suppose $U$ is an open subset of a topological pseudomanifold $X$ and $A \subset U$ is a closed subset of $U$ such that $X \setminus A$ is still and topological psudomanifold (and hence $U\setminus A$). Then there is a natural isomorphism} $$I^pH_i(X,U) \simeq I^pH_i(X \setminus A, U \setminus A)$$
+
+\vspace*{0.2cm}
+
+\noindent \prop{2.2} (Mayer-Vietoris sequences) \textit{If $U$ and $V$ are two open set so that $X$ can be written as union of two open sets $X= U \cup V$. Let, $A$ be an open set and $A \subseteq U \cap V$, then we have the following\les,}\[
+\cdots \to I^pH_i(U\cap V, A)    \to  I^pH_i(U\, A) \oplus  I^pH_i(V, A) \to  I^pH_i(U\cup V V, A) \to \cdots          
+\]
+
+\section{Intersection Homology of a cone} 
+
+\newcommand{\oc}{\mathring{c}} One of the reasons to introduce the definition of intersection homology was to resolve Poincaré duality for singular spaces. In the case of manifold (of dimension say $n$) in order to talk about orientations the key calculations were, 
+\[
+ H_i(\R^n) = \begin{cases}
+    \F & i =0 \\
+    0  & i \neq 0
+ \end{cases}    \hspace*{0.4cm} \text{ and } \hspace*{0.4cm} H_i(\R^n, \R^n\setminus\qty{0}) = \begin{cases}
+    \F & i =m \\
+    0 & i \neq m
+ \end{cases}
+\] (This was important as manifolds are locally euclidian) Here we are interested in $n$-dimensional topological pseudomanifold, spaces which are locally cone on a compact pseudomanifold manifold of dimension $n-1$. Thus the key calculations for us will be $IH_{i}(\oc L)$ and $IH_{i}(\oc L, \oc L -\qty{\text{pt}})$. In order to do the calculations we will use the \textbf{Kunneth formula} we derived in the first section. If a topological pseudomanifold $X$ has the given stratification, $$X = X_n \supseteq X_{n-2} \cdots \supseteq X_0$$ Then the cone $\oc X$ (open cone in $X$) is also a pseudomanifold with startification, \[
+\oc X = \oc X_{n}\supseteq \cdots \supseteq \oc X_0 \supseteq \qty{v}    
+\]
+
+\begin{Thm}{}{}
+    \hspace*{0.1cm} Suppose $X$ is a compact topological pseudomanifold of dimension $n \geq 1$. Then for any perversity $p$, \[I^pH(\oc X) \simeq \begin{cases}
+        I^pH_i(X) & i < n -p(\qty{v})\\
+        0 & \text{ Otherwise }
+    \end{cases}  \hspace*{0.4cm} \text{ and } \hspace*{0.3cm} I^pH(\oc X, \oc X \setminus \qty{v}) \simeq \begin{cases}
+        I^pH_{i-1}(X) & i > n -p(\qty{v})\\
+        0 & \text{ Otherwise }
+    \end{cases} \]
+\end{Thm}
+
+\noindent \textit{Proof.} First note that the cone point $\qty{v}$ has co-dimension $n+1$ in $\oc X$. For $\xi \in I^pC_i(\o c X)$ we have, \[ \dim \qty(\abs{\xi}\cap \qty{v}) \leq i - (n+1)+p(\qty{v})\] Thus $\xi$ can not be $p$-allowable for $i \leq n-p(\qty{v})$. Therefore in this range $I^pC_i(\oc X)\simeq I^pC_i(\oc X \setminus \qty{v})$. Thus for $i < n- p(\qty{v})$ we must have \begin{align*}
+    I^pH_i(\oc X) &\simeq I^pH_i(\oc X \setminus \qty{v}) \\
+    & \simeq I^pH_i(X \times (0,1)) \\
+    & \simeq I^pH_i(X) \hspace*{0.2cm} \text{(Kunneth theorem)}
+\end{align*}
+
+\noindent On other hand, for $i \geq m - p(\qty{v})$ a $p$-allowable chain $\xi$ with $\p \xi=0$ satisfies $\xi = \p (c \xi)$ [why? For any simplex $\sigma$ note that $ \p(c \sigma)+ c (\p \sigma) = \sigma$(upto sign)]. Thus $I^pH_i(\oc X) =0$ for these indices. The computation of the  relative guroups follows from the following \les, 
+\[
+  \cdots  \to I^pH_i(\oc X \setminus \qty{v}) \to I^pH_i(\oc X) \to I^pH_i(\oc X, \oc X \setminus \qty{v}) \to \cdots     
+\]
+
+\coro{ Let $X$ be a $(2k-1)$ dimensional pseudomanifold. We can use the Mayer-Vietoris sequences and the above result on cone to compute intersection homology of $\Sigma X$. With respect to the middle perversity we can say, \[
+I^mH_i(\Sigma X) = \begin{cases}
+    IH_i(X) & i < k \\
+    0 & i =k \\
+    IH_{i-1}(X) & i >k
+\end{cases}    
+\]} 
+
+\noindent \textsc{Remark:} We can do the similar calculation as above for homology with closed support (or) Borel Moore homology to get,\[
+    I^{BM}H^p(\oc X) \simeq \begin{cases}
+        I^pH_i(X) & i > n -p(\qty{v})\\
+        0 & \text{ Otherwise }
+    \end{cases}      
+\]
+
+\section{Poincaré Duality}
+
+\begin{Thm}{Poincaré Duality for Pseudomanifolds, Chain Version}{}
+     If $X^n$ is an oriented n-dimensional topological pseudomanifold, and $\bar{p}$ and $\bar{q}$ are complementary perversities, then there is a non-degenerate bilinear pairing
+$$
+I H_i^{\bar{p}}(X) \times I^{B M} H_{n-i}^{\bar{q}}(X) \xrightarrow{\frown} \mathbb{Q} .
+$$
+\end{Thm}
+
+Before discussing the proof, let us explain the geometric intuition behind the above Theorem. Fix a stratification $X=X_n \supseteq X_{n-2} \supseteq \ldots \supseteq X_0 \supseteq \emptyset$, and assume, for simplicity, that $X$ has a compatible triangulation. For $a \in I H_i^{\bar{p}}(X)$ and $b \in I^{B M} H_{n-i}^{\bar{q}}(X)$ one can choose simplicial intersection chains $\xi \in I C_i^{\bar{p}}(X)$ and $\eta \in I^{B M} C_{n-i}^{\bar{q}}(X)$ (representatives of $a$ and $b$ resp.) so that $|\xi| \cap|\eta| \subset X-X_{n-2}$ and $|\xi| \cap|\eta|$ is a finite number of points. The number of these points counted with multiplicities (depending on coefficients of $\xi, \eta$, and on the orientation) does not depend on the representatives $\xi, \eta$ for $a$ and $b$. This number is $a \frown b$.
+
+
+\vspace*{0.2cm}
+
+\noindent A proof of Poincaré duality for pseudomanifolds, similar to the one for manifolds, would consist of the following steps:
+\begin{itemize}
+\item[(a)] Induction for proving (local) Poincaré duality for open cones $\stackrel{\circ}{c} L$.
+\item[(b)] Show that Poincaré duality holds for conical neighborhoods of the form $\stackrel{\circ}{c} L \times \mathbb{R}^k$.
+\item[(c)] Cover $X$ by conical neighborhoods and patch local Poincaré dualities for such neighborhoods by a Mayer-Vietoris argument.
+\end{itemize}
+
+\noindent \textit{Proof.} We only deal here with the first step (the theorem will be proved later on by using sheaves, which are designed to relate local and global information). We prove that, if $L$ is a compact $n$-dimensional pseudomanifold, and if Poincaré duality holds for $L$, then Poincaré duality holds also for $c{ }^{\circ} L$. Recall the calculation of intersection homology of cones from the previous section:
+$$
+\begin{aligned}
+& I H_i^{\bar{p}}(\stackrel{\circ}{c} L ; \mathbb{Q}) \cong \begin{cases}I H_i^{\bar{p}}(L ; \mathbb{Q}), & i<n-\bar{p}(\qty{v}), \\
+0, & \text { otherwise. }\end{cases}
+\end{aligned} \hspace*{0.3cm} \text{and } \hspace*{0.3cm} I^{B M} H_i^{\bar{p}}(\stackrel{\circ}{c} L ; \mathbb{Z}) \cong \begin{cases}0, & i \leq n-\bar{p}(\qty{v}), \\
+    I H_{i-1}^{\bar{p}}(L ; \mathbb{Z}), & \text { otherwise. } .\end{cases}
+$$
+
+\noindent Assume now that $L$ satisfies Poincaré duality, i.e.,
+$$
+I H_i^{\bar{p}}(L ; \mathbb{Q}) \cong I H_{n-i}^{\bar{q}}(L ; \mathbb{Q})^{\ast}
+$$
+for $\bar{p}$ and $\bar{q}$ complementary perversities. Then, if $i<n-\bar{p}(\qty{v})$, one has:
+$$
+I H_i^{\bar{p}}(\stackrel{\circ}{c} L ; \mathbb{Q}) \cong I H_i^{\bar{p}}(L ; \mathbb{Q}) \cong I H_{n-i}^{\bar{q}}(L ; \mathbb{Q})^{\ast} \cong I^{BM}H_{n+1-i}^{\bar{q}}(\stackrel{\circ}{c} L ; \mathbb{Q})^{\ast},
+$$
+while if $i \geq n-\bar{p}(\qty{v})$ one has
+$$
+I H_i^{\bar{p}}(\stackrel{\circ}{c} L)=0=I^{Bm} H_{n+1-i}^{\bar{q}}(\stackrel{\circ}{c} L),
+$$
+since $n-1=\bar{p}(\qty{v})+\bar{q}(\qty{v})$. This proves the claim. $\hfill \blacksquare$
+
+\section{Intersection homology of Quasi projective variety}
+
+We started this reading seminar with the concern, that a lot of beautiful result fails for singular complex varieties. Till now, we have developed Intersection Homology theory for stratified spaces and pseudomanifold. In order to discuss intersection homology for quasi projective varieties, we need to give them a stratification so that we can talk about intersection chains and etc.  
+
+\vspace*{0.2cm}
+
+\noindent A complex affine variety is subset of $\C P^N$ defined by the simultaneous vanishing of polynomial equations. A \textbf{Complex projective variety} $X$ is a subset $$X \subseteq \C P^N$$ defined by the vanishing of homogeneous polynomial equations. A \textbf{Quasi-projective varieties} $X$ is a subset of $\C P^N$ of the form $$ X = Z - Y$$ where $Z$ and $Y$ are projective varieties. By noetherian property we can say there is homogeneous polynomial $f_1,\cdots f_i$ so that $P \in X$ satisfies all of them simultaneously and there is $g_1,\cdots g_j$ so that $P$ doesn't staisfy atleast one of them.
+\begin{itemize}
+    \item[] \examp{5.1}  $\C^N$ can be identified with the Quasi-projective variety $$\qty{[x_0:\cdots:x_N]: x_0 \neq 0}$$ via the mapping $(x_1,\cdots,x_N) \to [1:x_1:\cdots :x_N]$ and inverse map is, $[x_0:\cdots:x_n] \to \qty(\frac{x_1}{x_0},\cdots,\frac{x_N}{x_0})$.
+    \item[] \examp{5.2} Any affine variety can be identified with quasi projective varieties. If $X = V(f_1,\cdots ,f_m)$ where $f_i$ has $\deg f_i = d_i$. Then $$X \cong \qty{[x_0:\cdots: x_n] \in \C P^N : x_0 \neq 0, \, \hat{f}_i(x_0,\cdots,x_N)=0}$$ where $\hat{f}_i = x_0^{d_i} f_i(x_1/x_0,\cdots,x_n/x_0)$.
+    \item[] \examp{5.3} Any projective variety is quasi projective variety.
+\end{itemize}
+A point $x$ of $X$ is called \textbf{Non-singular} if there is an open nbd. $U$ of $x$ in $\C P^N$ and homogeneous polynomials $f_1,\cdots,f_m$ such that, $$X \cap U = \qty{[x_0:\cdots:x_N]:f_j(x_0,\cdots,x_N)=0}$$ and the jacobian matrix of partial derivatives $\pdv{f_j}{x_i}$ has rank $m$.
+
+
 
 %%%%%%%%%%%%%%%%%%%
+\pagebreak
+
+\section{Homology with local coefficients}
+
   \pagebreak
 
   \printbibliography[ 

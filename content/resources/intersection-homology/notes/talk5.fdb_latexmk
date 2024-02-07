@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber talk5"] 1707252446 "talk5.bcf" "talk5.bbl" "talk5" 1707252638 0
+["biber talk5"] 0 "talk5.bcf" "talk5.bbl" "talk5" 1707291087 -1
   "./ref.bib" 1707252415 653 553e6251c4ff7c6392b07407ac8b3d7f ""
-  "talk5.bcf" 1707252637 107734 ff7037df3ad588cedce29820ab96c519 "pdflatex"
+  "talk5.bcf" 1707291086 107796 70a700925003af0976c2cd2221862e42 "pdflatex"
   (generated)
   "talk5.bbl"
   "talk5.blg"
   (rewritten before read)
-["pdflatex"] 1707252636 "c:/Users/trish/trishan8.github.io/content/resources/intersection-homology/notes/talk5.tex" "talk5.pdf" "talk5" 1707252638 0
+["pdflatex"] 1707291084 "c:/Users/trish/trishan8.github.io/content/resources/intersection-homology/notes/talk5.tex" "talk5.pdf" "talk5" 1707291087 0
   "C:/Users/trish/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1705326437 196659 862a97ff76821cd574ca4528c4924162 ""
   "C:/Users/trish/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs10.tfm" 1661309732 688 37338d6ab346c2f1466b29e195316aa4 ""
   "C:/Users/trish/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs5.tfm" 1661309735 684 3a51bd4fd9600428d5264cf25f04bb9a ""
@@ -253,12 +253,12 @@
   "C:/Users/trish/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/trish/AppData/Local/Programs/MiKTeX/tex/latex/wrapfig/wrapfig.sty" 1044403200 26220 3701aebf80ccdef248c0c20dd062fea9 ""
   "C:/Users/trish/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
-  "c:/Users/trish/trishan8.github.io/content/resources/intersection-homology/notes/talk5.tex" 1707252635 10927 d8c7b107e78cad9ef43964e05f0493e8 ""
-  "talk5.aux" 1707252637 916 9a3bec9cb306ee676d87db9be43dc0bb "pdflatex"
-  "talk5.bbl" 1707252448 2890 2007958e8bdbb7f9c2264ef7e36bc602 "biber talk5"
-  "talk5.out" 1707252637 698 878730b6adc944ac5918c8a0a570b5fa "pdflatex"
-  "talk5.run.xml" 1707252637 2311 5176afe137a3fb8a2ecaa9ffe9da7d44 "pdflatex"
-  "talk5.tex" 1707252635 10927 d8c7b107e78cad9ef43964e05f0493e8 ""
+  "c:/Users/trish/trishan8.github.io/content/resources/intersection-homology/notes/talk5.tex" 1707291084 20853 ad3525c5a30213540e7102bcc20cd263 ""
+  "talk5.aux" 1707291086 1488 1ef1f544f06da21edfd0062053cc9097 "pdflatex"
+  "talk5.bbl" 1707275809 2890 2007958e8bdbb7f9c2264ef7e36bc602 "biber talk5"
+  "talk5.out" 1707291086 1552 c1b34d1ea8247d75341de2ccac3e6066 "pdflatex"
+  "talk5.run.xml" 1707291086 2311 5176afe137a3fb8a2ecaa9ffe9da7d44 "pdflatex"
+  "talk5.tex" 1707291084 20853 ad3525c5a30213540e7102bcc20cd263 ""
   "trishnote.sty" 1707248419 6280 93eae473a707d9d4ce5405c27c4734ce ""
   (generated)
   "talk5.aux"
