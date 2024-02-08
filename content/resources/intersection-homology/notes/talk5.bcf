@@ -2361,9 +2361,14 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">ref.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1" intorder="1">Friedman_2003</bcf:citekey>
-    <bcf:citekey order="2" intorder="1">GM_1990</bcf:citekey>
-    <bcf:citekey order="3" intorder="1">GM_1990</bcf:citekey>
+    <bcf:citekey order="1" intorder="1">maxim2019intersection</bcf:citekey>
+    <bcf:citekey order="2" intorder="1">kirwan2006introduction</bcf:citekey>
+    <bcf:citekey order="3" intorder="1">Friedman_2003</bcf:citekey>
+    <bcf:citekey order="4" intorder="1">GM_1990</bcf:citekey>
+    <bcf:citekey order="5" intorder="1">GM_1990</bcf:citekey>
+    <bcf:citekey order="6" intorder="1">whit_1965</bcf:citekey>
+    <bcf:citekey order="7" intorder="1">borelintersection</bcf:citekey>
+    <bcf:citekey order="8" intorder="1">hartshorne2013algebraic</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="ynt">

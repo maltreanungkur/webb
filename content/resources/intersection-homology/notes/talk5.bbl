@@ -19,6 +19,30 @@
 
 \refsection{0}
   \datalist[entry]{ynt/global//global/global}
+    \entry{whit_1965}{article}{}
+      \name{author}{1}{}{%
+        {{hash=a6559134ad5c376a08e881686225654e}{%
+           family={Whitney},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{a6559134ad5c376a08e881686225654e}
+      \strng{fullhash}{a6559134ad5c376a08e881686225654e}
+      \strng{bibnamehash}{a6559134ad5c376a08e881686225654e}
+      \strng{authorbibnamehash}{a6559134ad5c376a08e881686225654e}
+      \strng{authornamehash}{a6559134ad5c376a08e881686225654e}
+      \strng{authorfullhash}{a6559134ad5c376a08e881686225654e}
+      \field{labelalpha}{Whi65}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{year}{1965}
+      \verb{urlraw}
+      \verb https://www.jstor.org/stable/1970400?seq=4
+      \endverb
+      \verb{url}
+      \verb https://www.jstor.org/stable/1970400?seq=4
+      \endverb
+    \endentry
     \entry{Friedman_2003}{article}{}
       \name{author}{1}{}{%
         {{hash=0ae9f05a96dd477513bb21c886ab06f3}{%
@@ -44,6 +68,114 @@
       \verb{url}
       \verb https://arxiv.org/pdf/math/0307254.pdf
       \endverb
+    \endentry
+    \entry{kirwan2006introduction}{book}{}
+      \name{author}{2}{}{%
+        {{hash=f4bbd7ccd0250c57c48088142084a597}{%
+           family={Kirwan},
+           familyi={K\bibinitperiod},
+           given={Frances},
+           giveni={F\bibinitperiod}}}%
+        {{hash=9c905542d3acef7843a6b043f4c9bd51}{%
+           family={Woolf},
+           familyi={W\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {CRC Press}%
+      }
+      \strng{namehash}{1edd6fe84b9b397228fd6a716d5dc0a3}
+      \strng{fullhash}{1edd6fe84b9b397228fd6a716d5dc0a3}
+      \strng{bibnamehash}{1edd6fe84b9b397228fd6a716d5dc0a3}
+      \strng{authorbibnamehash}{1edd6fe84b9b397228fd6a716d5dc0a3}
+      \strng{authornamehash}{1edd6fe84b9b397228fd6a716d5dc0a3}
+      \strng{authorfullhash}{1edd6fe84b9b397228fd6a716d5dc0a3}
+      \field{labelalpha}{KW06}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{An introduction to intersection homology theory}
+      \field{year}{2006}
+    \endentry
+    \entry{hartshorne2013algebraic}{book}{}
+      \name{author}{1}{}{%
+        {{hash=ee65baaab88f9233fbad3d51c399ee25}{%
+           family={Hartshorne},
+           familyi={H\bibinitperiod},
+           given={Robin},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Science \& Business Media}%
+      }
+      \strng{namehash}{ee65baaab88f9233fbad3d51c399ee25}
+      \strng{fullhash}{ee65baaab88f9233fbad3d51c399ee25}
+      \strng{bibnamehash}{ee65baaab88f9233fbad3d51c399ee25}
+      \strng{authorbibnamehash}{ee65baaab88f9233fbad3d51c399ee25}
+      \strng{authornamehash}{ee65baaab88f9233fbad3d51c399ee25}
+      \strng{authorfullhash}{ee65baaab88f9233fbad3d51c399ee25}
+      \field{labelalpha}{Har13}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Algebraic geometry}
+      \field{volume}{52}
+      \field{year}{2013}
+    \endentry
+    \entry{maxim2019intersection}{book}{}
+      \name{author}{1}{}{%
+        {{hash=2c59ce6e21f31a3096bfa0600c4a2f5b}{%
+           family={Maxim},
+           familyi={M\bibinitperiod},
+           given={LAURENTIU},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{2c59ce6e21f31a3096bfa0600c4a2f5b}
+      \strng{fullhash}{2c59ce6e21f31a3096bfa0600c4a2f5b}
+      \strng{bibnamehash}{2c59ce6e21f31a3096bfa0600c4a2f5b}
+      \strng{authorbibnamehash}{2c59ce6e21f31a3096bfa0600c4a2f5b}
+      \strng{authornamehash}{2c59ce6e21f31a3096bfa0600c4a2f5b}
+      \strng{authorfullhash}{2c59ce6e21f31a3096bfa0600c4a2f5b}
+      \field{labelalpha}{Max19}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Intersection Homology \& Perverse Sheaves}
+      \field{year}{2019}
+    \endentry
+    \entry{borelintersection}{article}{}
+      \name{author}{1}{}{%
+        {{hash=f160faeef24b45b29598f96864ca33be}{%
+           family={Borel},
+           familyi={B\bibinitperiod},
+           given={A},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{f160faeef24b45b29598f96864ca33be}
+      \strng{fullhash}{f160faeef24b45b29598f96864ca33be}
+      \strng{bibnamehash}{f160faeef24b45b29598f96864ca33be}
+      \strng{authorbibnamehash}{f160faeef24b45b29598f96864ca33be}
+      \strng{authornamehash}{f160faeef24b45b29598f96864ca33be}
+      \strng{authorfullhash}{f160faeef24b45b29598f96864ca33be}
+      \field{labelalpha}{Bor}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{M0dern 81rkh\~{} u5er C1a551c5}
+      \field{title}{Intersection Cohomology Progress in Mathematics, Vol. 50 0 1984 Birkh\~{} iuser Boston, Inc.}
+      \field{pages}{47}
+      \range{pages}{1}
     \endentry
     \entry{GM_1990}{article}{}
       \name{author}{2}{}{%

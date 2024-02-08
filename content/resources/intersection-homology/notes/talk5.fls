@@ -443,6 +443,20 @@ INPUT C:\Users\trish\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\tex-gyre\q-rm
 INPUT C:\Users\trish\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\tex-gyre\q-rm-sc.enc
 INPUT C:\Users\trish\AppData\Local\Programs\MiKTeX\fonts\tfm\public\tex-gyre\rm-qplri.tfm
 INPUT C:\Users\trish\AppData\Local\Programs\MiKTeX\fonts\tfm\public\tex-gyre\rm-qplr-sc.tfm
+INPUT C:\Users\trish\AppData\Local\Programs\MiKTeX\fonts\tfm\public\tex-gyre\rm-qplb.tfm
+INPUT C:\Users\trish\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
+INPUT C:\Users\trish\AppData\Local\Programs\MiKTeX\tex\latex\tex-gyre\ts1qpl.fd
+INPUT C:\Users\trish\AppData\Local\Programs\MiKTeX\tex\latex\tex-gyre\ts1qpl.fd
+INPUT C:\Users\trish\AppData\Local\Programs\MiKTeX\tex\latex\tex-gyre\ts1qpl.fd
+INPUT C:\Users\trish\AppData\Local\Programs\MiKTeX\fonts\tfm\public\tex-gyre\ts1-qplr.tfm
+INPUT C:\Users\trish\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\tex-gyre\q-ts1.enc
+INPUT .\image.png
+INPUT .\image.png
+INPUT .\image.png
+INPUT .\image.png
+INPUT .\image.png
+INPUT .\image.png
+INPUT .\image.png
 INPUT C:\Users\trish\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmtt10.tfm
 INPUT talk5.aux
 INPUT .\talk5.out
@@ -483,3 +497,5 @@ INPUT C:\Users\trish\AppData\Local\Programs\MiKTeX\fonts\type1\public\tex-gyre\q
 INPUT C:\Users\trish\AppData\Local\Programs\MiKTeX\fonts\type1\public\tex-gyre\qplr.pfb
 INPUT C:\Users\trish\AppData\Local\Programs\MiKTeX\fonts\type1\public\tex-gyre\qplri.pfb
 INPUT C:\Users\trish\AppData\Local\Programs\MiKTeX\fonts\type1\public\tex-gyre\qplri.pfb
+INPUT C:\Users\trish\AppData\Local\Programs\MiKTeX\fonts\type1\public\rsfs\rsfs10.pfb
+INPUT C:\Users\trish\AppData\Local\Programs\MiKTeX\fonts\type1\public\rsfs\rsfs10.pfb

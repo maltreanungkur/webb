@@ -11,7 +11,7 @@
 \maketitle 
 
 \begin{abstract}
-    \noindent In this talk, we will discuss the homological properties of intersection homology like pushforward maps, excision and Mayer-Vietoris. We will compute the intersection homology of cones. We then discuss Whitney stratifications for complex quasi-projective varieties and the associated pseudomanifold structure on their underlying topological space. We will conclude with a discussion of Poincaré duality, Lefschetz hyperplane and hard Lefschetz theorems in the context of intersection homology.
+    \noindent In this talk, we will discuss the homological properties of intersection homology like pushforward maps, excision and Mayer-Vietoris. We will compute the intersection homology of cones. We then discuss Whitney stratifications for complex quasi-projective varieties and the associated pseudomanifold structure on their underlying topological space. We will conclude with a discussion of Poincaré duality, Lefschetz hyperplane and hard Lefschetz theorems in the context of intersection homology. Main references \cite{maxim2019intersection}, \cite{kirwan2006introduction}.
 \end{abstract}
 
 \section{Functoriality of Intersection Homology}
@@ -225,16 +225,214 @@ We started this reading seminar with the concern, that a lot of beautiful result
     \item[] \examp{5.2} Any affine variety can be identified with quasi projective varieties. If $X = V(f_1,\cdots ,f_m)$ where $f_i$ has $\deg f_i = d_i$. Then $$X \cong \qty{[x_0:\cdots: x_n] \in \C P^N : x_0 \neq 0, \, \hat{f}_i(x_0,\cdots,x_N)=0}$$ where $\hat{f}_i = x_0^{d_i} f_i(x_1/x_0,\cdots,x_n/x_0)$.
     \item[] \examp{5.3} Any projective variety is quasi projective variety.
 \end{itemize}
-A point $x$ of $X$ is called \textbf{Non-singular} if there is an open nbd. $U$ of $x$ in $\C P^N$ and homogeneous polynomials $f_1,\cdots,f_m$ such that, $$X \cap U = \qty{[x_0:\cdots:x_N]:f_j(x_0,\cdots,x_N)=0}$$ and the jacobian matrix of partial derivatives $\pdv{f_j}{x_i}$ has rank $m$.
+A point $x$ of $X$ is called \textbf{Non-singular} if there is an open nbd. $U$ of $x$ in $\C P^N$ and homogeneous polynomials $f_1,\cdots,f_m$ such that, $$X \cap U = \qty{[x_0:\cdots:x_N]:f_j(x_0,\cdots,x_N)=0}$$ and the jacobian matrix of partial derivatives $\pdv{f_j}{x_i}$ has rank $m$. $X_{\text{Non-sing}}$ is the set of all non-singular point of a variety. It can be proved that if $X_{\text{Non-sing}}$ is non-empty then it is open and dense in $X$.
+
+\vspace*{0.2cm}
+
+\noindent \examp{5.4} If we take the projective variety $X = V(x^3-y^2z) \subseteq \C P^2$, at the point $[0:0:1]$ we will get, $\nabla(x^3-y^2z) = (0,0,0)$ i.e. it don't have rank $1$. So it has a singularity at that point.  
+
+\pagebreak
+
+A variety said to have \textbf{pure dimension} $n$ if the connected components of $X_{\text{Non-sing}}$ is manifold of dimension $n$. A variety is said to be \textbf{irreducible} if it can't be expressed as union of two closed sub-varieties $Y$ and $Z$. \textbf{Example}- $X = V(yz)$ is not irreducible (topologically it looks like) 
+
+\begin{figure}[htbp]
+    
+\centering
+% Gradient Info
+  
+\tikzset {_gtkz9ukec/.code = {\pgfsetadditionalshadetransform{ \pgftransformshift{\pgfpoint{89.1 bp } { -108.9 bp }  }  \pgftransformscale{1.32 }  }}}
+\pgfdeclareradialshading{_44g1w0v36}{\pgfpoint{-72bp}{88bp}}{rgb(0bp)=(1,1,1);
+rgb(0bp)=(1,1,1);
+rgb(25bp)=(0,0,0);
+rgb(400bp)=(0,0,0)}
+
+% Gradient Info
+  
+\tikzset {_z0oehbc7l/.code = {\pgfsetadditionalshadetransform{ \pgftransformshift{\pgfpoint{89.1 bp } { -108.9 bp }  }  \pgftransformscale{1.32 }  }}}
+\pgfdeclareradialshading{_tzqsy0m73}{\pgfpoint{-72bp}{88bp}}{rgb(0bp)=(1,1,1);
+rgb(0bp)=(1,1,1);
+rgb(25bp)=(0,0,0);
+rgb(400bp)=(0,0,0)}
+\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+%uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
+
+%Shape: Circle [id:dp5045272844648152] 
+\path  [shading=_44g1w0v36,_gtkz9ukec] (92.16,151.08) .. controls (92.16,122.59) and (115.26,99.49) .. (143.76,99.49) .. controls (172.26,99.49) and (195.36,122.59) .. (195.36,151.08) .. controls (195.36,179.58) and (172.26,202.68) .. (143.76,202.68) .. controls (115.26,202.68) and (92.16,179.58) .. (92.16,151.08) -- cycle ; % for fading 
+ \draw   (92.16,151.08) .. controls (92.16,122.59) and (115.26,99.49) .. (143.76,99.49) .. controls (172.26,99.49) and (195.36,122.59) .. (195.36,151.08) .. controls (195.36,179.58) and (172.26,202.68) .. (143.76,202.68) .. controls (115.26,202.68) and (92.16,179.58) .. (92.16,151.08) -- cycle ; % for border 
+
+%Shape: Circle [id:dp27600530699752257] 
+\path  [shading=_tzqsy0m73,_z0oehbc7l] (195.36,151.08) .. controls (195.36,122.59) and (218.46,99.49) .. (246.96,99.49) .. controls (275.46,99.49) and (298.56,122.59) .. (298.56,151.08) .. controls (298.56,179.58) and (275.46,202.68) .. (246.96,202.68) .. controls (218.46,202.68) and (195.36,179.58) .. (195.36,151.08) -- cycle ; % for fading 
+ \draw   (195.36,151.08) .. controls (195.36,122.59) and (218.46,99.49) .. (246.96,99.49) .. controls (275.46,99.49) and (298.56,122.59) .. (298.56,151.08) .. controls (298.56,179.58) and (275.46,202.68) .. (246.96,202.68) .. controls (218.46,202.68) and (195.36,179.58) .. (195.36,151.08) -- cycle ; % for border 
+
+
+
+
+
+\end{tikzpicture}
+\end{figure}
+
+\noindent Any quasi projective variety is union of finitely may irreducible quasi-projective variety. It is easy to check that $X$ has pure dimension $n$ if and only if,$$(X_j)_{\text{Non-sing}} = X_j-\qty{\text{singular points of }X_j}$$ 
+ is a complex manifold of dimension $n$. $X_j$ are irreducible components of $X$. [Then talk about curve and surface]. Now we will introduce a special stratification for the quasi projective varieties. 
+
+ \subsection{Whitney Stratification}
+
+ A \textbf{Whitney Stratification} of $X$ (a quasi projective variety of pure dimension $n$) is given by a filtration $$X=X_n\supseteq X_{n-1}\supseteq \cdots \supseteq X_0$$ of closed subvarieties $X_j$ such that for each $j$, $X_j-X_{j-1}$ is either empty or is a \textbf{non-singular} quasi projective variety of pure dimension $j$. This stratification requires to staisfy the following two conditions. 
+ \begin{itemize}
+    \item \textbf{Whitney condition (a)} If a sequence of points $a_i\in S_{\alpha}$ converge to a point $c \in S_{\beta}$ then the tangent space $T_cS_{\beta}$ is contained in the limit of the tangent space $T_{a_i}S_{\alpha}$, provided the limit exist.
+    \item \textbf{Whitney condition (b)} If a sequence of points of $b_i \in S_{\beta}$ and $a_i \in S_{\alpha}$ both tend to the same point $c \in S_{\beta}$ then the limit of the lines joining $a_i$ and $b_i$ is contained in the limit of the tangent spaces to $S_{\alpha}$ at $a_i$, provided both limit exist.
+ \end{itemize} 
+Roughly these conditions are to ensure that the normal structure to each stratum $S_{\beta}$ is constant along $S_{\beta}$. \textsc{Remark:} \textit{It turns out that the condition (b) implies condition (a).} This was proved my \textit{Mather}. But condition (a) do not imply condition (b). 
+
+\vspace*{0.2cm}
+
+\noindent \examp{5.5}  (Whitney's Umbrella) Let, $X = V(x^2-y^2z)$. This space has singularity along the whole $z$-axis. Thus take the filtration with $X_0 = \qty{0}$, $X_1 = \qty{z-\text{axis}}$ and $X_2 = X$. It can be show that, it is a Whitney startification of $X$.
+
+\begin{figure}[htbp]
+    
+\centering
+\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+%uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
+
+%Straight Lines [id:da3051212884747203] 
+\draw    (116.83,167.61) -- (293.36,121.97) ;
+%Straight Lines [id:da5970026463866993] 
+\draw    (125.5,135.95) -- (295.36,157.97) ;
+%Curve Lines [id:da7682892169827296] 
+\draw  [dash pattern={on 4.5pt off 4.5pt}]  (116.83,167.61) .. controls (129.47,219.22) and (152.16,191.95) .. (125.5,135.95) ;
+%Curve Lines [id:da5380894940965806] 
+\draw    (295.36,157.97) .. controls (290.69,210.64) and (310.03,169.3) .. (293.36,121.97) ;
+%Straight Lines [id:da7220319461659055] 
+\draw    (132.83,195.28) -- (296.69,181.97) ;
+%Straight Lines [id:da24050677405998733] 
+\draw    (201.5,97.95) -- (201.36,255.97) ;
+%Curve Lines [id:da2766589837075546] 
+\draw    (116.83,167.61) .. controls (117.47,167.72) and (120.47,193.72) .. (132.83,195.28) ;
+%Curve Lines [id:da3571003825201615] 
+\draw    (125.5,135.95) .. controls (126.47,140.72) and (134.47,156.72) .. (134.47,163.22) ;
+
+
+
+
+
+\end{tikzpicture}
+\caption{\textcolor{darkcerulean}{Whitney's Umbrella}}
+\end{figure}
+
+\noindent \textbf{WARNING !} Any stratification may not be Whitney Stratification. The following is the example for that and it will also prove that condition (a) do not implies condition (b).
+
+\vspace*{0.3cm}
+
+\noindent \examp{5.6} $X = V(x^4+y^4-xyz)$. This variety also have singularity along whole $z$-axis. If we take the startification $X_0 = \emptyset$, $X_1= \qty{z-\text{axis}}$ and $X_2 =X$. Here, there are two strata, $S_{\beta} = X_1$ and $S_{\alpha} = X \setminus X_1$. This satisfies the condition (a) but fails to satisfy condition (b).
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width = 4.5cm]{image.png}
+     \caption{\textcolor{darkcerulean}{Condition (b) fails}}
+\end{figure}
+
+\noindent To obtain a Whitney stratification we take $X_0 =\qty{c}$ and rests are as previous. The next two theorems will conclude that any quasi projective variety is a pseudomanifold.
+
+\begin{Thm}{\cite{whit_1965} Whitney}{}
+    Any quasi projective variety of pure dimension $n$ has a Whitney startification.
+\end{Thm}
+
+\begin{Thm}{\cite{borelintersection} Borel}{}
+    Any Whitney startification, $$X=X_n\supseteq X_{n-1}\supseteq \cdots \supseteq X_0$$ of complex quasi projective variety of pure dimension $n$ makes $X$ into a topological pseudomanifold of dimension $2n$ with filtration, $$X=Y_{2n}\supseteq Y_{2n-1}\supseteq \cdots \supseteq Y_0$$ defined by $Y_{2j}=Y_{2j+1}=X_j$
+\end{Thm}
+
+\subsection{Normalisations}
+
+For the computational purpose we have defined normalisation of psudomanifold and we have seen there is an isomorphism between the intersection homology groups of the space and the normalised space. Now we will talk about normalizsation of algbraic variety. 
+
+\begin{Def}{(Normal variety) }{}
+    A quasi-projective complex variety $X$ is called normal if the stalk at $x$ of the sheaf of regular functions on $X$ is an integrally closed ring for every $x \in X$. i.e. local ring $\mathscr{O}_{X,x} \hookrightarrow k(X)$ is integrally closed.
+\end{Def}
+\noindent It can be shown using Zariski's Main Theorem (\cite{hartshorne2013algebraic}, Ch. V Thm. 5.2) that if a quasi-projective complex variety $X$ is normal in the algebraic sense then it is topologically normal.
+
+\vspace*{0.2cm}
+
+\noindent Any quasi-projective variety $X$ has a normalisation $\pi: \tilde{X} \rightarrow X$. Here $\tilde{X}$ is a normal quasi-projective variety and $\pi$ is a finite-to-one surjective-holomorphic map (with a suitable universal property) which restricts to an isomorphism over the non-singular part $X_{\text {nonsing }}$ of $X$. (Resolving singularity of $\codim \geq 2$)
+
+\vspace*{0.2cm} 
+
+\noindent The normalisation $\tilde{X}$ of a curve $X$ is always non-singular (Hartshorne [79, Ch. III Ex. 5.8]), and hence by results from previous lecture we have,
+$$
+I H_i(X) \cong H_i(\tilde{X}) .
+$$
+
+In general this does not hold for higher-dimensional varieties since the normalisation need not be non-singular.
+
+\subsection{The Kähler package}
+
+We noted in lecture-1 that the intersection homology of a complex projective variety satisfies a set of theorems collectively termed the Kähler package
+
+\begin{itemize}
+    \item[] \textbf{Lefschetz hyperplane theorem.} Following the idea of Deligne there is a proof using Morse theory and sheaf theory. This proof holds for a wider range of perversities than middle. Precisely, \textit{ Let $X$ be an $n$-dimensional complex projective variety, $H$ a hyperplane which is transverse to the strata of some Whitney stratification of $X$, and $p$ a perversity for which $p(c) \leq c$ for all $c$. Then the map $$
+    I^p H_i(X \cap H) \rightarrow I^p H_i(X)
+    $$
+    is an isomorphism for $i<n-1$ and a surjection for $i=n-1$}
+    \item Some interesting consequences for a normal complex projective variety $X$.
+    \begin{itemize}
+        \item[(a)] Take $p$ to be the zero perversity. Using last Proposition of lecture-3 we can deduce that the natural map
+        $$
+        H^i(X \cap H) \rightarrow H^{i+2}(X)
+        $$
+        is an isomorphism for $i>n-1$ and surjective for $i=n-1$. 
+        \item[(b)] We can show that $I H_1(X) \cong H_1(X)$. By repeatedly applying the Lefschetz hyperplane theorem we deduce that $I H_1(X)$ is isomorphic to the first intersection homology of a surface $Y$ with isolated singularities. Direct computation shows that this group is $H_1(X)$, has even dimension.
+    \end{itemize}
+ \item[] \textbf{Hard Lefschetz Theorem.} The hard Lefschetz theorem states that multiplication by the Euler class of $E$ induces a map
+ $$
+ L: I H^i(X) \rightarrow I H^{i+2}(X)
+ $$
+ which is injective for $i<n$, surjective for $i+2>n$ and such that
+ $$
+ L^i: I H^{n-i}(X) \rightarrow I H^{n+i}(X)
+ $$ is isomorphism for $i \geq 0$.
+ \item There are many interesting consequences of this theorem. One simple exmaple is given below - Suppose $X$ is an $n$-dimensional complex projective variety in $\mathbb{C P}^N$ and that $Y$ is the complex cone on $X$, i.e. $Y$ is the affine variety in $\mathbb{C}^{N+1}$ cut-out by the homogeneous polynomials in $N+1$ variables which define $X$. Let $E$ be the tautological line bundle on $X$ whose fibre over $x \in X$ is the line in $\mathbb{C}^{N+1}$ represented by the point $x \in \mathbb{C P}^N$.
+
+ \item[] The vertex $\{0\}$ of the complex cone is a singularity of real codimension $2(n+1)$ and so
+ $$
+ I H^i(Y)=\left\{\begin{array}{cl}
+ I H^i(Y-\{0\}) & i \leq n \\
+ 0 & \text { otherwise. }
+ \end{array}\right.
+ $$
+ \noindent We have a rank $1$ complex vector bundle, which is therefor $2$-dimensional. Thus there is a `Thom isomorphism' says for any orientated dimension $n$ (in this case $n=2$) vector bundle there is an isomorphism $$T: IH^k(X) \rightarrow IH^ {k+n}(E, E\setminus X)$$ We have LES of cohomology for pair $(E,E\setminus X)$as follows - $$\cdots \rightarrow IH^{i-1}(E \setminus X) \rightarrow IH^i(E, E\setminus X) \rightarrow IH^i(E) \rightarrow IH^i(E\setminus X) \rightarrow \cdots $$
+It can be shown that $\pi^{\ast}: IH^{i}(X)\to IH^{i}(E)$ is an isomorphism (using stratified homotopy invariance property). It can be shown the square in the following diagram commutes, \[\begin{tikzcd}
+    \cdots & {IH^{i-1}(E\setminus X)} & {IH^{i}(E,E\setminus X)} & {IH^{i-1}(E)} & {IH^{i}(E\setminus X)} & \cdots \\
+    && {IH^{i-2}(X)} & {IH^{i}(X)}
+    \arrow[from=1-1, to=1-2]
+    \arrow[from=1-2, to=1-3]
+    \arrow[from=1-3, to=1-4]
+    \arrow[from=1-4, to=1-5]
+    \arrow[from=1-5, to=1-6]
+    \arrow["{\smile e(E)}", color={rgb,255:red,92;green,92;blue,214}, from=2-3, to=2-4]
+    \arrow["{\pi^{\ast}}"', color={rgb,255:red,92;green,92;blue,214}, from=2-4, to=1-4]
+    \arrow["T", color={rgb,255:red,92;green,92;blue,214}, from=2-3, to=1-3]
+    \arrow[color={rgb,255:red,214;green,92;blue,92}, from=1-2, to=2-3]
+    \arrow[color={rgb,255:red,214;green,92;blue,92}, from=2-4, to=1-5]
+    \end{tikzcd}\]
+    and thus we have a LES, \[\begin{tikzcd}
+        \cdots & {IH^{i-1}(E\setminus X)} & {IH^{i-2}(X)} & {IH^{i}(X)} & {IH^{i}(E\setminus X)} & \cdots
+        \arrow[from=1-1, to=1-2]
+        \arrow[from=1-5, to=1-6]
+        \arrow[color={rgb,255:red,214;green,92;blue,92}, from=1-2, to=1-3]
+        \arrow[color={rgb,255:red,214;green,92;blue,92}, from=1-4, to=1-5]
+        \arrow["{\smile e(E)}", color={rgb,255:red,92;green,92;blue,214}, from=1-3, to=1-4]
+        \end{tikzcd}\]
+        The LES corresponds to of SES (using Hard Lefschetz) $$0\to IH^{i-2}(X)\xrightarrow{\smile e(E)}IH^{i}(X) \to IH^{i}(E\setminus X)\to 0$$ for $i \leq n$. Now note that $Y \setminus \qty{0}$ and $E \setminus X$ are naturally isomorphic. So we have for $i \leq n$, $$IH^i(Y)\simeq IH^{i}(E\setminus X) \simeq IH^{i}(X)/\operatorname{Im} L \simeq IH^{i}_{\text{prim}}(X)$$ where $IH^{i}_{\text{prim}}(X)$ is primitive part of $IH^{i}(X)$, that is not multiple of $e(E)$.
+\end{itemize} \textsc{Remark:} \textit{$E$ can be viewed as blow up of $Y$ at origin. The above method will be helpful to compute intersection Homology of a space we get by doing successive blow-ups.}
 
 
 
 %%%%%%%%%%%%%%%%%%%
-\pagebreak
 
-\section{Homology with local coefficients}
 
-  \pagebreak
+
 
   \printbibliography[ 
         heading=bibintoc,
