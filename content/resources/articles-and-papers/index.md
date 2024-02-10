@@ -23,6 +23,7 @@ showDate: false
    * Fixed-point theorems (*Lefschetz*) and Jordan seperation theorem (generalization of *Jordan curve theorem*)-[pdf](fp-ord.pdf) (This is also a part of my VSRP 2023 report).
    * Cohomology and Poincare duality-[pdf](chompoin.pdf).
 - **Algebra**
+   * Quick Highlights of Sheaf Cohomology - [pdf](https://trishan8.github.io/resources/intersection-homology/notes/prereq.pdf)
    * Kunneth Formula and Eilenberg-Zilber Theorem-[pdf](kunneth.pdf). 
 - **Topology and set theory** 
   * Uncountable ordinals - [pdf](ordinalnumber.pdf).
@@ -40,7 +41,8 @@ showDate: false
 
 ## <span style="color: #EBF343;">Papers</span>
 The following papers/articles/notes are for my reference. It might be helpful for others too.
-
+- Intersection homology theory by Goresky, MacPherson [pdf](https://www.math.ias.edu/~goresky/pdf/IH.pdf)
+- Intersection homology and stratified morse theory by Goresky, MacPherson - [pdf](https://www.math.ias.edu/~goresky/pdf/MorseIHHigh.pdf)
 - Rational homotopy theory by D.Quillen-[pdf](https://people.math.rochester.edu/faculty/doug/otherpapers/quillen-rational.pdf).
 - The realization of polynomial algebras as cohomology rings by Clark and Ewing -[pdf](https://msp.org/pjm/1974/50-2/pjm-v50-n2-p07-s.pdf).
 - Realizing certain polynomial algebras as cohomology rings of spaces of finite type fibered over \\( \times BU(d) \\)-[pdf](https://projecteuclid.org/journals/pacific-journal-of-mathematics/volume-126/issue-2/Realizing-certain-polynomial-algebras-as-cohomology-rings-of-spaces-of/pjm/1102699808.pdf)

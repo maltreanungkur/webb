@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber talk5"] 1707370786 "talk5.bcf" "talk5.bbl" "talk5" 1707391992 0
+["biber talk5"] 1707370786 "talk5.bcf" "talk5.bbl" "talk5" 1707527626 0
   "./ref.bib" 1707370769 1665 b6b2bbdd704cefc2d1a5a6231468b9be ""
-  "talk5.bcf" 1707391991 108163 c6524627f5dd47180c39e919321a608f "pdflatex"
+  "talk5.bcf" 1707527625 108163 c6524627f5dd47180c39e919321a608f "pdflatex"
   (generated)
   "talk5.bbl"
   "talk5.blg"
   (rewritten before read)
-["pdflatex"] 1707391989 "c:/Users/trish/trishan8.github.io/content/resources/intersection-homology/notes/talk5.tex" "talk5.pdf" "talk5" 1707391992 0
+["pdflatex"] 1707527620 "c:/Users/trish/trishan8.github.io/content/resources/intersection-homology/notes/talk5.tex" "talk5.pdf" "talk5" 1707527626 0
   "C:/Users/trish/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1705326437 196659 862a97ff76821cd574ca4528c4924162 ""
   "C:/Users/trish/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs10.tfm" 1661309732 688 37338d6ab346c2f1466b29e195316aa4 ""
   "C:/Users/trish/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs5.tfm" 1661309735 684 3a51bd4fd9600428d5264cf25f04bb9a ""
@@ -258,13 +258,13 @@
   "C:/Users/trish/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/trish/AppData/Local/Programs/MiKTeX/tex/latex/wrapfig/wrapfig.sty" 1044403200 26220 3701aebf80ccdef248c0c20dd062fea9 ""
   "C:/Users/trish/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
-  "c:/Users/trish/trishan8.github.io/content/resources/intersection-homology/notes/talk5.tex" 1707391986 35522 60dd8754abd9eba3a8d21d33661ac1f0 ""
+  "c:/Users/trish/trishan8.github.io/content/resources/intersection-homology/notes/talk5.tex" 1707527618 35523 ed79c0d1a40d6344876543d7a69d7ac6 ""
   "image.png" 1707330511 13441 af7a172d0a1fa49aa5c39ba9141904c3 ""
-  "talk5.aux" 1707391991 2831 595f718ac9894366eb8993ac84e15fa9 "pdflatex"
+  "talk5.aux" 1707527625 2831 595f718ac9894366eb8993ac84e15fa9 "pdflatex"
   "talk5.bbl" 1707370789 8215 51e109cdd543d8e0b04ab3a095aff48a "biber talk5"
-  "talk5.out" 1707391991 1798 c84cfaf7f7b578cff25c8e5e9dbef06b "pdflatex"
-  "talk5.run.xml" 1707391991 2311 5176afe137a3fb8a2ecaa9ffe9da7d44 "pdflatex"
-  "talk5.tex" 1707391986 35522 60dd8754abd9eba3a8d21d33661ac1f0 ""
+  "talk5.out" 1707527625 1798 c84cfaf7f7b578cff25c8e5e9dbef06b "pdflatex"
+  "talk5.run.xml" 1707527625 2311 5176afe137a3fb8a2ecaa9ffe9da7d44 "pdflatex"
+  "talk5.tex" 1707527618 35523 ed79c0d1a40d6344876543d7a69d7ac6 ""
   "trishnote.sty" 1707248419 6280 93eae473a707d9d4ce5405c27c4734ce ""
   (generated)
   "talk5.aux"
