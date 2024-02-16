@@ -59,28 +59,29 @@ showPagination: false
 
 {{< timeline >}}
 
-{{< timelineItem icon="" header="Lecture 1" badge="12/1" subheader="Overview talk by Prof. Suresh Nayak" >}}
+{{< timelineItem icon="" header="1. Overview Talk" badge="12/1" subheader="Overview talk by Prof. Suresh Nayak" >}}
      Notes taken by me (Latexed) - <a href="./notes/overview.pdf"> Overview Talk </a>.
 {{< /timelineItem >}}
 
-{{< timelineItem icon="" header="Lecture 2" badge="19/1" subheader="Prognadipto Majumdar and Eeshan Pandey" >}}
+{{< timelineItem icon="" header="2. Review Talk" badge="19/1" subheader="Prognadipto Majumdar and Eeshan Pandey" >}}
      Notes by me (Latexed)- <a href="./notes/prereq.pdf">Prerequisites</a>.<br>
 
      In this lecture we will cover some prerequisite needed for this seminar like, review of singular, simplicial, Borel-Moore (co)homology etc and then Sheaf theory, sheaf cohomology (both from resolution and Derived functor point of view), cech cohomology, their relations (in some case). <br>
 {{< /timelineItem >}}
 
-{{< timelineItem icon="" header="Lecture 3" badge="02/02" subheader="Soumya Dasgupta" >}}
-    Notes by Soumya - <a href="./notes/IH_notes.pdf">Introduction</a>.<br>
+{{< timelineItem icon="" header="3. Pseudomanifold and Intersection Homology" badge="02/02" subheader="Soumya Dasgupta" >}}
+    Notes by Soumya - <a href="./notes/IH_notes.pdf">Lecture-3</a>.<br>
      Introduction to stratified spaces, Psudomanifold, Perversity and `Intersection Homology' with examples. Heading towards resolving Poincare duality - Normalization of topological spaces.
 {{< /timelineItem >}}
 
-{{< timelineItem icon="" header="Lecture 4" badge="09/02" subheader="Trishan Mondal" >}}
+{{< timelineItem icon="" header="4. First Properties of I.H. and I.H for Quasi projective Varites" badge="09/02" subheader="Trishan Mondal" >}}
     Notes by me - <a href="./notes/talk5.pdf">Lecture 4</a>.<br>
       In this talk, we will discuss the homological properties of intersection homology like pushforward maps, excision and Mayer-Vietoris. We will compute the intersection homology of cones. We then discuss Whitney stratifications for complex quasi-projective varieties and the associated pseudomanifold structure on their underlying topological space. We will conclude with a discussion of Poincaré duality, Lefschetz hyperplane and hard Lefschetz theorems in the context of intersection homology.
 {{< /timelineItem >}}
 
-{{< timelineItem icon="blank" header="Lecture 5" badge="16/02" subheader="Aaratrick Basu" >}}
-     $L^2$- Cohomology and Intersection Cohomology.
+{{< timelineItem icon="" header="5. \(L^2\)- Cohomology and Intersection Cohomology." badge="16/02" subheader="Aaratrick Basu" >}}
+    Notes by Aaratrick - <a href="./notes/lec-5.pdf">Lecture 5</a>.<br>
+    We introduce \(L^2\)-cohomology of smooth manifolds with riemannian metric, which is closely related to de Rham cohomology. We will then discuss strong Hodge theorem and a conjecture of Cheeger about intersection cohomology and \(L^2\)-cohomology. In the case of complex projective varieties with simple singularities, we show that \(L^2\)-cohomology does coincide with its intersection cohomology. If time permits, we will discuss the relation between the \(L^2\)-cohomology of a locally symmetric space and the intersection cohomology of its Baily-Borel compactification.
 {{< /timelineItem >}}
 
 {{< timelineItem icon="blank" header="Lecture 6" badge="24/02" subheader="Jishnu Biswas" >}}
