@@ -18,7 +18,7 @@ B.Math
    - (Text 3) Harris
 
    **Homeworks**
-   - Assignment-1 [Problems and Solutions](AGHW1.pdf)
+   - We were asked to solve the assignments in group. Me, [Aaratrick](https://awnathan1893.github.io/), [Soumya](https://omegasd18.github.io/) were a group. Find all solutions and details regarding this course [here](./AG-HW.html).
   ### Complex Analysis
  > This course in taken by prof. *Jaydeb Sarker*. 
 
