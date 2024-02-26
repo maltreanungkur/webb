@@ -13,9 +13,6 @@ B.Math
 
   ### Algebraic Geometry 1
   > This course is taken by Prof. *Ramesh Shrikantan*. 
-   - (Text 1) Miles Ried.
-   - (Text 2) Fulton 
-   - (Text 3) Harris
 
    **Homeworks**
    - We were asked to solve the assignments in group. Me, [Aaratrick](https://awnathan1893.github.io/), [Soumya](https://omegasd18.github.io/) were a group. Find all solutions and details regarding this course [here](./AG-HW.html).
