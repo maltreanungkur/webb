@@ -1,0 +1,9 @@
+[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:310> INFO - Logfile is 'talk(4)(II).blg'
+[416] biber-MSWIN64:340> INFO - === 
+[567] Biber.pm:419> INFO - Reading 'talk(4)(II).bcf'
+[737] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
+[773] bbl.pm:660> INFO - Writing 'talk(4)(II).bbl' with encoding 'UTF-8'
+[773] bbl.pm:763> INFO - Output to talk(4)(II).bbl
+[774] Biber.pm:131> WARN - The file 'talk(4)(II).bcf' does not contain any citations!
+[774] Biber.pm:133> INFO - WARNINGS: 1

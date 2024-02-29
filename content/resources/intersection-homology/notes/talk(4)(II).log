@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.2.26)  29 FEB 2024 22:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.2.26)  29 FEB 2024 20:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/trish/trishan8.github.io/content/resources/intersection-homology/notes/talk5.tex
-(c:/Users/trish/trishan8.github.io/content/resources/intersection-homology/notes/talk5.tex
+**c:/Users/trish/trishan8.github.io/content/resources/intersection-homology/notes/talk(4)(II).tex
+(c:/Users/trish/trishan8.github.io/content/resources/intersection-homology/notes/talk(4)(II).tex
 LaTeX2e <2023-11-01>
 L3 programming layer <2023-12-11>
 (C:\Users\trish\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -933,16 +933,11 @@ Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
 Package hyperref Info: Option `colorlinks' set `true' on input line 47.
 \c@tcb@cnt@Thm=\count470
 \c@tcb@cnt@Def=\count471
-) (C:\Users\trish\AppData\Local\Programs\MiKTeX\tex/latex/tex-gyre\tgpagella.sty
-Package: tgpagella 2009/09/27 v1.2 TeX Gyre Pagella as default roman family
 )
 \@quotelevel=\count472
 \@quotereset=\count473
-LaTeX Font Info:    Trying to load font information for OT1+qpl on input line 10.
- (C:\Users\trish\AppData\Local\Programs\MiKTeX\tex/latex/tex-gyre\ot1qpl.fd
-File: ot1qpl.fd 2009/09/25 v1.2 font definition file for OT1/qpl
-) (talk5.aux)
-\openout1 = `talk5.aux'.
+ (talk(4)(II).aux)
+\openout1 = `talk(4)(II).aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
 LaTeX Font Info:    ... okay on input line 10.
@@ -998,9 +993,9 @@ LaTeX Font Info:    ... okay on input line 10.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package hyperref Info: Link coloring ON on input line 10.
-(talk5.out) (talk5.out)
+(talk(4)(II).out) (talk(4)(II).out)
 \@outlinefile=\write5
-\openout5 = `talk5.out'.
+\openout5 = `talk(4)(II).out'.
 
  (C:\Users\trish\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1039,11 +1034,11 @@ File: english.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
-\openout4 = `talk5.bcf'.
+\openout4 = `talk(4)(II).bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'talk5.bbl' found.
- (talk5.bbl)
+Package biblatex Info: ... file 'talk(4)(II).bbl' found.
+ (talk(4)(II).bbl)
 Package biblatex Info: Reference section=0 on input line 10.
 Package biblatex Info: Reference segment=0 on input line 10.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 12.
@@ -1057,50 +1052,48 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 LaTeX Font Info:    Trying to load font information for U+rsfs on input line 12.
  (C:\Users\trish\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
-) [1
+)
 
-{C:/Users/trish/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/tex-gyre/q-rm.enc}{C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/tex-gyre/q-rm-sc.enc}] [2] [3]
+LaTeX Font Warning: Font shape `OT1/cmr/m/sc' in size <13> not available
+(Font)              size <12> substituted on input line 28.
 
-LaTeX Warning: Command \o invalid in math mode on input line 146.
 
-[4]
-Underfull \hbox (badness 1163) in paragraph at lines 174--176
-[][][]\OT1/qpl/b/sc/10.95 (Poincar[]e Du-al-ity for Pseu-do-man-i-folds, Chain Ver-sion)[]\OT1/qpl/m/n/10.95 If $\OML/cmm/m/it/10.95 X[]$ \OT1/qpl/m/n/10.95 is an ori-ented n-
- []
+LaTeX Font Warning: Font shape `OT1/cmr/bx/sc' undefined
+(Font)              using `OT1/cmr/bx/n' instead on input line 32.
 
-[5] [6]
-LaTeX Font Info:    Trying to load font information for TS1+qpl on input line 283.
- (C:\Users\trish\AppData\Local\Programs\MiKTeX\tex/latex/tex-gyre\ts1qpl.fd
-File: ts1qpl.fd 2009/09/25 v1.2 font definition file for TS1/qpl
-) [7{C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/tex-gyre/q-ts1.enc}]
-<image.png, id=148, 303.63437pt x 265.99374pt>
-File: image.png Graphic file (type png)
-<use image.png>
-Package pdftex.def Info: image.png  used on input line 333.
-(pdftex.def)             Requested size: 128.0374pt x 112.16711pt.
- [8 <./image.png>] [9] [10] (talk5.aux)
+[1
+
+{C:/Users/trish/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2] (talk(4)(II).aux)
  ***********
 LaTeX2e <2023-11-01>
 L3 programming layer <2023-12-11>
  ***********
-Package rerunfilecheck Info: File `talk5.out' has not changed.
-(rerunfilecheck)             Checksum: C84CFAF7F7B578CFF25C8E5E9DBEF06B;1798.
-Package logreq Info: Writing requests to 'talk5.run.xml'.
-\openout1 = `talk5.run.xml'.
+
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 1.0pt have occurred.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+Package rerunfilecheck Info: File `talk(4)(II).out' has not changed.
+(rerunfilecheck)             Checksum: 3E231820149CD810C979BF362193B7AC;182.
+Package logreq Info: Writing requests to 'talk(4)(II).run.xml'.
+\openout1 = `talk(4)(II).run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 39002 strings out of 474495
- 788066 string characters out of 5743935
- 1953460 words of memory out of 5000000
- 60628 multiletter control sequences out of 15000+600000
- 611397 words of font info for 85 fonts, out of 8000000 for 9000
+ 38306 strings out of 474495
+ 772647 string characters out of 5743935
+ 1944460 words of memory out of 5000000
+ 59983 multiletter control sequences out of 15000+600000
+ 566778 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 116i,17n,121p,919b,1557s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qplb.pfb><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qplr.pfb><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qplri.pfb><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on talk5.pdf (10 pages, 442622 bytes).
+ 116i,11n,121p,834b,1113s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\trish\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/trish/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on talk(4)(II).pdf (2 pages, 169542 bytes).
 PDF statistics:
- 273 PDF objects out of 1000 (max. 8388607)
- 38 named destinations out of 1000 (max. 500000)
- 246 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 126 PDF objects out of 1000 (max. 8388607)
+ 6 named destinations out of 1000 (max. 500000)
+ 165 words of extra memory for PDF output out of 10000 (max. 10000000)
 

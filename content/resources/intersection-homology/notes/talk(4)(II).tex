@@ -1,0 +1,58 @@
+\documentclass[11pt]{article}
+\usepackage{trishnote}
+  % for sample text
+
+\title{\textbf{Homology with local coefficients} \\[0.25cm]
+\small{(In the context of Intersection Homology)}}
+\author{Trishan Mondal}
+\date{}
+
+\begin{document}
+\maketitle
+
+\noindent \textbf{I}n the case of ordinary Homology theory we have seen `Homology with coefficients' $H_{\ast}(X,G)$, where the coefficients of simplex comes from the group (Abelian) $G$. During the study of homotopy theory of non-simply connected spaces, we consider the action of $\pi_1(X)$ on some Abelian groups. Local coefficient system are tools to organize this information. For Homology with local coefficients the `coefficients' of simplex comes from a bundle of group. So, as we move around the space, it allows the coefficients to ``twist''(change). 
+
+\vspace*{0.2cm}
+
+If we have a topological pseudo-manifold $X$ with the following startification, $$X=X_n \supseteq X_{n-2}\cdots \supset X_0 \supseteq \emptyset$$ then for any perversity $p$ if $X$ is a manifold, $IH^{p}_{i}(X) \simeq H_{i}(X)$, in this case if we deal with local system both the homology will also be same. But for the case of pseudo-manifold with singularity, if there is a local system $\mathcal{L}$ defined only on $X - \Sigma_{X}$ (non-singular part), which can't be extended to the whole $X$, we can talk about Intersection chains of $X$ with local-coefficients but $H_{\ast}(X,\mathcal{L})$ do not make sense. \textbf{Recall} there are two ways in which we can define homology with local coefficients. 
+
+\vspace*{0.2cm}
+
+\noindent \textbf{First way ($k[\pi]$-modules):} Let, $X$ be a locally connected topological with a simply connected universal covering $\tilde{X}$. Let, $p: \tilde{X}\to X$ be the covering and $\pi_1 := \pi_1(X)$ be the fundamental group of $X$. Consider the group ring $k[\pi]$. It is a non-commutative ring (as $\pi$ may not be Abelian). Then make the following observations:
+\begin{itemize}
+    \item Singular complex with integer coefficients $S_{\ast}(\tilde{X};k)$ is a right $k[\pi]$ module; if we treat $\pi$ as the group of deck transformations, every element in $\pi$ will corresponds to a homoemorphism $\in \operatorname{Deck}(p)$. The composition of this homoemorphism with a simplex $\sigma$ will give us a new simplex. We can also talk about the basis of $S_{\ast}(\tilde{X};k)$ as a $k [\pi]$ module.
+    \item Let, $V$ be a vector-space ($k$-module). Then consider a representation of $\pi$, $$\rho : \pi \to GL(V)$$ Thus it will give us an action, so that we can write $V$ as a left $k[\pi]$ module. So, the tensor product $S_{\ast}(\tilde{X};k)\otimes_{k[\pi]}V$ make sense.
+\end{itemize}
+Now we will just define $S_{\ast}(X;V):= S_{\ast}(\tilde{X};k)\otimes_{k[\pi]}V$, there is a natural boundary oparetor. The homology corresponding to this complex is called homology with local coefficients. We write it like $H_{\ast}(X,V_{\rho})$. This definition doesn't adopt easily for the case of Intersection homology. (Note that $H_{\ast}(X,V_{\rho})$ is a module over $k$, ) There is a more geometric (topological construction to it), which is easily adoptable for the case of Intersection chains.
+
+\section{Local systems and homology} 
+\newcommand{\el}{\mathcal{L}}
+
+\textbf{Recall :}(Consider $X$ to be locally connected) If $X$ is a topological space. The fundamental groupoid $\Pi(X)$ is the category with $\operatorname{Obj}(X)$ are elements of $X$ and $\hm(p,q)$ is the set of paths between $p,q$ (upto homotopy).
+\begin{Def}{(Local system) }{}
+   A system of local coefficients is contravariant functor, $$\el : \Pi(X) \to \operatorname{Vec}_k^{V}$$
+   ($\operatorname{Vec}_k^{V}$ is the $k$-vector space isomorphic to $V$).
+\end{Def}
+\noindent Equivalently, $\el$ is a locally constant sheaf defined by a representation of $\pi_1(X)$. Consider, the \'Etale space for the sheaf $\el$, $E = \sqcup_{x \in X} \el(x)$. Thus we have a natural projection $\pi : E \to X$, such that fibre of the point $x$ is $\el (x)$. Now let, $S_k(X;\el)$ denote the set of all finite formal sum $\sum_{i=1}^m a_i \sigma_i$, where : \begin{itemize}
+    \item[1.] $\sigma_i: \D^k \to X$ is singular $k$-simplex and,
+    \item[2.] $a_i$ is an element of the group $\el_{\sigma(e_0)}$. Where $e_0 =(1,0,0,0\cdots)$. 
+\end{itemize} 
+The obvious way to sum elements make sense and is well defined. To lessen the confusion one view $S_k(X;\el)$ as a sub-space of $\oplus_{x\in X} S_k(X;\el(x))$. Now we will describe the differential $\p : S_k(X;\el) \to S_{k-1}(X;\el)$. \textbf{Recall:} there are face maps $f^k_m:\D^{k-1}\to \D^k$ defined by $f(t_0,t_1,\cdots,t_{k-1}) = (t_0 \cdots t_{m-1}, 0, t_m ,\cdots)$.
+
+\vspace*{0.2cm}
+
+Given a singular simplex $\sigma : \D^k \to X$ and $\gamma_{\sigma}:[0,1]\to X$ be the path $\sigma(t,1-t,0\dots,0)$. Then because $\pi : E \to X$ is a covering space (the fibre is discrete), the lift of the path $\gamma_{\sigma}$, gives us a isomorphism between $\el(\sigma(0,1,\cdots))\to \el(\sigma(0,1,0,\cdots))$. We can define $$\p(a\sigma) = \tilde{\gamma}_{\sigma}(\sigma \circ f_0^{k}) + \sum_{m=1}^{k} (-1)^m a (\sigma \circ f_m^k)$$ It can be checked that it is a differential i.e. $\p ^2 =0$. Thus we can define homology $$H_{\ast}(X;\el) := H_{\ast}(S_{\bullet}(X;\el),\p)$$ The following theorem will tell us the two definition are equivalent. 
+
+\begin{Thm}{}{}
+  The homology $H_k(X;\el)$ is equals to $H_k(X;V_{\rho})$. Where the representation $\rho$ of $\pi_1(X)$ is determined by the local system $\pi:E\to X$.
+\end{Thm}
+
+It's easier to define Intersection homology with local coefficients with the second definition. Now suppose that $X$ is a topological pseudomanifold with a fixed topological stratification
+$$
+X=X_m \supseteq X_{m-2} \supseteq \cdots \supseteq X_0 .
+$$ To make this procedure work for intersection homology we only need the local coefficient system $\mathcal{L}$ to be defined on the open subset $X-X_{m-2}$ of $X$, not on the whole of $X$. This is because the allowability conditions on intersection $i$-chains $\xi$ mean that if the coefficient of $\xi$ indexed by $\sigma$ is non-zero then
+$$
+\sigma^{-1}\left(X-X_{m-2}\right) \neq \emptyset
+$$ and similarly $\tau^{-1}\left(X-X_{m-2}\right) \neq \emptyset$ for any face $\tau$ of $\sigma$. Thus we can use this procedure to define the intersection homology groups $I H_i(X ; \mathcal{L})$ of $X$ with coefficients in $\mathcal{L}$ for any local coefficient system $\mathcal{L}$ on $X-X_{m-2}$.
+
+\end{document}
