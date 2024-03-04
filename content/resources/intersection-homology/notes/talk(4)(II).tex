@@ -41,7 +41,7 @@ The obvious way to sum elements make sense and is well defined. To lessen the co
 
 \vspace*{0.2cm}
 
-Given a singular simplex $\sigma : \D^k \to X$ and $\gamma_{\sigma}:[0,1]\to X$ be the path $\sigma(t,1-t,0\dots,0)$. Then because $\pi : E \to X$ is a covering space (the fibre is discrete), the lift of the path $\gamma_{\sigma}$, gives us a isomorphism between $\el(\sigma(0,1,\cdots))\to \el(\sigma(0,1,0,\cdots))$. We can define $$\p(a\sigma) = \tilde{\gamma}_{\sigma}(\sigma \circ f_0^{k}) + \sum_{m=1}^{k} (-1)^m a (\sigma \circ f_m^k)$$ It can be checked that it is a differential i.e. $\p ^2 =0$. Thus we can define homology $$H_{\ast}(X;\el) := H_{\ast}(S_{\bullet}(X;\el),\p)$$ The following theorem will tell us the two definition are equivalent. 
+Given a singular simplex $\sigma : \D^k \to X$ and $\gamma_{\sigma}:[0,1]\to X$ be the path $\sigma(t,1-t,0\dots,0)$. Then because $\pi : E \to X$ is a covering space (the fibre is discrete), the lift of the path $\gamma_{\sigma}$, gives us a isomorphism between $\el(\sigma(0,1,\cdots))\to \el(\sigma(1,0,\cdots))$. We can define $$\p(a\sigma) = \tilde{\gamma}_{\sigma}(\sigma \circ f_0^{k}) + \sum_{m=1}^{k} (-1)^m a (\sigma \circ f_m^k)$$ It can be checked that it is a differential i.e. $\p ^2 =0$. Thus we can define homology $$H_{\ast}(X;\el) := H_{\ast}(S_{\bullet}(X;\el),\p)$$ The following theorem will tell us the two definition are equivalent. 
 
 \begin{Thm}{}{}
   The homology $H_k(X;\el)$ is equals to $H_k(X;V_{\rho})$. Where the representation $\rho$ of $\pi_1(X)$ is determined by the local system $\pi:E\to X$.

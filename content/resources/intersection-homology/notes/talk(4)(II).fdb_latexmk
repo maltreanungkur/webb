@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber talk(4)(II)"] 1709212166 "talk(4)(II).bcf" "talk(4)(II).bbl" "talk(4)(II)" 1709218314 0
+["biber talk(4)(II)"] 1709212166 "talk(4)(II).bcf" "talk(4)(II).bbl" "talk(4)(II)" 1709382358 0
   "./ref.bib" 1707370769 1665 b6b2bbdd704cefc2d1a5a6231468b9be ""
-  "talk(4)(II).bcf" 1709218314 107254 44e9398af84e14874c9184492baf0fdb "pdflatex"
+  "talk(4)(II).bcf" 1709382357 107254 44e9398af84e14874c9184492baf0fdb "pdflatex"
   (generated)
   "talk(4)(II).bbl"
   "talk(4)(II).blg"
   (rewritten before read)
-["pdflatex"] 1709218313 "c:/Users/trish/trishan8.github.io/content/resources/intersection-homology/notes/talk(4)(II).tex" "talk(4)(II).pdf" "talk(4)(II)" 1709218314 0
+["pdflatex"] 1709382348 "c:/Users/trish/trishan8.github.io/content/resources/intersection-homology/notes/talk(4)(II).tex" "talk(4)(II).pdf" "talk(4)(II)" 1709382358 0
   "C:/Users/trish/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1708964485 287127 bd7ca93361d12ec9974b3f26f21427b5 ""
   "C:/Users/trish/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1095.pk" 1681444613 12668 2d81a1b63444eb95777adce0741edc20 ""
   "C:/Users/trish/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs10.tfm" 1661309732 688 37338d6ab346c2f1466b29e195316aa4 ""
@@ -241,12 +241,12 @@
   "C:/Users/trish/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/trish/AppData/Local/Programs/MiKTeX/tex/latex/wrapfig/wrapfig.sty" 1044403200 26220 3701aebf80ccdef248c0c20dd062fea9 ""
   "C:/Users/trish/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
-  "c:/Users/trish/trishan8.github.io/content/resources/intersection-homology/notes/talk(4)(II).tex" 1709218309 6543 ff11a7544da6b185841c45e890fe67f8 ""
-  "talk(4)(II).aux" 1709218314 394 69d34fadbbe28c457ae916eb695e604d "pdflatex"
+  "c:/Users/trish/trishan8.github.io/content/resources/intersection-homology/notes/talk(4)(II).tex" 1709382346 6541 99f07a23da74ac420f2d4a2da6bbb656 ""
+  "talk(4)(II).aux" 1709382357 394 69d34fadbbe28c457ae916eb695e604d "pdflatex"
   "talk(4)(II).bbl" 1709212178 486 ee04f40f768daeed26442158e95aba61 "biber talk(4)(II)"
-  "talk(4)(II).out" 1709218314 182 3e231820149cd810c979bf362193b7ac "pdflatex"
-  "talk(4)(II).run.xml" 1709218314 2353 caabcc26428cf1ecd0d0e3c0f1c51855 "pdflatex"
-  "talk(4)(II).tex" 1709218309 6543 ff11a7544da6b185841c45e890fe67f8 ""
+  "talk(4)(II).out" 1709382357 182 3e231820149cd810c979bf362193b7ac "pdflatex"
+  "talk(4)(II).run.xml" 1709382357 2353 caabcc26428cf1ecd0d0e3c0f1c51855 "pdflatex"
+  "talk(4)(II).tex" 1709382346 6541 99f07a23da74ac420f2d4a2da6bbb656 ""
   "trishnote.sty" 1707248419 6280 93eae473a707d9d4ce5405c27c4734ce ""
   (generated)
   "talk(4)(II).aux"

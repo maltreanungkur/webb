@@ -15,7 +15,7 @@ B.Math
   > This course is taken by Prof. *Ramesh Shrikantan*. 
 
    **Homeworks**
-   - We were asked to solve the assignments in group. Me, [Aaratrick](https://awnathan1893.github.io/), [Soumya](https://omegasd18.github.io/) were a group. Find all solutions and details regarding this course [here](./AG-HW.html).
+   - We were asked to solve the assignments in group. Me, [Aaratrick](https://awnathan1893.github.io/), [Soumya](https://omegasd18.github.io/) were a group. Find all solutions and details regarding this course [here](https://trishan8.github.io/alg-geo-hw.html).
   ### Complex Analysis
  > This course in taken by prof. *Jaydeb Sarker*. 
 
