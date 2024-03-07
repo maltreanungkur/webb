@@ -76,8 +76,12 @@ showPagination: false
     In this talk, we sheafify the construction of the intersection homology we have seen so far by showing that it can be computed as the homology group of a certain complex of sheaves. As a consequence, it is shown that intersection homology is a topological invariant of a pseudomanifold, i.e, it does not depend on the choice of a stratification. This is done using Deligne's construction which given any stratification associates to a complex of sheaves, a new complex of sheaves. This construction is then applied to the complex computing intersection homology for the canonical (coarsest) stratification to derive the independence of stratification.
 {{< /timelineItem >}}
 
-{{< timelineItem icon="blank" header="7. Continuation" badge="01/03" subheader="Jishnu Biswas,Trishan Mondal" >}}
-     
+{{< timelineItem icon="" header="7. Continuation" badge="01/03" subheader="Jishnu Biswas,Trishan Mondal" >}}
+In this talk we will first look into The Kähler package, then will will get back proving the fact Intersection homology sheaf is invariant of stratification.
+{{< /timelineItem >}}
+
+{{< timelineItem icon="blank" header="8. Perverse sheaves" badge="01/03" subheader="Animesh Renanse" >}}
+ Let X be an n-pseudomanifold. In the last two talks, we constructed the simplicial intersection complex of sheaves over X and showed that its hypercohomology is the intersection homology. Furthermore, it is completely characterized in the derived category by a list of axioms. Continuing with this, we will see that these axioms ensure that this complex is a perverse sheaf with a twist. We will see that the category of perverse sheaves enjoys special properties in the derived category; it is abelian and is closed under Verdier duality. Thinking of perverse sheaves as an enlargement of intersection homology with local coefficients, we will see that every perverse sheaf can be “approximated” by finitely many of them; that is, the category of perverse sheaves is artinian. We will end with some more remarks and examples from complex varieties.
 {{< /timelineItem >}}
 
 {{< /timeline >}}
