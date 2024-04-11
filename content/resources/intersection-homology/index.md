@@ -85,9 +85,15 @@ In this talk we will first look into The Kähler package, then we will get back 
  Let X be an n-pseudomanifold. In the last two talks, we constructed the simplicial intersection complex of sheaves over X and showed that its hypercohomology is the intersection homology. Furthermore, it is completely characterized in the derived category by a list of axioms. Continuing with this, we will see that these axioms ensure that this complex is a perverse sheaf with a twist. We will see that the category of perverse sheaves enjoys special properties in the derived category; it is abelian and is closed under Verdier duality. Thinking of perverse sheaves as an enlargement of intersection homology with local coefficients, we will see that every perverse sheaf can be “approximated” by finitely many of them; that is, the category of perverse sheaves is artinian. We will end with some more remarks and examples from complex varieties.
 {{< /timelineItem >}}
 
-{{< timelineItem icon="blank" header="8. Nearby and Vanishing cycle" badge="15/03" subheader="Raushon toor nair" >}}
-    TBA
+{{< timelineItem icon="" header="8. Nearby and Vanishing cycle" badge="15/03" subheader="Raushon toor nair" >}}
+     We define nearby and vanishing cycles functors, associated with a function \(f: \mathbb{C}^n \to \mathbb{C}\), from the bounded derived category of constructible sheaves on \(\mathbb{C}^n\) to those on the special fiber of 0 of the function \(f\). We will then discuss the Beilinson-Bernstein-Deligne-Gabber decomposition theorem for intersection homology.
 {{< /timelineItem >}}
+
+
+{{< timelineItem icon="" header="9,10. Weil's conjecture for the singular case" badge="05/04, 12/04" subheader="Kannappan Sampath" >}}
+     We will introduce Weil's zeta function of a smooth projective variety over finite fields and Weil's conjectures about them. We will then explain how one could deduce these conjectures from a reasonable cohomology theory; we will then explain that such a cohomology theory with coefficients in \(\mathbb{Q}_p\) that is functorial for morphisms between smooth projective varieties cannot exist. We will then mention that \(\ell\)-adic etale cohomology (with ell not equal to p) is a Weil-cohomology theory. We will end by computing the "naive" zeta function of some explicit examples of singular varieties.
+{{< /timelineItem >}}
+
 
 {{< /timeline >}}
 
