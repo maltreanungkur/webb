@@ -29,24 +29,11 @@
  name = "Resources"
  pageRef = "resources"
  weight = 190
-
-[[main]]
-  identifier = "mastodon"
-  pre = "mastodon"
-  url = "https://mathstodon.xyz/@trishan1"
-  weight = 500
-
 [[main]]
   identifier = "github"
   pre = "github"
   url = "https://github.com/Trishan8"
   weight = 400
-
-[[main]]
-  identifier = "envelope"
-  pre = "envelope"
-  url = "mailto:trishanmondal004@gmail.com"
-  weight = 210
 
 #[[main]]
 #  name = "example sub-menu 2"

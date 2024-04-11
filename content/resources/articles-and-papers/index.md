@@ -17,6 +17,10 @@ showDate: false
 
 
 (If name of author is not mentioned, it's a note written by me. There can be some typo irrespective of authors. The blue leters contains link of the pdf/texfiles.)
+
+- **General**
+  * Riemann-Roch theorem and it's application - [Pdf](r-roch.pdf).
+  * Intersection homology introduction and application - [Introduction](https://trishan8.github.io/resources/intersection-homology/notes/IH_notes.pdf), [Properties and Application](https://trishan8.github.io/resources/intersection-homology/notes/talk5.pdf).
  
 - **Algebraic Topology**
    * Simplicial and Singular homology, their equivalances by *Acyclic model theorem* and furthers-[pdf](main.pdf) (This is a part of my VSRP 2023 report).

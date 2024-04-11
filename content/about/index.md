@@ -3,6 +3,7 @@ title: "About Me"
 description: "Here I will mostly write about my self"
 showDate: false
 showTableOfContents: false
+sharinglinks: [""]
 ---
 
 
@@ -14,3 +15,4 @@ showTableOfContents: false
 
 - (2013-2019)   **Secondery** at *Nirmal Hriday Ashram Boys' High school*.
 
+--------
