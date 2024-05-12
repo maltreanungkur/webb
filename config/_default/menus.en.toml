@@ -26,6 +26,11 @@
  weight = 100
 
 [[main]]
+ name = "Articles"
+ url = "https://trishan8.github.io/My-Notes.html"
+ weight = 120
+
+[[main]]
  name = "Resources"
  pageRef = "resources"
  weight = 190
