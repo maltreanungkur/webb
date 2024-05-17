@@ -36,8 +36,42 @@
            body{
          font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
+        .topnav {
+            position: fixed; top: 0; left: 0; z-index: 9999; width: 100%;
+            overflow: hidden;
+            background-color: #202c3c;
+          }
+          
+          
+          .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 0px 32px;
+            text-decoration: solid;
+            font-size: 17px;
+          }
+          
+          .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+          }
+          
+          .topnav a.active {
+            background-color: #181828;
+            color: white;
+          }
         </style>
         <body>
+               
+            <div class="topnav">
+                <a href="https://trishan8.github.io/">Home</a>
+                <a href="https://trishan8.github.io/about/">About</a>
+                <a class="active" href="https://trishan8.github.io/My-Notes.html">Articles</a>
+                <a href="https://trishan8.github.io/posts/">Blogs</a>
+                <a href="https://trishan8.github.io/misc/">Mics</a>
+              </div>
+
             <h1 font-family="">
                 <center>
                   Some Notes by Me
