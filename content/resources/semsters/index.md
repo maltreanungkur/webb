@@ -11,8 +11,9 @@ series_order: 2
 ## Semester 1
   
   ### Analysis of Several variables
-  - Pre Midsem notes: [PDF](./Analysis(pre-midsem).pdf)
-  - Post Midsem notes: [PDF](./Analysis(post-midsem).pdf)
+  
+  - Pre Midsem notes: [PDF](Analysis(pre-midsem).pdf)
+  - Post Midsem notes: [PDF](Analysis(post-midsem).pdf)
   - Assignments: [PDF](Assignments(Analysis).pdf)
 
 
