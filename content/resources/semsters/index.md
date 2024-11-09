@@ -6,12 +6,15 @@ description: "Semester works"
 series: ["Resources"]
 series_order: 2
 ---
+
+semester works
+
 # M.Math @ISI, Kolkata
 
 ## Semester 1
   
   ### Analysis of Several variables
-  
+
   - Pre Midsem notes: [PDF](Analysis(pre-midsem).pdf)
   - Post Midsem notes: [PDF](Analysis(post-midsem).pdf)
   - Assignments: [PDF](Assignments(Analysis).pdf)
