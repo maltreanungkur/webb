@@ -1,12 +1,23 @@
 ---
 title: "Semester works"
-date: 2021-09-20
+date: 2024-01-01
 draft: false
 description: "Semester works"
 series: ["Resources"]
 series_order: 2
 ---
-B.Math
+# M.Math @ISI, Kolkata
+
+## Semester 1
+  
+  ### Analysis of Several variables
+  - Pre Midsem notes: [PDF](./Analysis(pre%20midsem).pdf)
+  - Post Midsem notes: [PDF](./Analysis(post%20midsem).pdf)
+  - Assignments: [PDF](./Assignments(Analysis).pdf)
+
+
+
+# B.Math @ISI, Bengaluru
 
 ## Semester 6 (B.Math)
   In this semester I have taken 5 courses(which is compulsory) and a Reading Seminar. Probable courses are as follows
