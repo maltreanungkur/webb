@@ -8,12 +8,12 @@ description: "Welcome to my website"
 <img src="featured.jpg" width="310" height="250" alt="*picture*" align=right>
 
 <span style="color: #d2d5d8; font-family: 'Garamond'; font-size: 1em;">Student @ Theoretical Statistics and Mathematics depertment <br>
-Indian Statistical Institute, Bangalore <br>
+Indian Statistical Institute, Kolkata <br>
 Email : trishanmondal004[at]gmail[dot]com <br>
 </span>
-<span style="color: #364150; font-family: 'Georgia'; font-size: 1em;">Student email: bmat2144[at]isibang[dot]ac[dot]in</span>
+<span style="color: #364150; font-family: 'Georgia'; font-size: 1em;">Student email: mmat2437[at]isikol[dot]ac[dot]in</span>
 
-I am a third year undergraduate(B.Math) student at <a href="https://www.isibang.ac.in/" style="color:violet">Indian Statistical Institute</a>. My mathematical interests include Algebra, Topology, Geometry. Currently, I am focusing more on Algebraic Topology and Algebraic Geometry. <br>
+I am a first year master(M.Math) student at <a href="https://www.isibang.ac.in/" style="color:violet">Indian Statistical Institute</a>. My mathematical interests include Algebra, Topology, Geometry. Currently, I am focusing more on Algebraic Topology and Algebraic Geometry. <br>
 
 
 <center> 
