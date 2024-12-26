@@ -24,7 +24,7 @@ semester works
  - Pre midsem notes: [PDF](./Pre-midsem(topology).pdf)
  - Post midsem notes: [PDF](./Post-midsem(topology).pdf)
  - Assignments: [PDF 1](./exer1.pdf), [PDF 2](./exer2.pdf)
- - Additional Exercises: [See here](./Top-HW.html)
+ - Additional Exercises: [See here](https://trishan8.github.io/Top-HW.html)
 
 
 
