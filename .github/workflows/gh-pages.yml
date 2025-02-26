@@ -1,4 +1,4 @@
-name: Build and Deploy to GitHub Pages
+Build and Push to GitHub Pages
 
 on:
   push:
@@ -14,7 +14,7 @@ jobs:
   build-page:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repository
+      - name: Checkout Git Repository
         uses: actions/checkout@v4
         with:
           submodules: true
@@ -29,19 +29,13 @@ jobs:
       - name: Build site
         run: hugo --minify
 
-      - name: Debug: List Symlinks
-        run: find public -type l -ls  # Check for symlinks
-
-      - name: Remove Symlinks (Forced)
-        run: find public -type l -delete  # Delete symlinks if found
-
-      - name: Debug: Check Public Directory Size
-        run: du -sh public/  # Check if too large (>10GB)
+      - name: List files before uploading
+        run: ls -R public/  # Debugging step
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: hugo-pages  # Changed artifact name
+          name: github-pages
           path: ./public
           retention-days: 1
 
@@ -50,15 +44,19 @@ jobs:
     needs: build-page
     environment:
       name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      - name: List available artifacts
+        run: ls -l ${{ runner.temp }}/_github_workflow/  # Debugging step
+
       - name: Download artifact
         uses: actions/download-artifact@v4
         with:
-          name: hugo-pages  # Updated artifact name
+          name: github-pages
           path: public
 
-      - name: Debug: Check if public/ is Empty
-        run: ls -lah public/
+      - name: Check Downloaded Files
+        run: ls -l public/  # Debugging step
 
       - name: Deploy to GitHub Pages
         id: deployment
