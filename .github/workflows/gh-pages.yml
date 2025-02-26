@@ -32,10 +32,13 @@ jobs:
       - name: Debug Hugo Build Output
         run: ls -la public
 
+      - name: Remove .lock files  # ✅ New step to fix deployment issue
+        run: find public/ -name ".lock" -type f -delete
+
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: github-pages  # ✅ Matches deploy job
+          name: github-pages
           path: public/
 
   deploy:
@@ -48,7 +51,7 @@ jobs:
       - name: Download Artifact
         uses: actions/download-artifact@v4
         with:
-          name: github-pages  # ✅ Matches build job
+          name: github-pages
           path: public/
 
       - name: Debug Downloaded Artifact
