@@ -4,17 +4,6 @@ on:
   push:
     branches:
       - master
-    paths:
-      - ".github/workflows/**.yml"
-      - "config/**"
-      - "content/**"
-      - "archetypes/**"
-      - "themes/**"
-      - "data/**"
-      - "assets/**"
-      - "layouts/**"
-      - "static/**"
-      - "images/**"
 
 permissions:
   contents: read
@@ -24,8 +13,6 @@ permissions:
 jobs:
   build-page:
     runs-on: ubuntu-latest
-    concurrency:
-      group: ${{ github.workflow }}-${{ github.ref }}
     steps:
       - name: Checkout Git Repository
         uses: actions/checkout@v4
@@ -40,14 +27,15 @@ jobs:
           extended: true
 
       - name: Build site
-        run: |
-          hugo --minify
-          ls -l public/  # Debugging step to check if output exists
+        run: hugo --minify
+
+      - name: List files before uploading
+        run: ls -R public/  # Debugging step
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: github-pages  # Ensure this matches the deploy step
+          name: github-pages
           path: ./public
           retention-days: 1
 
@@ -58,11 +46,14 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      - name: List available artifacts
+        run: ls -l ${{ runner.temp }}/_github_workflow/  # Debugging step
+
       - name: Download artifact
         uses: actions/download-artifact@v4
         with:
-          name: github-pages  # Ensure this matches upload step
-          path: public  # Ensure correct path
+          name: github-pages
+          path: public
 
       - name: Check Downloaded Files
         run: ls -l public/  # Debugging step
