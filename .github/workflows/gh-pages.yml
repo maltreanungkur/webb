@@ -35,7 +35,7 @@ jobs:
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: hugo-site
+          name: github-pages  # ✅ Matches deploy job
           path: public/
 
   deploy:
@@ -48,7 +48,7 @@ jobs:
       - name: Download Artifact
         uses: actions/download-artifact@v4
         with:
-          name: hugo-site
+          name: github-pages  # ✅ Matches build job
           path: public/
 
       - name: Debug Downloaded Artifact
