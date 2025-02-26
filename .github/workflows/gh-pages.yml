@@ -29,8 +29,11 @@ jobs:
       - name: Build site
         run: hugo --minify
 
-      - name: List files before uploading
-        run: ls -R public/  # Debugging step
+      - name: Remove Symlinks
+        run: find public -type l -exec rm {} \;  # Fix issue with symlinks
+
+      - name: Check Artifact Size
+        run: du -sh public/  # Debugging step
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
@@ -46,17 +49,14 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: List available artifacts
-        run: ls -l ${{ runner.temp }}/_github_workflow/  # Debugging step
-
       - name: Download artifact
         uses: actions/download-artifact@v4
         with:
           name: github-pages
-          path: public
+          path: public  # Explicit path
 
-      - name: Check Downloaded Files
-        run: ls -l public/  # Debugging step
+      - name: Verify Downloaded Files
+        run: ls -R public/
 
       - name: Deploy to GitHub Pages
         id: deployment
