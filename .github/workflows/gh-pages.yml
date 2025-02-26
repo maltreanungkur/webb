@@ -28,7 +28,7 @@ jobs:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
       - name: Checkout Git Repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           submodules: true
           fetch-depth: 0
@@ -45,10 +45,11 @@ jobs:
           ls -l public/  # Debugging step to check if output exists
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4  # Updated to v4
         with:
-          name: github-pages  # Explicit artifact name
+          name: github-pages
           path: public  # Ensure path is correct
+          retention-days: 1  # Keep artifact for 1 day
 
   deploy:
     environment:
@@ -58,10 +59,10 @@ jobs:
     needs: build-page
     steps:
       - name: Download artifact
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4  # Updated to v4
         with:
           name: github-pages
-          path: public  # Ensure correct path
+          path: public
 
       - name: Deploy to GitHub Pages
         id: deployment
