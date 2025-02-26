@@ -1,4 +1,4 @@
-Build and Push to GitHub Pages
+name: Build and Deploy to GitHub Pages
 
 on:
   push:
@@ -14,7 +14,7 @@ jobs:
   build-page:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Git Repository
+      - name: Checkout Repository
         uses: actions/checkout@v4
         with:
           submodules: true
@@ -26,18 +26,17 @@ jobs:
           hugo-version: "0.123.0"
           extended: true
 
-      - name: Build site
+      - name: Build Hugo Site
         run: hugo --minify
 
-      - name: List files before uploading
-        run: ls -R public/  # Debugging step
+      - name: Debug Hugo Build Output
+        run: ls -la public
 
-      - name: Upload artifact
+      - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: github-pages
-          path: ./public
-          retention-days: 1
+          name: hugo-site
+          path: public/
 
   deploy:
     runs-on: ubuntu-latest
@@ -46,17 +45,14 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: List available artifacts
-        run: ls -l ${{ runner.temp }}/_github_workflow/  # Debugging step
-
-      - name: Download artifact
+      - name: Download Artifact
         uses: actions/download-artifact@v4
         with:
-          name: github-pages
-          path: public
+          name: hugo-site
+          path: public/
 
-      - name: Check Downloaded Files
-        run: ls -l public/  # Debugging step
+      - name: Debug Downloaded Artifact
+        run: ls -la public/
 
       - name: Deploy to GitHub Pages
         id: deployment
