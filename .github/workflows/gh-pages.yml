@@ -45,24 +45,27 @@ jobs:
           ls -l public/  # Debugging step to check if output exists
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v4  # Updated to v4
+        uses: actions/upload-artifact@v4
         with:
-          name: github-pages
-          path: public  # Ensure path is correct
-          retention-days: 1  # Keep artifact for 1 day
+          name: github-pages  # Ensure this matches the deploy step
+          path: ./public
+          retention-days: 1
 
   deploy:
+    runs-on: ubuntu-latest
+    needs: build-page
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build-page
     steps:
       - name: Download artifact
-        uses: actions/download-artifact@v4  # Updated to v4
+        uses: actions/download-artifact@v4
         with:
-          name: github-pages
-          path: public
+          name: github-pages  # Ensure this matches upload step
+          path: public  # Ensure correct path
+
+      - name: Check Downloaded Files
+        run: ls -l public/  # Debugging step
 
       - name: Deploy to GitHub Pages
         id: deployment
