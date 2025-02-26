@@ -40,12 +40,15 @@ jobs:
           extended: true
 
       - name: Build site
-        run: hugo --minify
+        run: |
+          hugo --minify
+          ls -l public/  # Debugging step to check if output exists
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-artifact@v3
         with:
-          path: ./public
+          name: github-pages  # Explicit artifact name
+          path: public  # Ensure path is correct
 
   deploy:
     environment:
@@ -54,6 +57,12 @@ jobs:
     runs-on: ubuntu-latest
     needs: build-page
     steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: github-pages
+          path: public  # Ensure correct path
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v3
